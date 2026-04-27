@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "linguanomad",
+    "plugins": [
+      "expo-router"
+    ],
+    "name": "LinguaNomad",
+    "slug": "linguanomad"
+  }
+}
