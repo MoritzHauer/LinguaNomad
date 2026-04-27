@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "tatoeba-kyrgyz-sentences",
+      "name": "Tatoeba Kyrgyz Sentences",
+      "url": "https://tatoeba.org/en/sentences/search?from=kir&to=eng",
+      "licenseSummary": "Check dataset and per-entry terms before public ingestion",
+      "attributionRequired": true,
+      "committable": false,
+      "packagable": false,
+      "status": "candidate",
+      "notes": "Useful for example-sentence discovery, but quality and redistribution handling need review."
+    },
+    {
+      "id": "wiktionary-kyrgyz",
+      "name": "Wiktionary Kyrgyz",
+      "url": "https://en.wiktionary.org/wiki/Category:Kyrgyz_language",
+      "licenseSummary": "CC BY-SA 4.0; verify derived-data handling and attribution approach",
+      "attributionRequired": true,
+      "committable": false,
+      "packagable": false,
+      "status": "candidate",
+      "notes": "Useful for lexical coverage and transliteration references."
+    }
+  ]
+}
