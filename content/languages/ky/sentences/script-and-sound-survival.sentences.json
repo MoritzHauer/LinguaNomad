@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-sent-alpha-01",
+      "languageCode": "ky",
+      "text": "Апа.",
+      "transliteration": "Apa.",
+      "translation": "Mother.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-alpha-02",
+      "languageCode": "ky",
+      "text": "Үй.",
+      "transliteration": "Uey.",
+      "translation": "House.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-alpha-03",
+      "languageCode": "ky",
+      "text": "Өрүк.",
+      "transliteration": "Oeruek.",
+      "translation": "Apricot.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-alpha-04",
+      "languageCode": "ky",
+      "text": "Жаңы.",
+      "transliteration": "Zhangy.",
+      "translation": "New.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-alpha-05",
+      "languageCode": "ky",
+      "text": "Ооба.",
+      "transliteration": "Ooba.",
+      "translation": "Yes.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-alpha-06",
+      "languageCode": "ky",
+      "text": "Жок.",
+      "transliteration": "Zhok.",
+      "translation": "No.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-alpha-07",
+      "languageCode": "ky",
+      "text": "Салам!",
+      "transliteration": "Salam!",
+      "translation": "Hi!",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-alpha-08",
+      "languageCode": "ky",
+      "text": "Рахмат!",
+      "transliteration": "Rakhmat!",
+      "translation": "Thank you!",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-sent-greeting-01",
+      "languageCode": "ky",
+      "text": "Саламатсызбы!",
+      "transliteration": "Salamatsyzby!",
+      "translation": "Hello!",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-greeting-02",
+      "languageCode": "ky",
+      "text": "Сиздин атыңыз ким?",
+      "transliteration": "Sizdin atynyz kim?",
+      "translation": "What is your name?",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-greeting-03",
+      "languageCode": "ky",
+      "text": "Менин атым Алия.",
+      "transliteration": "Menin atym Aliya.",
+      "translation": "My name is Aliya.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-greeting-04",
+      "languageCode": "ky",
+      "text": "Мен студентмин.",
+      "transliteration": "Men studentmin.",
+      "translation": "I am a student.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-greeting-05",
+      "languageCode": "ky",
+      "text": "Таанышканыма кубанычтамын.",
+      "transliteration": "Taanyshkanyma kubanychtamyn.",
+      "translation": "Nice to meet you.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-greeting-06",
+      "languageCode": "ky",
+      "text": "Жакшы, рахмат.",
+      "transliteration": "Zhakshy, rakhmat.",
+      "translation": "Good, thank you.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ]
+}

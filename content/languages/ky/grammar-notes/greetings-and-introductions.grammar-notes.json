@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-grammar-greeting-01",
+      "title": "Start with polite `сиз` forms",
+      "summary": "In first meetings, default to polite address. This chapter uses `сиз` and polite endings before any casual shift.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-greeting-02",
+      "title": "Use `Менин атым ...` for names",
+      "summary": "A safe beginner pattern for self-introduction is `Менин атым ...`, literally `my name is ...`.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-greeting-03",
+      "title": "`-мин` builds simple identity statements",
+      "summary": "In sentences like `Мен студентмин`, the ending `-мин` helps express `I am` with a noun.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ]
+}

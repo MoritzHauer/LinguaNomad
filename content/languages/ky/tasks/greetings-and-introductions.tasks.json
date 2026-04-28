@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-task-greetings-dialogue-01",
+      "kind": "guided-dialogue-completion",
+      "objective": "Complete a polite first-meeting exchange.",
+      "instructions": "Choose the missing Kyrgyz lines to finish the greeting and name exchange.",
+      "successCriteria": [
+        "Use a polite greeting first.",
+        "Ask for a name with the polite pattern.",
+        "Answer with your own name."
+      ],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "lexemeIds": [
+        "ky-lex-salamatsyzby",
+        "ky-lex-siz",
+        "ky-lex-at",
+        "ky-lex-kim"
+      ],
+      "sentenceIds": [
+        "ky-sent-greeting-01",
+        "ky-sent-greeting-02",
+        "ky-sent-greeting-03"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-greeting-01",
+        "ky-grammar-greeting-02"
+      ],
+      "completionHint": "If the speakers do not know each other yet, stay polite.",
+      "supportCards": [
+        {
+          "id": "ky-task-greetings-dialogue-01-support-grammar",
+          "kind": "grammar",
+          "title": "Polite `сиз` forms are the safest first choice",
+          "body": "When you meet someone for the first time, polite address is the beginner-safe default. This task keeps you inside that safer register.",
+          "grammarNoteIds": ["ky-grammar-greeting-01"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-greetings-dialogue-01-support-pronunciation",
+          "kind": "pronunciation",
+          "title": "Say `Саламатсызбы` as one greeting block",
+          "body": "Do not pause in the middle. It works better as one memorized respectful greeting chunk than as a word you sound out syllable by syllable every time.",
+          "sentenceIds": ["ky-sent-greeting-01"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-greetings-dialogue-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Respectful openings do real social work",
+          "body": "In many settings across Kyrgyzstan, a respectful opening formula can matter as much as the information that follows. A careful greeting changes the tone of the exchange immediately.",
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        }
+      ],
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Саламатсызбы!",
+          "transliteration": "Salamatsyzby!",
+          "translation": "Hello!"
+        },
+        {
+          "speaker": "B",
+          "text": "Саламатсызбы!",
+          "transliteration": "Salamatsyzby!",
+          "translation": "Hello!"
+        },
+        {
+          "speaker": "A",
+          "text": "Сиздин атыңыз ким?",
+          "transliteration": "Sizdin atynyz kim?",
+          "translation": "What is your name?"
+        },
+        {
+          "speaker": "B",
+          "text": "Менин атым Алия.",
+          "transliteration": "Menin atym Aliya.",
+          "translation": "My name is Aliya.",
+          "responseSlotId": "reply-name"
+        },
+        {
+          "speaker": "A",
+          "text": "Таанышканыма кубанычтамын.",
+          "transliteration": "Taanyshkanyma kubanychtamyn.",
+          "translation": "Nice to meet you.",
+          "responseSlotId": "reply-close"
+        }
+      ],
+      "responseChoices": [
+        "Менин атым Алия.",
+        "Таанышканыма кубанычтамын.",
+        "Рахмат.",
+        "Салам."
+      ],
+      "responseMode": "ordered-choice"
+    },
+    {
+      "id": "ky-task-greetings-script-01",
+      "kind": "script-to-meaning",
+      "objective": "Read key greeting lines in Cyrillic and match them to meaning.",
+      "instructions": "Read each Kyrgyz line first. Use transliteration only when needed.",
+      "successCriteria": [
+        "Recognize the polite greeting in Cyrillic.",
+        "Recognize the name-question pattern.",
+        "Recognize the self-introduction pattern."
+      ],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "sentenceIds": [
+        "ky-sent-greeting-01",
+        "ky-sent-greeting-02",
+        "ky-sent-greeting-03"
+      ],
+      "completionHint": "Read the Cyrillic first, then check the transliteration if you get stuck.",
+      "supportCards": [
+        {
+          "id": "ky-task-greetings-script-01-support-grammar",
+          "kind": "grammar",
+          "title": "Question shape matters as much as vocabulary",
+          "body": "`Сиздин атыңыз ким?` is a reusable name-question pattern, not just three isolated words. Learn the whole frame and you can swap in new content later.",
+          "grammarNoteIds": ["ky-grammar-greeting-02"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-greetings-script-01-support-pronunciation",
+          "kind": "pronunciation",
+          "title": "Let the final question rise slightly",
+          "body": "A light question lift on `ким?` helps the line sound like a real name question instead of a flat word list.",
+          "sentenceIds": ["ky-sent-greeting-02"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-greetings-script-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Names usually arrive early in Kyrgyz social small talk",
+          "body": "A short exchange often moves to names quickly, so mastering this question gives the learner an early real-world payoff.",
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        }
+      ],
+      "transliterationVisible": true,
+      "items": [
+        {
+          "text": "Саламатсызбы!",
+          "transliteration": "Salamatsyzby!",
+          "meaning": "Hello!"
+        },
+        {
+          "text": "Сиздин атыңыз ким?",
+          "transliteration": "Sizdin atynyz kim?",
+          "meaning": "What is your name?"
+        },
+        {
+          "text": "Менин атым Алия.",
+          "transliteration": "Menin atym Aliya.",
+          "meaning": "My name is Aliya."
+        }
+      ]
+    },
+    {
+      "id": "ky-task-greetings-role-01",
+      "kind": "mini-role",
+      "objective": "Introduce yourself in a respectful first meeting.",
+      "instructions": "Imagine you are meeting a host family for the first time. Greet them, say your name, and close warmly.",
+      "successCriteria": [
+        "Open with a polite greeting.",
+        "Say your name with `Менин атым ...`.",
+        "End with a polite closing or thanks."
+      ],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "lexemeIds": [
+        "ky-lex-salamatsyzby",
+        "ky-lex-rahmat"
+      ],
+      "sentenceIds": [
+        "ky-sent-greeting-01",
+        "ky-sent-greeting-03",
+        "ky-sent-greeting-05"
+      ],
+      "completionHint": "Use the phrase bank, then swap in your own name.",
+      "supportCards": [
+        {
+          "id": "ky-task-greetings-role-01-support-grammar",
+          "kind": "grammar",
+          "title": "`Менин атым ...` is a safe low-risk self-introduction",
+          "body": "This frame avoids extra grammar load. You can introduce yourself clearly before you learn more flexible identity structures.",
+          "grammarNoteIds": ["ky-grammar-greeting-02"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-greetings-role-01-support-pronunciation",
+          "kind": "pronunciation",
+          "title": "Pause after the greeting, not inside the name frame",
+          "body": "A natural beginner rhythm is `Саламатсызбы | Менин атым ...`. Keep `Менин атым` together so it sounds like one introduction unit.",
+          "sentenceIds": ["ky-sent-greeting-01", "ky-sent-greeting-03"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-greetings-role-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Host-family style first meetings are a good beginner frame",
+          "body": "Many early Kyrgyz interactions for learners happen in homes, classrooms, or hosted settings. Practicing respectful self-introductions in that frame pays off quickly.",
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        }
+      ],
+      "scenario": "You are being introduced to a new host family in Bishkek.",
+      "learnerRole": "new guest",
+      "phraseBankLexemeIds": [
+        "ky-lex-salamatsyzby",
+        "ky-lex-rahmat"
+      ],
+      "phraseBankSentenceIds": [
+        "ky-sent-greeting-01",
+        "ky-sent-greeting-03",
+        "ky-sent-greeting-05"
+      ]
+    }
+  ]
+}

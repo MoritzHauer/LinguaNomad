@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-task-alpha-script-01",
+      "kind": "script-to-meaning",
+      "objective": "Read a few short Kyrgyz words in Cyrillic and connect them to sound and meaning.",
+      "instructions": "Look at the Kyrgyz word first. Use transliteration only when you need a quick pronunciation check.",
+      "successCriteria": [
+        "Recognize an easy A-word in Cyrillic.",
+        "Recognize at least one word with `ө` or `ү`.",
+        "Connect a survival word like `Ооба` or `Жок` to meaning without translating letter by letter forever."
+      ],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "lexemeIds": [
+        "ky-lex-alpha-aa",
+        "ky-lex-alpha-oe",
+        "ky-lex-alpha-ue",
+        "ky-lex-alpha-ooba",
+        "ky-lex-alpha-zhok"
+      ],
+      "sentenceIds": [
+        "ky-sent-alpha-01",
+        "ky-sent-alpha-02",
+        "ky-sent-alpha-03",
+        "ky-sent-alpha-05",
+        "ky-sent-alpha-06"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-alpha-01",
+        "ky-grammar-alpha-02"
+      ],
+      "completionHint": "Spot the overall word shape first, then zoom into the special letters.",
+      "supportCards": [
+        {
+          "id": "ky-task-alpha-script-01-support-grammar",
+          "kind": "grammar",
+          "title": "Letters can predict later suffix patterns",
+          "body": "When you notice `ө` or `ү`, you are not just memorizing a symbol. You are also training your eye for a front-vowel pattern that matters in later grammar.",
+          "grammarNoteIds": ["ky-grammar-alpha-02"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-alpha-script-01-support-pronunciation",
+          "kind": "pronunciation",
+          "title": "Use transliteration as a quick check, not your first stop",
+          "body": "Read the Cyrillic once before peeking. A two-second attempt builds script confidence much faster than immediate transliteration dependence.",
+          "sentenceIds": ["ky-sent-alpha-02", "ky-sent-alpha-03"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-alpha-script-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Apricot is a strong Central Asian starter word",
+          "body": "`Өрүк` means apricot. Apricots show up often in Central Asian food culture, so this small reading card quietly doubles as a regional culture anchor.",
+          "sentenceIds": ["ky-sent-alpha-03"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        }
+      ],
+      "transliterationVisible": true,
+      "items": [
+        {
+          "text": "Апа.",
+          "transliteration": "Apa.",
+          "meaning": "Mother."
+        },
+        {
+          "text": "Үй.",
+          "transliteration": "Uey.",
+          "meaning": "House."
+        },
+        {
+          "text": "Өрүк.",
+          "transliteration": "Oeruek.",
+          "meaning": "Apricot."
+        },
+        {
+          "text": "Ооба.",
+          "transliteration": "Ooba.",
+          "meaning": "Yes."
+        }
+      ]
+    },
+    {
+      "id": "ky-task-alpha-noticing-01",
+      "kind": "noticing",
+      "objective": "Notice which word contains the special Kyrgyz ng letter and which words show the front-vowel family.",
+      "instructions": "Read each item and choose the one that matches the sound clue.",
+      "successCriteria": [
+        "Find the word with `ң`.",
+        "Find a word with a front rounded vowel.",
+        "Say why the special letter matters for pronunciation."
+      ],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "sentenceIds": [
+        "ky-sent-alpha-02",
+        "ky-sent-alpha-03",
+        "ky-sent-alpha-04",
+        "ky-sent-alpha-08"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-alpha-02",
+        "ky-grammar-alpha-03"
+      ],
+      "completionHint": "Check the middle of the word carefully. `ң` is easy to miss if you only skim the first letter.",
+      "supportCards": [
+        {
+          "id": "ky-task-alpha-noticing-01-support-grammar",
+          "kind": "grammar",
+          "title": "Treat `ң` as its own building block",
+          "body": "If you split `ң` into `n` plus `g`, the word will sound wrong. Kyrgyz learners do better when they memorize it as one fixed sound block from the start.",
+          "grammarNoteIds": ["ky-grammar-alpha-03"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-alpha-noticing-01-support-pronunciation",
+          "kind": "pronunciation",
+          "title": "Round your lips for `ө` and `ү`",
+          "body": "A quick pronunciation trick: keep your tongue forward and round your lips a bit for `ө` and `ү`. That helps them feel distinct from plain `о` and `у`.",
+          "sentenceIds": ["ky-sent-alpha-02", "ky-sent-alpha-03"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-alpha-noticing-01-support-fact",
+          "kind": "fun-fact",
+          "title": "One extra letter can change a whole identity cue",
+          "body": "Words with `ң` often become instant identity markers for learners because that sound is less common in many European languages. Nailing it early makes your Kyrgyz sound noticeably more grounded.",
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        }
+      ],
+      "prompt": "Which word contains the single ng sound letter, and which word shows a front rounded vowel?",
+      "targets": [
+        {
+          "sentenceId": "ky-sent-alpha-02",
+          "text": "Үй.",
+          "transliteration": "Uey.",
+          "translation": "House.",
+          "focus": "Contains the front rounded vowel `ү`."
+        },
+        {
+          "sentenceId": "ky-sent-alpha-03",
+          "text": "Өрүк.",
+          "transliteration": "Oeruek.",
+          "translation": "Apricot.",
+          "focus": "Contains the front rounded vowel `ө`."
+        },
+        {
+          "sentenceId": "ky-sent-alpha-04",
+          "text": "Жаңы.",
+          "transliteration": "Zhangy.",
+          "translation": "New.",
+          "focus": "Contains the special Kyrgyz `ң` letter."
+        },
+        {
+          "sentenceId": "ky-sent-alpha-08",
+          "text": "Рахмат!",
+          "transliteration": "Rakhmat!",
+          "translation": "Thank you!",
+          "focus": "Good survival phrase, but no special front-vowel or ng target here."
+        }
+      ]
+    },
+    {
+      "id": "ky-task-alpha-dialogue-01",
+      "kind": "guided-dialogue-completion",
+      "objective": "Read a short encounter and pick the right survival responses in Cyrillic.",
+      "instructions": "Complete the exchange with the best short reply for each moment.",
+      "successCriteria": [
+        "Open with a readable greeting.",
+        "Choose `Ооба` or `Жок` to match the question.",
+        "Close with thanks."
+      ],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "lexemeIds": [
+        "ky-lex-alpha-ooba",
+        "ky-lex-alpha-zhok",
+        "ky-lex-alpha-salam",
+        "ky-lex-alpha-rahmat"
+      ],
+      "sentenceIds": [
+        "ky-sent-alpha-05",
+        "ky-sent-alpha-06",
+        "ky-sent-alpha-07",
+        "ky-sent-alpha-08"
+      ],
+      "grammarNoteIds": ["ky-grammar-alpha-01"],
+      "completionHint": "Start with the social phrase, then choose the yes-no word that fits the prompt.",
+      "supportCards": [
+        {
+          "id": "ky-task-alpha-dialogue-01-support-grammar",
+          "kind": "grammar",
+          "title": "Social-survival words deserve early automaticity",
+          "body": "Very short words like `Ооба`, `Жок`, and `Рахмат` are worth overlearning. They let the learner participate before full sentence grammar is available.",
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-alpha-dialogue-01-support-pronunciation",
+          "kind": "pronunciation",
+          "title": "Give `Рахмат` a clear back `kh` sound",
+          "body": "Do not flatten `Рахмат` into English `rah-mat`. Let the middle consonant stay a little rougher in the throat.",
+          "sentenceIds": ["ky-sent-alpha-08"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-alpha-dialogue-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Short formulas carry a lot of social weight",
+          "body": "In many Central Asian settings, even very short respectful formulas matter. Getting a greeting and thanks right can smooth interaction long before your grammar catches up.",
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        }
+      ],
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Салам!",
+          "transliteration": "Salam!",
+          "translation": "Hi!"
+        },
+        {
+          "speaker": "B",
+          "text": "Ооба.",
+          "transliteration": "Ooba.",
+          "translation": "Yes.",
+          "responseSlotId": "reply-yes"
+        },
+        {
+          "speaker": "A",
+          "text": "Рахмат!",
+          "transliteration": "Rakhmat!",
+          "translation": "Thank you!",
+          "responseSlotId": "reply-thanks"
+        }
+      ],
+      "responseChoices": [
+        "Ооба.",
+        "Жок.",
+        "Рахмат!",
+        "Салам!"
+      ],
+      "responseMode": "ordered-choice"
+    }
+  ]
+}

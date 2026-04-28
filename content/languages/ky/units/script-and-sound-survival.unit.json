@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "unit": {
+    "id": "ky-unit-script-and-sound-survival",
+    "slug": "script-and-sound-survival",
+    "title": "Script And Sound Survival",
+    "communicationGoal": "Recognize the Kyrgyz alphabet's key beginner sounds, read a few high-value words in Cyrillic, and answer with short social-survival phrases.",
+    "sequenceNumber": 1,
+    "supportedScripts": ["cyrl", "latn"],
+    "pronunciationFocus": [
+      "Open vowel a in familiar starter words",
+      "Front rounded vowels oe and ue as a sound family",
+      "The single ng sound written with Cyrillic ng"
+    ],
+    "lexemeIds": [
+      "ky-lex-alpha-aa",
+      "ky-lex-alpha-oe",
+      "ky-lex-alpha-ue",
+      "ky-lex-alpha-ng",
+      "ky-lex-alpha-ooba",
+      "ky-lex-alpha-zhok",
+      "ky-lex-alpha-salam",
+      "ky-lex-alpha-rahmat"
+    ],
+    "sentenceIds": [
+      "ky-sent-alpha-01",
+      "ky-sent-alpha-02",
+      "ky-sent-alpha-03",
+      "ky-sent-alpha-04",
+      "ky-sent-alpha-05",
+      "ky-sent-alpha-06",
+      "ky-sent-alpha-07",
+      "ky-sent-alpha-08"
+    ],
+    "grammarNoteIds": [
+      "ky-grammar-alpha-01",
+      "ky-grammar-alpha-02",
+      "ky-grammar-alpha-03"
+    ],
+    "taskIds": [
+      "ky-task-alpha-script-01",
+      "ky-task-alpha-noticing-01",
+      "ky-task-alpha-dialogue-01"
+    ],
+    "reviewSeedIds": [
+      "ky-review-alpha-01",
+      "ky-review-alpha-02",
+      "ky-review-alpha-03",
+      "ky-review-alpha-04"
+    ],
+    "sourceIds": [
+      "linguanomad-original-kyrgyz-starter-2026",
+      "peace-corps-kyrgyz-language-manual-1997"
+    ]
+  }
+}

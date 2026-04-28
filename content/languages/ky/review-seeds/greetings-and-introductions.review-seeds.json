@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-review-greeting-01",
+      "kind": "lexeme-recall",
+      "prompt": "How do you say `hello (polite)` in Kyrgyz?",
+      "acceptableAnswers": ["Саламатсызбы"],
+      "lexemeIds": ["ky-lex-salamatsyzby"]
+    },
+    {
+      "id": "ky-review-greeting-02",
+      "kind": "sentence-comprehension",
+      "prompt": "What does `Сиздин атыңыз ким?` mean?",
+      "acceptableAnswers": ["What is your name?"],
+      "sentenceIds": ["ky-sent-greeting-02"]
+    },
+    {
+      "id": "ky-review-greeting-03",
+      "kind": "pattern-recall",
+      "prompt": "Complete the pattern: `Менин атым ...` means what?",
+      "acceptableAnswers": ["My name is ...", "My name is"],
+      "sentenceIds": ["ky-sent-greeting-03"],
+      "grammarNoteIds": ["ky-grammar-greeting-02"]
+    },
+    {
+      "id": "ky-review-greeting-04",
+      "kind": "form-noticing",
+      "prompt": "Which sentence uses a polite question about someone's name?",
+      "acceptableAnswers": ["Сиздин атыңыз ким?"],
+      "sentenceIds": ["ky-sent-greeting-02"],
+      "grammarNoteIds": ["ky-grammar-greeting-01"]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-lex-alpha-aa",
+      "languageCode": "ky",
+      "lemma": "А а",
+      "transliteration": "A a",
+      "gloss": "letter A",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "A stable anchor letter for early reading. It appears clearly in words like `апа` and helps learners trust the script quickly."
+    },
+    {
+      "id": "ky-lex-alpha-oe",
+      "languageCode": "ky",
+      "lemma": "Ө ө",
+      "transliteration": "Oe oe",
+      "gloss": "letter Oe",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "A front rounded vowel. If you know Turkish or German, it feels similar to `oe` or `o-umlaut`."
+    },
+    {
+      "id": "ky-lex-alpha-ue",
+      "languageCode": "ky",
+      "lemma": "Ү ү",
+      "transliteration": "Ue ue",
+      "gloss": "letter Ue",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Another front rounded vowel. It often travels with front-vowel harmony patterns later in the course."
+    },
+    {
+      "id": "ky-lex-alpha-ng",
+      "languageCode": "ky",
+      "lemma": "Ң ң",
+      "transliteration": "Ng ng",
+      "gloss": "letter Ng",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "This is one sound, like the `ng` in `sing`, not two separate consonants."
+    },
+    {
+      "id": "ky-lex-alpha-ooba",
+      "languageCode": "ky",
+      "lemma": "Ооба",
+      "transliteration": "Ooba",
+      "gloss": "yes",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "A very high-value survival word. The long `oo` sound is worth hearing and repeating early."
+    },
+    {
+      "id": "ky-lex-alpha-zhok",
+      "languageCode": "ky",
+      "lemma": "Жок",
+      "transliteration": "Zhok",
+      "gloss": "no",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Useful from day one. The first consonant is softer than English `j` and often rendered as `zh` in transliteration."
+    },
+    {
+      "id": "ky-lex-alpha-salam",
+      "languageCode": "ky",
+      "lemma": "Салам",
+      "transliteration": "Salam",
+      "gloss": "hi",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "A casual greeting. It is short enough to practice reading as a whole chunk."
+    },
+    {
+      "id": "ky-lex-alpha-rahmat",
+      "languageCode": "ky",
+      "lemma": "Рахмат",
+      "transliteration": "Rakhmat",
+      "gloss": "thank you",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Common across the region. The `kh` spelling signals a deeper back-of-mouth sound than plain English `h`."
+    }
+  ]
+}

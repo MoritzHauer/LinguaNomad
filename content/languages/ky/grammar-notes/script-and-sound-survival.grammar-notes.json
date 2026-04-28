@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-grammar-alpha-01",
+      "title": "Kyrgyz Cyrillic adds a few letters beyond Russian",
+      "summary": "You do not need the whole alphabet at once. Start by noticing the extra learner-critical letters like `ө`, `ү`, and `ң`, because they carry real meaning differences.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-alpha-02",
+      "title": "Front rounded vowels form a family",
+      "summary": "The letters `ө` and `ү` belong to a front-vowel family. Later they often help predict which suffix shape sounds natural, so it is worth recognizing them early by sight and sound.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-alpha-03",
+      "title": "`ң` writes one sound, not two",
+      "summary": "When you see `ң`, pronounce it like the `ng` in `sing`. Treat it as one sound chunk rather than `n` plus `g`.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ]
+}

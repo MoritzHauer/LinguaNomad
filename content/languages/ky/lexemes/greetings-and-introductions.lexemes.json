@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-lex-salamatsyzby",
+      "languageCode": "ky",
+      "lemma": "Саламатсызбы",
+      "transliteration": "Salamatsyzby",
+      "gloss": "hello (polite)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Default greeting for first meetings and respectful interactions."
+    },
+    {
+      "id": "ky-lex-salam",
+      "languageCode": "ky",
+      "lemma": "Салам",
+      "transliteration": "Salam",
+      "gloss": "hi",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "More casual than `Саламатсызбы`."
+    },
+    {
+      "id": "ky-lex-men",
+      "languageCode": "ky",
+      "lemma": "мен",
+      "transliteration": "men",
+      "gloss": "I",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-lex-siz",
+      "languageCode": "ky",
+      "lemma": "сиз",
+      "transliteration": "siz",
+      "gloss": "you (polite)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-lex-at",
+      "languageCode": "ky",
+      "lemma": "ат",
+      "transliteration": "at",
+      "gloss": "name",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-lex-kim",
+      "languageCode": "ky",
+      "lemma": "ким",
+      "transliteration": "kim",
+      "gloss": "who",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-lex-rahmat",
+      "languageCode": "ky",
+      "lemma": "Рахмат",
+      "transliteration": "Rakhmat",
+      "gloss": "thank you",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-lex-zhakshy",
+      "languageCode": "ky",
+      "lemma": "жакшы",
+      "transliteration": "zhakshy",
+      "gloss": "good / well",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ]
+}

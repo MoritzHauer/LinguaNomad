@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "unit": {
+    "id": "ky-unit-greetings-and-introductions",
+    "slug": "greetings-and-introductions",
+    "title": "Greetings And Introductions",
+    "communicationGoal": "Greet someone politely, ask and give a name, and introduce yourself with one simple identity statement.",
+    "sequenceNumber": 2,
+    "unlocksAfterUnitId": "ky-unit-script-and-sound-survival",
+    "supportedScripts": ["cyrl", "latn"],
+    "pronunciationFocus": [
+      "Hear the polite greeting as one memorized chunk",
+      "Keep question intonation light in name questions",
+      "Notice the calm rhythm of `Менин атым ...` as a fixed beginner frame"
+    ],
+    "lexemeIds": [
+      "ky-lex-salamatsyzby",
+      "ky-lex-salam",
+      "ky-lex-men",
+      "ky-lex-siz",
+      "ky-lex-at",
+      "ky-lex-kim",
+      "ky-lex-rahmat",
+      "ky-lex-zhakshy"
+    ],
+    "sentenceIds": [
+      "ky-sent-greeting-01",
+      "ky-sent-greeting-02",
+      "ky-sent-greeting-03",
+      "ky-sent-greeting-04",
+      "ky-sent-greeting-05",
+      "ky-sent-greeting-06"
+    ],
+    "grammarNoteIds": [
+      "ky-grammar-greeting-01",
+      "ky-grammar-greeting-02",
+      "ky-grammar-greeting-03"
+    ],
+    "taskIds": [
+      "ky-task-greetings-dialogue-01",
+      "ky-task-greetings-script-01",
+      "ky-task-greetings-role-01"
+    ],
+    "reviewSeedIds": [
+      "ky-review-greeting-01",
+      "ky-review-greeting-02",
+      "ky-review-greeting-03",
+      "ky-review-greeting-04"
+    ],
+    "sourceIds": [
+      "linguanomad-original-kyrgyz-starter-2026",
+      "peace-corps-kyrgyz-language-manual-1997"
+    ]
+  }
+}

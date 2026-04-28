@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-review-alpha-01",
+      "kind": "lexeme-recall",
+      "prompt": "How do you say `yes` in Kyrgyz?",
+      "acceptableAnswers": ["Ооба"],
+      "lexemeIds": ["ky-lex-alpha-ooba"]
+    },
+    {
+      "id": "ky-review-alpha-02",
+      "kind": "sentence-comprehension",
+      "prompt": "What does `Үй.` mean?",
+      "acceptableAnswers": ["House."],
+      "sentenceIds": ["ky-sent-alpha-02"]
+    },
+    {
+      "id": "ky-review-alpha-03",
+      "kind": "form-noticing",
+      "prompt": "Which word includes the special Kyrgyz ng letter?",
+      "acceptableAnswers": ["Жаңы."],
+      "sentenceIds": ["ky-sent-alpha-04"],
+      "grammarNoteIds": ["ky-grammar-alpha-03"]
+    },
+    {
+      "id": "ky-review-alpha-04",
+      "kind": "pattern-recall",
+      "prompt": "Which short reply means `thank you`?",
+      "acceptableAnswers": ["Рахмат!", "Рахмат"],
+      "sentenceIds": ["ky-sent-alpha-08"]
+    }
+  ]
+}

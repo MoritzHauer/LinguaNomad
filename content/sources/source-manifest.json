@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "linguanomad-original-kyrgyz-starter-2026",
+      "name": "LinguaNomad Original Kyrgyz Starter Content",
+      "url": "https://github.com/moe/LinguaNomad",
+      "licenseSummary": "Original LinguaNomad authored content for the Kyrgyz starter pack",
+      "attributionRequired": false,
+      "committable": true,
+      "packagable": true,
+      "status": "approved",
+      "sourceLanguages": ["ky", "en"],
+      "contentTypes": [
+        "dialogue",
+        "vocabulary-box",
+        "grammar-box",
+        "exercise",
+        "prompt"
+      ],
+      "notes": "Public runtime content authored for LinguaNomad."
+    },
+    {
+      "id": "peace-corps-kyrgyz-language-manual-1997",
+      "name": "Peace Corps Kyrgyz Language Manual",
+      "url": "https://files.eric.ed.gov/fulltext/ED461284.pdf",
+      "licenseSummary": "Redistribution status not yet verified; use as restricted editorial reference only",
+      "attributionRequired": true,
+      "committable": false,
+      "packagable": false,
+      "status": "candidate",
+      "sourceLanguages": ["ky", "en"],
+      "contentTypes": [
+        "dialogue",
+        "vocabulary-box",
+        "grammar-box",
+        "phonetic-drill",
+        "exercise"
+      ],
+      "notes": "Referenced for sequencing and cross-checking only."
+    }
+  ]
+}
