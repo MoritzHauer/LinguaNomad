@@ -22,6 +22,19 @@
       "packagable": false,
       "status": "candidate",
       "notes": "Useful for lexical coverage and transliteration references."
+    },
+    {
+      "id": "peace-corps-kyrgyz-language-manual-1997",
+      "name": "Peace Corps Kyrgyz Language Manual",
+      "url": "https://files.eric.ed.gov/fulltext/ED461284.pdf",
+      "licenseSummary": "Redistribution status not yet verified; use as restricted editorial reference only",
+      "attributionRequired": true,
+      "committable": false,
+      "packagable": false,
+      "status": "candidate",
+      "sourceLanguages": ["ky", "en"],
+      "contentTypes": ["dialogue", "vocabulary-box", "grammar-box", "phonetic-drill", "exercise"],
+      "notes": "Use for coverage planning, pattern mining, and grammar cross-checking rather than shipping verbatim text."
     }
   ]
 }

@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "note": "Illustrative non-verbatim sample for schema and workflow design. This pack uses short paraphrases and formulaic examples rather than copied lesson text.",
+  "source": {
+    "id": "peace-corps-kyrgyz-language-manual-1997",
+    "name": "Peace Corps Kyrgyz Language Manual",
+    "url": "https://files.eric.ed.gov/fulltext/ED461284.pdf",
+    "licenseSummary": "Redistribution status not yet verified; use as restricted editorial reference only",
+    "attributionRequired": true,
+    "committable": false,
+    "packagable": false,
+    "status": "candidate",
+    "sourceLanguages": ["ky", "en"],
+    "contentTypes": [
+      "dialogue",
+      "vocabulary-box",
+      "grammar-box",
+      "phonetic-drill",
+      "exercise"
+    ],
+    "notes": "Used here only to illustrate how Topic 1 material can be captured for editorial transformation."
+  },
+  "segments": [
+    {
+      "id": "topic-01-dialogue-01",
+      "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+      "kind": "dialogue",
+      "title": "Greeting and self-introduction exchange",
+      "topic": "Greetings",
+      "languageCode": "ky",
+      "scripts": ["cyrl", "latn"],
+      "communicativeFunctions": ["greet", "ask-name", "self-introduce"],
+      "informationIds": [
+        "info-greeting-formal-01",
+        "info-name-question-01",
+        "info-name-pattern-01",
+        "info-register-note-01",
+        "info-task-cue-01"
+      ],
+      "references": [
+        {
+          "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+          "sectionTitle": "Topic 1. Greetings",
+          "topic": "Greetings",
+          "pageStart": 25,
+          "pageEnd": 26,
+          "notes": "Paraphrased as an initial greeting and name-exchange pattern."
+        }
+      ],
+      "notes": "Keep any verbatim transcription outside the public repository."
+    },
+    {
+      "id": "topic-01-phonetic-drill-01",
+      "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+      "kind": "phonetic-drill",
+      "title": "Script and sound orientation",
+      "topic": "Greetings",
+      "languageCode": "ky",
+      "scripts": ["cyrl", "latn"],
+      "communicativeFunctions": ["decode-cyrillic", "notice-vowel-patterns"],
+      "informationIds": [
+        "info-script-cue-01",
+        "info-pronunciation-cue-01",
+        "info-review-cue-01"
+      ],
+      "references": [
+        {
+          "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+          "sectionTitle": "Introductory Phonetic Course",
+          "topic": "Phonetic Course",
+          "pageStart": 13,
+          "pageEnd": 24,
+          "notes": "Use as a source for early script decoding tasks."
+        }
+      ]
+    }
+  ],
+  "information": [
+    {
+      "id": "info-greeting-formal-01",
+      "type": "lexeme-candidate",
+      "label": "Formal greeting",
+      "value": "Саламатсызбы",
+      "languageCode": "ky",
+      "transliteration": "Salamatsyzby",
+      "translation": "Hello",
+      "proficiency": "beginner",
+      "tags": ["greeting", "formal"],
+      "references": [
+        {
+          "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+          "sectionTitle": "Topic 1. Greetings",
+          "pageStart": 25,
+          "pageEnd": 26
+        }
+      ]
+    },
+    {
+      "id": "info-name-question-01",
+      "type": "sentence-pattern",
+      "label": "What is your name?",
+      "value": "Атыңыз ким?",
+      "languageCode": "ky",
+      "transliteration": "Atynyz kim?",
+      "translation": "What is your name?",
+      "proficiency": "beginner",
+      "tags": ["question", "identity"],
+      "references": [
+        {
+          "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+          "sectionTitle": "Topic 1. Greetings",
+          "pageStart": 25,
+          "pageEnd": 26
+        }
+      ]
+    },
+    {
+      "id": "info-name-pattern-01",
+      "type": "sentence-pattern",
+      "label": "My name is ...",
+      "value": "Менин атым ...",
+      "languageCode": "ky",
+      "transliteration": "Menin atym ...",
+      "translation": "My name is ...",
+      "proficiency": "beginner",
+      "tags": ["identity", "introduction"],
+      "references": [
+        {
+          "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+          "sectionTitle": "Topic 1. Greetings",
+          "pageStart": 25,
+          "pageEnd": 26
+        }
+      ]
+    },
+    {
+      "id": "info-register-note-01",
+      "type": "register-note",
+      "label": "Prefer polite forms in first meetings",
+      "value": "Initial greetings should default to polite address before switching to peer-level familiarity.",
+      "proficiency": "beginner",
+      "tags": ["register", "politeness"],
+      "references": [
+        {
+          "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+          "sectionTitle": "Topic 1. Greetings",
+          "pageStart": 25,
+          "pageEnd": 30,
+          "notes": "Editorial summary, not a copied explanation."
+        }
+      ]
+    },
+    {
+      "id": "info-task-cue-01",
+      "type": "task-cue",
+      "label": "Run a first-meeting introduction",
+      "value": "The learner should be able to greet, ask a name, answer with their own name, and close politely.",
+      "proficiency": "beginner",
+      "tags": ["task", "introduction"],
+      "references": [
+        {
+          "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+          "sectionTitle": "Topic 1. Greetings",
+          "pageStart": 25,
+          "pageEnd": 30
+        }
+      ]
+    },
+    {
+      "id": "info-script-cue-01",
+      "type": "script-mapping",
+      "label": "Cyrillic greeting recognition",
+      "value": "Learners should map a high-frequency greeting written in Cyrillic directly to sound and meaning.",
+      "proficiency": "intro",
+      "tags": ["script", "reading"],
+      "references": [
+        {
+          "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+          "sectionTitle": "Introductory Phonetic Course",
+          "pageStart": 13,
+          "pageEnd": 24
+        }
+      ]
+    },
+    {
+      "id": "info-pronunciation-cue-01",
+      "type": "pronunciation-cue",
+      "label": "Watch unfamiliar vowel sequences",
+      "value": "Early greetings should flag vowel patterns that English speakers may flatten or misread.",
+      "proficiency": "intro",
+      "tags": ["pronunciation", "vowel-harmony"],
+      "references": [
+        {
+          "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+          "sectionTitle": "Introductory Phonetic Course",
+          "pageStart": 13,
+          "pageEnd": 24,
+          "notes": "Editorial cue derived from the phonetic section."
+        }
+      ]
+    },
+    {
+      "id": "info-review-cue-01",
+      "type": "review-cue",
+      "label": "Repeat core greeting forms early",
+      "value": "High-frequency greeting and name-exchange patterns should enter spaced review immediately after the lesson.",
+      "proficiency": "beginner",
+      "tags": ["review", "retention"],
+      "references": [
+        {
+          "sourceId": "peace-corps-kyrgyz-language-manual-1997",
+          "sectionTitle": "Topic 1. Greetings",
+          "pageStart": 25,
+          "pageEnd": 30
+        }
+      ]
+    }
+  ],
+  "unitBlueprints": [
+    {
+      "id": "unit-blueprint-greetings-01",
+      "slug": "greetings-and-introductions",
+      "title": "Greetings And Introductions",
+      "communicationGoal": "Greet someone, ask and give a name, and introduce yourself politely.",
+      "sourceSegmentIds": [
+        "topic-01-dialogue-01",
+        "topic-01-phonetic-drill-01"
+      ],
+      "informationIds": [
+        "info-greeting-formal-01",
+        "info-name-question-01",
+        "info-name-pattern-01",
+        "info-register-note-01",
+        "info-task-cue-01",
+        "info-script-cue-01",
+        "info-pronunciation-cue-01",
+        "info-review-cue-01"
+      ],
+      "grammarFocus": [
+        "basic identity statements",
+        "polite address in first meetings"
+      ],
+      "pronunciationFocus": [
+        "early greeting pronunciation",
+        "reading high-frequency Cyrillic forms"
+      ],
+      "recommendedTaskKinds": [
+        "guided-dialogue-completion",
+        "script-to-meaning",
+        "mini-role"
+      ],
+      "targetLexemeCount": 8,
+      "targetSentenceCount": 6,
+      "notes": "Suitable as the first social-survival unit after script onboarding."
+    }
+  ]
+}
