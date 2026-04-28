@@ -1,5 +1,7 @@
 import type { ScriptCode } from "@linguanomad/shared";
 
+export type SourceStatus = "candidate" | "approved" | "blocked";
+
 export interface SourceRecord {
   id: string;
   name: string;
@@ -8,7 +10,9 @@ export interface SourceRecord {
   attributionRequired: boolean;
   committable: boolean;
   packagable: boolean;
-  status: "candidate" | "approved" | "blocked";
+  status: SourceStatus;
+  sourceLanguages?: string[];
+  contentTypes?: SourceSegmentKind[];
   notes?: string;
 }
 
@@ -17,12 +21,101 @@ export interface TextVariant {
   value: string;
 }
 
+export interface SourceReference {
+  sourceId: string;
+  sectionTitle?: string;
+  topic?: string;
+  pageStart?: number;
+  pageEnd?: number;
+  itemLabel?: string;
+  notes?: string;
+}
+
+export type SourceSegmentKind =
+  | "dialogue"
+  | "vocabulary-box"
+  | "grammar-box"
+  | "phonetic-drill"
+  | "exercise"
+  | "self-study"
+  | "reference-grammar"
+  | "cultural-note"
+  | "reading"
+  | "table"
+  | "prompt";
+
+export type SourceInformationType =
+  | "lexeme-candidate"
+  | "sentence-pattern"
+  | "grammar-concept"
+  | "pronunciation-cue"
+  | "script-mapping"
+  | "register-note"
+  | "cultural-context"
+  | "task-cue"
+  | "review-cue";
+
+export interface SourceSegment {
+  id: string;
+  sourceId: string;
+  kind: SourceSegmentKind;
+  title?: string;
+  topic?: string;
+  languageCode?: string;
+  text?: string;
+  transliteration?: string;
+  translation?: string;
+  scripts?: ScriptCode[];
+  communicativeFunctions?: string[];
+  register?: "neutral" | "informal" | "formal" | "honorific";
+  informationIds: string[];
+  references: SourceReference[];
+  notes?: string;
+}
+
+export interface ExtractedInformation {
+  id: string;
+  type: SourceInformationType;
+  label: string;
+  value: string;
+  languageCode?: string;
+  transliteration?: string;
+  translation?: string;
+  proficiency?: "intro" | "beginner" | "elementary" | "intermediate";
+  tags?: string[];
+  references: SourceReference[];
+  notes?: string;
+}
+
+export interface UnitBlueprint {
+  id: string;
+  slug: string;
+  title: string;
+  communicationGoal: string;
+  sourceSegmentIds: string[];
+  informationIds: string[];
+  grammarFocus: string[];
+  pronunciationFocus?: string[];
+  recommendedTaskKinds: TaskKind[];
+  targetLexemeCount?: number;
+  targetSentenceCount?: number;
+  notes?: string;
+}
+
+export interface SourceIngestionPack {
+  source: SourceRecord;
+  segments: SourceSegment[];
+  information: ExtractedInformation[];
+  unitBlueprints: UnitBlueprint[];
+}
+
 export interface Lexeme {
   id: string;
   languageCode: string;
   lemma: string;
   transliteration?: string;
   gloss: string;
+  sourceIds?: string[];
   notes?: string;
 }
 
@@ -39,13 +132,162 @@ export interface GrammarNote {
   id: string;
   title: string;
   summary: string;
+  sourceIds?: string[];
 }
 
-export interface TaskDefinition {
+export type TaskSupportKind = "grammar" | "pronunciation" | "fun-fact";
+
+export interface TaskSupportCard {
   id: string;
+  kind: TaskSupportKind;
+  title: string;
+  body: string;
+  grammarNoteIds?: string[];
+  lexemeIds?: string[];
+  sentenceIds?: string[];
+  sourceIds?: string[];
+}
+
+export type TaskKind =
+  | "guided-dialogue-completion"
+  | "register-choice"
+  | "pattern-swap"
+  | "information-gap"
+  | "script-to-meaning"
+  | "noticing"
+  | "mini-role";
+
+export interface DialogueTurn {
+  speaker: string;
+  text: string;
+  transliteration?: string;
+  translation?: string;
+  responseSlotId?: string;
+}
+
+export interface RegisterChoiceOption {
+  id: string;
+  label: string;
+  register: "informal" | "neutral" | "formal" | "honorific";
+  translation?: string;
+  notes?: string;
+}
+
+export interface PatternSlot {
+  id: string;
+  label: string;
+  allowedLexemeIds?: string[];
+  hint?: string;
+}
+
+export interface InformationGapFact {
+  id: string;
+  label: string;
+  value?: string;
+  revealedTo: "learner" | "partner" | "both";
+}
+
+export interface ScriptPromptItem {
+  text: string;
+  transliteration?: string;
+  meaning: string;
+}
+
+export interface NoticingTarget {
+  sentenceId?: string;
+  text: string;
+  transliteration?: string;
+  translation?: string;
+  focus: string;
+}
+
+export interface BaseTaskDefinition {
+  id: string;
+  kind: TaskKind;
   objective: string;
   instructions: string;
+  successCriteria: string[];
+  sourceIds?: string[];
+  lexemeIds?: string[];
+  sentenceIds?: string[];
+  grammarNoteIds?: string[];
   completionHint?: string;
+  supportCards?: TaskSupportCard[];
+}
+
+export interface GuidedDialogueCompletionTaskDefinition extends BaseTaskDefinition {
+  kind: "guided-dialogue-completion";
+  turns: DialogueTurn[];
+  responseChoices?: string[];
+  responseMode?: "ordered-choice" | "free-text";
+}
+
+export interface RegisterChoiceTaskDefinition extends BaseTaskDefinition {
+  kind: "register-choice";
+  scenario: string;
+  options: RegisterChoiceOption[];
+  correctOptionIds: string[];
+}
+
+export interface PatternSwapTaskDefinition extends BaseTaskDefinition {
+  kind: "pattern-swap";
+  pattern: string;
+  slots: PatternSlot[];
+  promptSentenceId?: string;
+}
+
+export interface InformationGapTaskDefinition extends BaseTaskDefinition {
+  kind: "information-gap";
+  scenario: string;
+  learnerRole: string;
+  partnerRole: string;
+  facts: InformationGapFact[];
+}
+
+export interface ScriptToMeaningTaskDefinition extends BaseTaskDefinition {
+  kind: "script-to-meaning";
+  transliterationVisible: boolean;
+  items: ScriptPromptItem[];
+}
+
+export interface NoticingTaskDefinition extends BaseTaskDefinition {
+  kind: "noticing";
+  prompt: string;
+  targets: NoticingTarget[];
+}
+
+export interface MiniRoleTaskDefinition extends BaseTaskDefinition {
+  kind: "mini-role";
+  scenario: string;
+  learnerRole: string;
+  phraseBankLexemeIds?: string[];
+  phraseBankSentenceIds?: string[];
+}
+
+export type TaskDefinition =
+  | GuidedDialogueCompletionTaskDefinition
+  | RegisterChoiceTaskDefinition
+  | PatternSwapTaskDefinition
+  | InformationGapTaskDefinition
+  | ScriptToMeaningTaskDefinition
+  | NoticingTaskDefinition
+  | MiniRoleTaskDefinition;
+
+export type ReviewSeedKind =
+  | "lexeme-recall"
+  | "sentence-comprehension"
+  | "pattern-recall"
+  | "form-noticing";
+
+export interface ReviewSeed {
+  id: string;
+  kind: ReviewSeedKind;
+  prompt: string;
+  acceptableAnswers: string[];
+  lexemeIds?: string[];
+  sentenceIds?: string[];
+  grammarNoteIds?: string[];
+  informationIds?: string[];
 }
 
 export interface UnitDefinition {
@@ -53,11 +295,15 @@ export interface UnitDefinition {
   slug: string;
   title: string;
   communicationGoal: string;
+  sequenceNumber?: number;
+  unlocksAfterUnitId?: string;
   supportedScripts: ScriptCode[];
+  pronunciationFocus?: string[];
   lexemeIds: string[];
   sentenceIds: string[];
   grammarNoteIds: string[];
   taskIds: string[];
+  reviewSeedIds?: string[];
   sourceIds: string[];
 }
 
