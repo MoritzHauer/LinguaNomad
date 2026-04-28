@@ -10,6 +10,10 @@
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {
+    "@linguanomad/content-schema": "workspace:*",
+    "@linguanomad/learner-state": "workspace:*",
+    "@linguanomad/shared": "workspace:*",
+    "@react-native-async-storage/async-storage": "^2.1.2",
     "expo": "^54.0.1",
     "expo-router": "~6.0.0",
     "expo-status-bar": "^55.0.5",

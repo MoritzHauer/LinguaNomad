@@ -3,12 +3,13 @@
   "compilerOptions": {
     "jsx": "react-native",
     "strict": true,
-    "types": ["react", "expo-router/types"]
+    "types": [
+      "react",
+      "expo-router/types"
+    ]
   },
   "include": [
     "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "**/*.tsx"
   ]
 }
