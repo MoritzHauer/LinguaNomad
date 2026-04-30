@@ -1,0 +1,432 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "unit": {
+    "id": "ky-unit-location-and-movement",
+    "slug": "location-and-movement",
+    "title": "Location And Everyday Movement",
+    "communicationGoal": "Ask where something is, say where you are going, understand a simple destination or transport exchange, and complete a short route dialogue.",
+    "sequenceNumber": 6,
+    "unlocksAfterUnitId": "ky-unit-food-and-preferences",
+    "supportedScripts": ["cyrl", "latn"],
+    "pronunciationFocus": [
+      "The directional suffixes -га / -ка blend smoothly onto place names: Базарга sounds like one word",
+      "Кайда has stress on the second syllable: kay-DA",
+      "Keep the final т in барат clearly voiced but short"
+    ],
+    "lexemeIds": [
+      "ky-lex-u6-kayda",
+      "ky-lex-u6-bazaar",
+      "ky-lex-u6-barat",
+      "ky-lex-u6-zhol",
+      "ky-lex-u6-awtobus",
+      "ky-lex-u6-bekhet",
+      "ky-lex-u6-tuurasynda",
+      "ky-lex-u6-zhakyn",
+      "ky-lex-u6-uzak",
+      "ky-lex-u6-sol",
+      "ky-lex-u6-ong",
+      "ky-lex-u6-toktom"
+    ],
+    "sentenceIds": [
+      "ky-sent-u6-01",
+      "ky-sent-u6-02",
+      "ky-sent-u6-03",
+      "ky-sent-u6-04",
+      "ky-sent-u6-05",
+      "ky-sent-u6-06",
+      "ky-sent-u6-07",
+      "ky-sent-u6-08",
+      "ky-sent-u6-09",
+      "ky-sent-u6-10"
+    ],
+    "grammarNoteIds": [
+      "ky-grammar-u6-01",
+      "ky-grammar-u6-02",
+      "ky-grammar-u6-03"
+    ],
+    "taskIds": [
+      "ky-task-u6-route-01"
+    ],
+    "reviewSeedIds": [
+      "ky-review-u6-01",
+      "ky-review-u6-02",
+      "ky-review-u6-03",
+      "ky-review-u6-04"
+    ],
+    "sourceIds": [
+      "linguanomad-original-kyrgyz-starter-2026",
+      "peace-corps-kyrgyz-language-manual-1997"
+    ]
+  },
+  "lexemes": [
+    {
+      "id": "ky-lex-u6-kayda",
+      "languageCode": "ky",
+      "lemma": "кайда",
+      "transliteration": "kayda",
+      "gloss": "where",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The question word for location. Базар кайда? means 'Where is the bazaar?' When combined with the verb барасыз it asks direction: Кайда барасыз? — 'Where are you going?'"
+    },
+    {
+      "id": "ky-lex-u6-bazaar",
+      "languageCode": "ky",
+      "lemma": "базар",
+      "transliteration": "bazaar",
+      "gloss": "bazaar / market",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The open-air market, a central social and commercial space in Kyrgyz towns and cities. Asking for the bazaar is one of the most useful navigation questions a visitor can use."
+    },
+    {
+      "id": "ky-lex-u6-barat",
+      "languageCode": "ky",
+      "lemma": "барат",
+      "transliteration": "barat",
+      "gloss": "is going / goes",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Third-person singular present progressive of баруу (to go). Мен баратмын (I am going), сиз барасыз (you are going), ал барат (he/she is going)."
+    },
+    {
+      "id": "ky-lex-u6-zhol",
+      "languageCode": "ky",
+      "lemma": "жол",
+      "transliteration": "zhol",
+      "gloss": "road / way",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Means road, path, or way. Also used idiomatically: Жолуңар болсун means 'have a good journey'. Жол сурамак means to ask for directions."
+    },
+    {
+      "id": "ky-lex-u6-awtobus",
+      "languageCode": "ky",
+      "lemma": "автобус",
+      "transliteration": "avtobus",
+      "gloss": "bus",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The standard word for bus, borrowed from Russian. Микроавтобус (minibus, marshrutka) is also very common in Kyrgyz cities. Автобус токтойт — the bus is stopping."
+    },
+    {
+      "id": "ky-lex-u6-bekhet",
+      "languageCode": "ky",
+      "lemma": "бекет",
+      "transliteration": "beket",
+      "gloss": "stop / station",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "A bus stop or station. Автобус бекети means 'bus stop'. Also used for larger stations. Knowing this word helps you navigate public transport quickly."
+    },
+    {
+      "id": "ky-lex-u6-tuurasynda",
+      "languageCode": "ky",
+      "lemma": "тууралуу",
+      "transliteration": "tuuraluu",
+      "gloss": "straight ahead",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Means straight, or in the direction of. Түз жүрүңүз is the common direction instruction for go straight. Тууралуу also means 'about / regarding' in other contexts — context tells you which meaning applies."
+    },
+    {
+      "id": "ky-lex-u6-zhakyn",
+      "languageCode": "ky",
+      "lemma": "жакын",
+      "transliteration": "zhakyn",
+      "gloss": "near / close",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Жакын is used both for physical closeness (the bazaar is near) and for emotional closeness. Базар жакынбы? — Is the bazaar close? It is also a common personal name."
+    },
+    {
+      "id": "ky-lex-u6-uzak",
+      "languageCode": "ky",
+      "lemma": "узак",
+      "transliteration": "uzak",
+      "gloss": "far / long",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Opposite of жакын. Узак refers to physical distance or duration. Узак эмес means 'not far'. Узак жол means a long road or journey."
+    },
+    {
+      "id": "ky-lex-u6-sol",
+      "languageCode": "ky",
+      "lemma": "сол",
+      "transliteration": "sol",
+      "gloss": "left",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The direction word for left. Солго бур means 'turn left'. In directions, солго (to the left) uses the directional suffix -го."
+    },
+    {
+      "id": "ky-lex-u6-ong",
+      "languageCode": "ky",
+      "lemma": "оң",
+      "transliteration": "ong",
+      "gloss": "right",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The direction word for right. Оңго бур means 'turn right'. The ң is a nasal n, similar to the ng in 'sing'. Оң also means correct or good in figurative use."
+    },
+    {
+      "id": "ky-lex-u6-toktom",
+      "languageCode": "ky",
+      "lemma": "токтом",
+      "transliteration": "toktom",
+      "gloss": "stop (command) / halt",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Used to signal a stop, for example telling a driver to stop. Токтоңуз (polite: please stop) is the form you would use with a driver or conductor. Токтом alone is more abrupt."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "ky-sent-u6-01",
+      "languageCode": "ky",
+      "text": "Кечиресиз, базар кайда?",
+      "transliteration": "Kechiresiz, bazaar kayda?",
+      "translation": "Excuse me, where is the bazaar?",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u6-02",
+      "languageCode": "ky",
+      "text": "Базар жакын, оңго буруңуз.",
+      "transliteration": "Bazaar zhakyn, onggo burunguz.",
+      "translation": "The bazaar is nearby, turn right.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u6-03",
+      "languageCode": "ky",
+      "text": "Сиз кайда барасыз?",
+      "transliteration": "Siz kayda barasyz?",
+      "translation": "Where are you going?",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u6-04",
+      "languageCode": "ky",
+      "text": "Мен базарга баратмын.",
+      "transliteration": "Men bazaarga baratmyn.",
+      "translation": "I am going to the bazaar.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u6-05",
+      "languageCode": "ky",
+      "text": "Автобус бекети кайда?",
+      "transliteration": "Avtobus beketi kayda?",
+      "translation": "Where is the bus stop?",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u6-06",
+      "languageCode": "ky",
+      "text": "Бекет узак эмес.",
+      "transliteration": "Beket uzak emes.",
+      "translation": "The stop is not far.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u6-07",
+      "languageCode": "ky",
+      "text": "Түз жүрүңүз, андан кийин солго.",
+      "transliteration": "Tüz zhürüngüz, andan kiyin solgo.",
+      "translation": "Go straight, then turn left.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u6-08",
+      "languageCode": "ky",
+      "text": "Ушул автобус базарга барабы?",
+      "transliteration": "Ushul avtobus bazaarga baraby?",
+      "translation": "Does this bus go to the bazaar?",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u6-09",
+      "languageCode": "ky",
+      "text": "Ооба, барат.",
+      "transliteration": "Ooba, barat.",
+      "translation": "Yes, it goes there.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u6-10",
+      "languageCode": "ky",
+      "text": "Өтүнөм, токтоңуз!",
+      "transliteration": "Ötünöm, toktonguz!",
+      "translation": "Please, stop!",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ],
+  "grammarNotes": [
+    {
+      "id": "ky-grammar-u6-01",
+      "title": "The -га / -ге / -ка / -ке suffix marks destination",
+      "summary": "To say where you are going in Kyrgyz, attach a directional suffix to the place name. Базар (bazaar) becomes базарга (to the bazaar). Which form? After voiced sounds use -га (back vowels) or -ге (front vowels). After voiceless sounds use -ка (back) or -ке (front). The choice depends on the last consonant of the word and vowel harmony. For now, practice базарга and үйгө (to home) as two starter examples.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-u6-02",
+      "title": "Кайда asks about static location; кайда барасыз asks about movement",
+      "summary": "Кайда means 'where' and works for both static location questions (Базар кайда? — where is the bazaar?) and movement questions (Кайда барасыз? — where are you going?). The difference comes from the verb: just кайда without a verb of motion asks for a location; кайда + баруу (to go) asks about a destination. This one question word does double duty.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-u6-03",
+      "title": "Negation with эмес: simple and flexible",
+      "summary": "The word эмес (not / is not) is placed directly after the word it negates. Базар жакын эмес — the bazaar is not near. Узак эмес — not far. This pattern requires no change to the negated word itself. It is one of the most beginner-friendly negation tools in Kyrgyz because it does not require verb conjugation changes.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "ky-task-u6-route-01",
+      "kind": "guided-dialogue-completion",
+      "objective": "Follow and complete a short route-finding dialogue between a visitor and a local.",
+      "instructions": "Read the exchange below. Some of the visitor's lines are missing. Choose the correct line from the options to complete each gap. The visitor is asking for the bazaar and the bus stop.",
+      "successCriteria": [
+        "Open with a polite attention-getter before asking a question.",
+        "Ask correctly where the bazaar is using кайда.",
+        "Confirm the bus route using ушул автобус барабы.",
+        "End the exchange politely."
+      ],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "lexemeIds": [
+        "ky-lex-u6-kayda",
+        "ky-lex-u6-bazaar",
+        "ky-lex-u6-awtobus",
+        "ky-lex-u6-bekhet",
+        "ky-lex-u6-zhakyn",
+        "ky-lex-u6-sol",
+        "ky-lex-u6-ong"
+      ],
+      "sentenceIds": [
+        "ky-sent-u6-01",
+        "ky-sent-u6-02",
+        "ky-sent-u6-05",
+        "ky-sent-u6-06",
+        "ky-sent-u6-07",
+        "ky-sent-u6-08",
+        "ky-sent-u6-09"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u6-01",
+        "ky-grammar-u6-02"
+      ],
+      "completionHint": "Remember to start with Кечиресиз before asking a stranger a question.",
+      "supportCards": [
+        {
+          "id": "ky-task-u6-route-01-support-grammar",
+          "kind": "grammar",
+          "title": "Destination suffix recap",
+          "body": "Базар → базарга (to the bazaar). Үй → үйгө (to home). Add -га after a voiced back consonant, -ка after a voiceless back consonant, -ге after a voiced front consonant, -ке after a voiceless front consonant.",
+          "grammarNoteIds": ["ky-grammar-u6-01"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-u6-route-01-support-pronunciation",
+          "kind": "pronunciation",
+          "title": "Direction words flow quickly",
+          "body": "Солго and оңго (to the left / to the right) are each said as a single natural unit. Do not pause between the direction word and its -го ending.",
+          "sentenceIds": ["ky-sent-u6-07"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-u6-route-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Asking for the bazaar is a power move",
+          "body": "In almost any Kyrgyz town or city, asking Базар кайда? is the single most useful navigation question. Markets are central, well-known, and always someone's destination. From the bazaar, you can orient yourself to find almost anything else.",
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        }
+      ],
+      "turns": [
+        {
+          "speaker": "Visitor",
+          "text": "Кечиресиз, базар кайда?",
+          "transliteration": "Kechiresiz, bazaar kayda?",
+          "translation": "Excuse me, where is the bazaar?",
+          "responseSlotId": "visitor-open"
+        },
+        {
+          "speaker": "Local",
+          "text": "Базар жакын. Түз жүрүңүз, андан кийин оңго буруңуз.",
+          "transliteration": "Bazaar zhakyn. Tüz zhürüngüz, andan kiyin onggo burunguz.",
+          "translation": "The bazaar is close. Go straight, then turn right."
+        },
+        {
+          "speaker": "Visitor",
+          "text": "Рахмат! Автобус бекети кайда?",
+          "transliteration": "Rakhmat! Avtobus beketi kayda?",
+          "translation": "Thank you! Where is the bus stop?",
+          "responseSlotId": "visitor-bus-stop"
+        },
+        {
+          "speaker": "Local",
+          "text": "Бекет узак эмес, солго.",
+          "transliteration": "Beket uzak emes, solgo.",
+          "translation": "The stop is not far, to the left."
+        },
+        {
+          "speaker": "Visitor",
+          "text": "Ушул автобус базарга барабы?",
+          "transliteration": "Ushul avtobus bazaarga baraby?",
+          "translation": "Does this bus go to the bazaar?",
+          "responseSlotId": "visitor-bus-check"
+        },
+        {
+          "speaker": "Local",
+          "text": "Ооба, барат.",
+          "transliteration": "Ooba, barat.",
+          "translation": "Yes, it goes there."
+        },
+        {
+          "speaker": "Visitor",
+          "text": "Чоң рахмат!",
+          "transliteration": "Chong rakhmat!",
+          "translation": "Many thanks!",
+          "responseSlotId": "visitor-close"
+        }
+      ],
+      "responseChoices": [
+        "Кечиресиз, базар кайда?",
+        "Рахмат! Автобус бекети кайда?",
+        "Ушул автобус базарга барабы?",
+        "Чоң рахмат!",
+        "Мен базарга баратмын.",
+        "Базар жакынбы?",
+        "Кайда барасыз?"
+      ],
+      "responseMode": "ordered-choice"
+    }
+  ],
+  "reviewSeeds": [
+    {
+      "id": "ky-review-u6-01",
+      "kind": "lexeme-recall",
+      "prompt": "What is the Kyrgyz word for 'where'?",
+      "acceptableAnswers": ["кайда", "Кайда", "kayda"],
+      "lexemeIds": ["ky-lex-u6-kayda"],
+      "sentenceIds": ["ky-sent-u6-01"]
+    },
+    {
+      "id": "ky-review-u6-02",
+      "kind": "sentence-comprehension",
+      "prompt": "What does 'Мен базарга баратмын' mean?",
+      "acceptableAnswers": ["I am going to the bazaar", "i am going to the bazaar"],
+      "lexemeIds": ["ky-lex-u6-bazaar", "ky-lex-u6-barat"],
+      "sentenceIds": ["ky-sent-u6-04"],
+      "grammarNoteIds": ["ky-grammar-u6-01"]
+    },
+    {
+      "id": "ky-review-u6-03",
+      "kind": "form-noticing",
+      "prompt": "What does the -га suffix on 'базарга' indicate?",
+      "acceptableAnswers": ["direction / destination", "going to", "toward the bazaar", "destination suffix"],
+      "lexemeIds": ["ky-lex-u6-bazaar"],
+      "sentenceIds": ["ky-sent-u6-04"],
+      "grammarNoteIds": ["ky-grammar-u6-01"]
+    },
+    {
+      "id": "ky-review-u6-04",
+      "kind": "pattern-recall",
+      "prompt": "How do you say 'The stop is not far' in Kyrgyz?",
+      "acceptableAnswers": ["Бекет узак эмес", "бекет узак эмес", "Beket uzak emes"],
+      "lexemeIds": ["ky-lex-u6-bekhet", "ky-lex-u6-uzak"],
+      "sentenceIds": ["ky-sent-u6-06"],
+      "grammarNoteIds": ["ky-grammar-u6-03"]
+    }
+  ]
+}

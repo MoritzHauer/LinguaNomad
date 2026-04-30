@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "unit": {
+    "id": "ky-unit-politeness-and-address",
+    "slug": "politeness-and-address",
+    "title": "Politeness And Address Forms",
+    "communicationGoal": "Use the correct register when addressing an elder, a peer, or a stranger; give and receive thanks; offer a simple apology; and open a conversation respectfully.",
+    "sequenceNumber": 3,
+    "unlocksAfterUnitId": "ky-unit-greetings-and-introductions",
+    "supportedScripts": ["cyrl", "latn"],
+    "pronunciationFocus": [
+      "Keep the ө in Өтүнөм rounded and short",
+      "Кечиресиз ends with a clear з, not an s sound",
+      "Stress in Жарайт falls on the second syllable: zha-RAYT"
+    ],
+    "lexemeIds": [
+      "ky-lex-u3-siz",
+      "ky-lex-u3-sen",
+      "ky-lex-u3-rakhmat",
+      "ky-lex-u3-chon-rakhmat",
+      "ky-lex-u3-kechiresiz",
+      "ky-lex-u3-kechir",
+      "ky-lex-u3-zharayt",
+      "ky-lex-u3-otunom",
+      "ky-lex-u3-masele-zhok",
+      "ky-lex-u3-ooba",
+      "ky-lex-u3-bolot",
+      "ky-lex-u3-zhardam"
+    ],
+    "sentenceIds": [
+      "ky-sent-u3-01",
+      "ky-sent-u3-02",
+      "ky-sent-u3-03",
+      "ky-sent-u3-04",
+      "ky-sent-u3-05",
+      "ky-sent-u3-06",
+      "ky-sent-u3-07",
+      "ky-sent-u3-08",
+      "ky-sent-u3-09"
+    ],
+    "grammarNoteIds": [
+      "ky-grammar-u3-01",
+      "ky-grammar-u3-02",
+      "ky-grammar-u3-03"
+    ],
+    "taskIds": [
+      "ky-task-u3-register-01"
+    ],
+    "reviewSeedIds": [
+      "ky-review-u3-01",
+      "ky-review-u3-02",
+      "ky-review-u3-03",
+      "ky-review-u3-04"
+    ],
+    "sourceIds": [
+      "linguanomad-original-kyrgyz-starter-2026",
+      "peace-corps-kyrgyz-language-manual-1997"
+    ]
+  },
+  "lexemes": [
+    {
+      "id": "ky-lex-u3-siz",
+      "languageCode": "ky",
+      "lemma": "сиз",
+      "transliteration": "siz",
+      "gloss": "you (polite)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The polite second-person pronoun. Use with elders, strangers, and anyone you have just met. Always a safe choice when unsure of the appropriate register."
+    },
+    {
+      "id": "ky-lex-u3-sen",
+      "languageCode": "ky",
+      "lemma": "сен",
+      "transliteration": "sen",
+      "gloss": "you (informal)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The casual second-person pronoun. Use only with close friends and peers of similar age once you know each other well. Using сен too soon can seem disrespectful."
+    },
+    {
+      "id": "ky-lex-u3-rakhmat",
+      "languageCode": "ky",
+      "lemma": "Рахмат",
+      "transliteration": "Rakhmat",
+      "gloss": "thank you",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The everyday thank-you. Works in all registers. The kh is a light throat sound, not a hard English k."
+    },
+    {
+      "id": "ky-lex-u3-chon-rakhmat",
+      "languageCode": "ky",
+      "lemma": "Чоң рахмат",
+      "transliteration": "Chong rakhmat",
+      "gloss": "thank you very much",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Чоң means big or great, so this phrase is literally 'big thanks'. Use it when someone has gone out of their way to help you."
+    },
+    {
+      "id": "ky-lex-u3-kechiresiz",
+      "languageCode": "ky",
+      "lemma": "Кечиресиз",
+      "transliteration": "Kechiresiz",
+      "gloss": "excuse me / sorry (polite)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Polite form. Use when speaking to elders, strangers, or in formal situations. Also works to get someone's attention before a question."
+    },
+    {
+      "id": "ky-lex-u3-kechir",
+      "languageCode": "ky",
+      "lemma": "Кечир",
+      "transliteration": "Kechir",
+      "gloss": "sorry (informal)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Casual apology for use with friends and peers. It is the short imperative form of the verb кечирүү (to forgive). Do not use with elders."
+    },
+    {
+      "id": "ky-lex-u3-zharayt",
+      "languageCode": "ky",
+      "lemma": "Жарайт",
+      "transliteration": "Zharayt",
+      "gloss": "okay / alright",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "An all-purpose 'okay' that fits both registers. Use it to accept an offer, agree to a plan, or close a brief exchange."
+    },
+    {
+      "id": "ky-lex-u3-otunom",
+      "languageCode": "ky",
+      "lemma": "Өтүнөм",
+      "transliteration": "Ötünöm",
+      "gloss": "please / I request",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "A polite particle meaning 'please' or 'I ask you'. Place it at the start of a request to soften the tone. Slightly more formal than the -чы suffix."
+    },
+    {
+      "id": "ky-lex-u3-masele-zhok",
+      "languageCode": "ky",
+      "lemma": "Маселе жок",
+      "transliteration": "Masele zhok",
+      "gloss": "no problem",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Literally 'there is no issue'. A warm and common response to thanks or an apology. Works in both formal and informal settings."
+    },
+    {
+      "id": "ky-lex-u3-ooba",
+      "languageCode": "ky",
+      "lemma": "Ооба",
+      "transliteration": "Ooba",
+      "gloss": "yes",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The standard Kyrgyz yes. It has a long double-o sound at the start. The shorter иə or ия forms are heard in some dialects but ооба is understood everywhere."
+    },
+    {
+      "id": "ky-lex-u3-bolot",
+      "languageCode": "ky",
+      "lemma": "Болот",
+      "transliteration": "Bolot",
+      "gloss": "it's okay / it's possible",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "From болуу (to be, to become). Used to say something is acceptable, possible, or fine. Often follows жарайт for added warmth: Жарайт, болот."
+    },
+    {
+      "id": "ky-lex-u3-zhardam",
+      "languageCode": "ky",
+      "lemma": "жардам",
+      "transliteration": "zhardam",
+      "gloss": "help / assistance",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Noun meaning help. Common in the phrase жардам бересизби (can you help me?). Also appears as a verb: жардам бер (give help)."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "ky-sent-u3-01",
+      "languageCode": "ky",
+      "text": "Кечиресиз, жардам бересизби?",
+      "transliteration": "Kechiresiz, zhardam beresizbi?",
+      "translation": "Excuse me, could you help me?",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u3-02",
+      "languageCode": "ky",
+      "text": "Рахмат, маселе жок.",
+      "transliteration": "Rakhmat, masele zhok.",
+      "translation": "Thank you, no problem.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u3-03",
+      "languageCode": "ky",
+      "text": "Чоң рахмат сизге!",
+      "transliteration": "Chong rakhmat sizge!",
+      "translation": "Many thanks to you!",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u3-04",
+      "languageCode": "ky",
+      "text": "Кечир, мен кеч калдым.",
+      "transliteration": "Kechir, men kech kaldym.",
+      "translation": "Sorry, I was late.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u3-05",
+      "languageCode": "ky",
+      "text": "Жарайт, болот.",
+      "transliteration": "Zharayt, bolot.",
+      "translation": "Okay, that's fine.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u3-06",
+      "languageCode": "ky",
+      "text": "Өтүнөм, отуруңуз.",
+      "transliteration": "Ötünöm, oturunguz.",
+      "translation": "Please, have a seat.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u3-07",
+      "languageCode": "ky",
+      "text": "Сен эмне каалайсың?",
+      "transliteration": "Sen emne kaalaysyng?",
+      "translation": "What do you want? (informal)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u3-08",
+      "languageCode": "ky",
+      "text": "Сиз эмне каалайсыз?",
+      "transliteration": "Siz emne kaalaysyz?",
+      "translation": "What would you like? (polite)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u3-09",
+      "languageCode": "ky",
+      "text": "Ооба, жарайт.",
+      "transliteration": "Ooba, zharayt.",
+      "translation": "Yes, that's fine.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ],
+  "grammarNotes": [
+    {
+      "id": "ky-grammar-u3-01",
+      "title": "сиз vs сен: choosing the right register",
+      "summary": "Kyrgyz has two second-person pronouns. Сиз is the polite form used with elders, strangers, teachers, and anyone you have just met. Сен is the casual form for close friends and peers of similar age. When in doubt, always use сиз — it is never rude to be respectful. Using сен too early with an elder can cause offence.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-u3-02",
+      "title": "The -чы particle softens requests",
+      "summary": "Adding -чы (or -чи after front vowels) to the end of a verb turns a plain command into a gentle request. Кел means come; Келчи means come on or please come. It works in the informal register between friends. For polite register, prefix Өтүнөм instead. Both strategies reduce abruptness — choose based on whom you are speaking to.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-u3-03",
+      "title": "Fixed polite formulae are safe whole chunks",
+      "summary": "Some polite expressions in Kyrgyz work best as memorised whole chunks rather than analysed word by word. Кечиресиз, Өтүнөм, and Маселе жок each carry a social function that learners can deploy immediately without needing to build the phrase from parts. Learn these as tools first; understanding the internal structure can come later.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "ky-task-u3-register-01",
+      "kind": "register-choice",
+      "objective": "Choose the correct wording for three social situations: addressing an elder, a close peer, and an unknown stranger.",
+      "instructions": "Read each situation and pick the response that fits the register best. Think about who you are talking to before you choose.",
+      "successCriteria": [
+        "Use сиз forms when addressing an elder or stranger.",
+        "Use сен forms only when the situation clearly calls for casual register.",
+        "Select the correct apology or thanks phrase that matches the register.",
+        "Avoid mixing polite and casual forms in the same response."
+      ],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "lexemeIds": [
+        "ky-lex-u3-siz",
+        "ky-lex-u3-sen",
+        "ky-lex-u3-kechiresiz",
+        "ky-lex-u3-kechir",
+        "ky-lex-u3-rakhmat",
+        "ky-lex-u3-otunom"
+      ],
+      "sentenceIds": [
+        "ky-sent-u3-01",
+        "ky-sent-u3-04",
+        "ky-sent-u3-06",
+        "ky-sent-u3-07",
+        "ky-sent-u3-08"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u3-01"
+      ],
+      "completionHint": "If you are unsure about age or relationship, the polite сиз register is always the safer choice.",
+      "supportCards": [
+        {
+          "id": "ky-task-u3-register-01-support-grammar",
+          "kind": "grammar",
+          "title": "Quick register reminder",
+          "body": "Elder or stranger → сиз, Кечиресиз. Friend you know well → сен, Кечир. When unsure → сиз.",
+          "grammarNoteIds": ["ky-grammar-u3-01"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-u3-register-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Register matters a lot in Kyrgyz culture",
+          "body": "Respect for elders is central to Kyrgyz social life. Getting the pronoun right signals not just grammar knowledge but genuine cultural awareness — and people notice and appreciate it.",
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        }
+      ],
+      "scenario": "You are in three different situations in one morning. For each, choose the phrase that best fits the context.",
+      "options": [
+        {
+          "id": "opt-a",
+          "text": "Кечиресиз, жардам бересизби?",
+          "transliteration": "Kechiresiz, zhardam beresizbi?",
+          "register": "polite",
+          "context": "stranger-or-elder",
+          "note": "Correct for approaching an unknown person or elder for help."
+        },
+        {
+          "id": "opt-b",
+          "text": "Кечир, жардам берчи?",
+          "transliteration": "Kechir, zhardam berchi?",
+          "register": "informal",
+          "context": "peer",
+          "note": "Correct for asking a close friend casually."
+        },
+        {
+          "id": "opt-c",
+          "text": "Өтүнөм, отуруңуз.",
+          "transliteration": "Ötünöm, oturunguz.",
+          "register": "polite",
+          "context": "elder-or-guest",
+          "note": "Correct when inviting an elder or respected guest to sit down."
+        },
+        {
+          "id": "opt-d",
+          "text": "Отур.",
+          "transliteration": "Otur.",
+          "register": "informal",
+          "context": "peer",
+          "note": "A bare command, acceptable only with close friends. Too blunt for an elder."
+        }
+      ],
+      "correctOptionIds": ["opt-a", "opt-b", "opt-c"]
+    }
+  ],
+  "reviewSeeds": [
+    {
+      "id": "ky-review-u3-01",
+      "kind": "lexeme-recall",
+      "prompt": "How do you say 'excuse me / sorry' politely in Kyrgyz?",
+      "acceptableAnswers": ["Кечиресиз", "кечиресиз", "Kechiresiz"],
+      "lexemeIds": ["ky-lex-u3-kechiresiz"],
+      "sentenceIds": ["ky-sent-u3-01"]
+    },
+    {
+      "id": "ky-review-u3-02",
+      "kind": "sentence-comprehension",
+      "prompt": "What does 'Рахмат, маселе жок' mean?",
+      "acceptableAnswers": ["Thank you, no problem", "thank you, no problem"],
+      "lexemeIds": ["ky-lex-u3-rakhmat", "ky-lex-u3-masele-zhok"],
+      "sentenceIds": ["ky-sent-u3-02"]
+    },
+    {
+      "id": "ky-review-u3-03",
+      "kind": "form-noticing",
+      "prompt": "Which pronoun should you use when talking to your friend's grandmother: сен or сиз?",
+      "acceptableAnswers": ["сиз", "Сиз", "siz"],
+      "lexemeIds": ["ky-lex-u3-siz", "ky-lex-u3-sen"],
+      "grammarNoteIds": ["ky-grammar-u3-01"]
+    },
+    {
+      "id": "ky-review-u3-04",
+      "kind": "pattern-recall",
+      "prompt": "Complete the polite request: ___, отуруңуз. (Please, have a seat.)",
+      "acceptableAnswers": ["Өтүнөм", "өтүнөм", "Ötünöm"],
+      "lexemeIds": ["ky-lex-u3-otunom"],
+      "sentenceIds": ["ky-sent-u3-06"],
+      "grammarNoteIds": ["ky-grammar-u3-03"]
+    }
+  ]
+}
