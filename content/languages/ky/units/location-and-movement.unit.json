@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "unit": {
+    "id": "ky-unit-location-and-movement",
+    "slug": "location-and-movement",
+    "title": "Location And Everyday Movement",
+    "communicationGoal": "Ask where something is, say where you are going, understand a simple destination or transport exchange, and complete a short route dialogue.",
+    "sequenceNumber": 6,
+    "unlocksAfterUnitId": "ky-unit-food-and-preferences",
+    "supportedScripts": [
+      "cyrl",
+      "latn"
+    ],
+    "pronunciationFocus": [
+      "The directional suffixes -га / -ка blend smoothly onto place names: Базарга sounds like one word",
+      "Кайда has stress on the second syllable: kay-DA",
+      "Keep the final т in барат clearly voiced but short"
+    ],
+    "sentenceIds": [
+      "ky-sent-u6-01",
+      "ky-sent-u6-02",
+      "ky-sent-u6-03",
+      "ky-sent-u6-04",
+      "ky-sent-u6-05",
+      "ky-sent-u6-06",
+      "ky-sent-u6-07",
+      "ky-sent-u6-08",
+      "ky-sent-u6-09",
+      "ky-sent-u6-10"
+    ],
+    "grammarNoteIds": [
+      "ky-grammar-u6-01",
+      "ky-grammar-u6-02",
+      "ky-grammar-u6-03"
+    ],
+    "reviewSeedIds": [
+      "ky-review-u6-01",
+      "ky-review-u6-02",
+      "ky-review-u6-03",
+      "ky-review-u6-04"
+    ],
+    "sourceIds": [
+      "linguanomad-original-kyrgyz-starter-2026",
+      "peace-corps-kyrgyz-language-manual-1997"
+    ]
+  }
+}

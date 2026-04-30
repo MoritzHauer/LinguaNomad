@@ -51,10 +51,20 @@ export default function RootLayout() {
           }}
         />
         <Tabs.Screen
+          name="course"
+          options={{ href: null }} // navigated to programmatically from welcome
+        />
+        <Tabs.Screen
+          name="lesson/[unitId]"
+          options={{ href: null }} // navigated to from course
+        />
+        <Tabs.Screen
+          name="review/[unitId]"
+          options={{ href: null }} // navigated to after lesson
+        />
+        <Tabs.Screen
           name="task/[unitId]"
-          options={{
-            href: null, // Hidden from tab bar — navigated to programmatically
-          }}
+          options={{ href: null }} // navigated to from course
         />
       </Tabs>
     </LearnerProgressProvider>

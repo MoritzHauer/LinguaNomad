@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-lex-u5-tamak",
+      "languageCode": "ky",
+      "lemma": "тамак",
+      "transliteration": "tamak",
+      "gloss": "food / meal",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The general word for food or a cooked meal. Тамак жеңиз means 'please eat' and is a standard host invitation. Тамак ичүү literally means eating-drinking and can refer to a meal event."
+    },
+    {
+      "id": "ky-lex-u5-nan",
+      "languageCode": "ky",
+      "lemma": "нан",
+      "transliteration": "nan",
+      "gloss": "bread",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The round flatbread central to Kyrgyz meals. Нан is never placed on the floor or turned upside down — it carries cultural significance as a staple and sacred food."
+    },
+    {
+      "id": "ky-lex-u5-chai",
+      "languageCode": "ky",
+      "lemma": "чай",
+      "transliteration": "chay",
+      "gloss": "tea",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Tea is central to Kyrgyz hospitality. Guests are offered чай almost immediately upon arriving. Accepting tea is polite; refusing can seem cold. Кара чай is plain black tea; ак чай (white tea) has milk."
+    },
+    {
+      "id": "ky-lex-u5-et",
+      "languageCode": "ky",
+      "lemma": "эт",
+      "transliteration": "et",
+      "gloss": "meat",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The word for meat generally. Mutton and beef are most common. Эт a common part of many Kyrgyz dish names such as бешбармак (big five-finger dish with meat and noodles)."
+    },
+    {
+      "id": "ky-lex-u5-meva",
+      "languageCode": "ky",
+      "lemma": "мөмө",
+      "transliteration": "mömo",
+      "gloss": "fruit",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The general word for fruit. Apricots, apples, and melons are common in Kyrgyz markets. Мөмө жечи — would you like some fruit — is a warm host offer."
+    },
+    {
+      "id": "ky-lex-u5-kaalaym",
+      "languageCode": "ky",
+      "lemma": "каалайм",
+      "transliteration": "kaalaym",
+      "gloss": "I want / I would like",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "First-person singular present tense of каалоо (to want, to wish). In polite speech you can soften it by adding өтүнөм before it or by using the -чы suffix: Чай берчи (please give tea)."
+    },
+    {
+      "id": "ky-lex-u5-zhakshy-korom",
+      "languageCode": "ky",
+      "lemma": "жакшы көрөм",
+      "transliteration": "zhakshy köröm",
+      "gloss": "I like",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Literally 'I see/find it good'. The standard way to say you like something. Мен нан жакшы көрөм — I like bread. More positive than just каалайм; it expresses genuine liking."
+    },
+    {
+      "id": "ky-lex-u5-zhaktyrbaym",
+      "languageCode": "ky",
+      "lemma": "жактырбайм",
+      "transliteration": "zhaktyrbayim",
+      "gloss": "I don't like",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The negated form of жактыруу. More direct than жакшы көрбөйм. Useful for politely declining food you genuinely dislike, but soften it with a smile and рахмат."
+    },
+    {
+      "id": "ky-lex-u5-bolot",
+      "languageCode": "ky",
+      "lemma": "болот",
+      "transliteration": "bolot",
+      "gloss": "okay / yes please",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Used as acceptance to an offer. When someone offers you tea, болот is a friendly way to say yes please. Болбойт means no / it won't work, used for soft refusals."
+    },
+    {
+      "id": "ky-lex-u5-zher-alma",
+      "languageCode": "ky",
+      "lemma": "жер алма",
+      "transliteration": "zher alma",
+      "gloss": "potato",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Literally 'earth apple'. Potatoes are a staple in Kyrgyz cooking. The compound word mirrors French pomme de terre and German Erdapfel — a useful memory hook."
+    },
+    {
+      "id": "ky-lex-u5-sut",
+      "languageCode": "ky",
+      "lemma": "сүт",
+      "transliteration": "süt",
+      "gloss": "milk",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Dairy features strongly in Kyrgyz food culture. Сүт is used in tea, as a drink, and in many fermented products. The ü vowel is front rounded — round your lips."
+    }
+  ]
+}

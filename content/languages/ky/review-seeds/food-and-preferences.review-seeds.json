@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-review-u5-01",
+      "kind": "lexeme-recall",
+      "prompt": "How do you say 'tea' in Kyrgyz?",
+      "acceptableAnswers": [
+        "чай",
+        "Чай",
+        "chay"
+      ],
+      "lexemeIds": [
+        "ky-lex-u5-chai"
+      ],
+      "sentenceIds": [
+        "ky-sent-u5-01"
+      ]
+    },
+    {
+      "id": "ky-review-u5-02",
+      "kind": "sentence-comprehension",
+      "prompt": "What does 'Мен нан жакшы көрөм' mean?",
+      "acceptableAnswers": [
+        "I like bread",
+        "i like bread"
+      ],
+      "lexemeIds": [
+        "ky-lex-u5-nan",
+        "ky-lex-u5-zhakshy-korom"
+      ],
+      "sentenceIds": [
+        "ky-sent-u5-03"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u5-01"
+      ]
+    },
+    {
+      "id": "ky-review-u5-03",
+      "kind": "pattern-recall",
+      "prompt": "How do you say 'I would like meat' in Kyrgyz?",
+      "acceptableAnswers": [
+        "Эт каалайм",
+        "эт каалайм",
+        "Et kaalaym"
+      ],
+      "lexemeIds": [
+        "ky-lex-u5-et",
+        "ky-lex-u5-kaalaym"
+      ],
+      "sentenceIds": [
+        "ky-sent-u5-04"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u5-01"
+      ]
+    },
+    {
+      "id": "ky-review-u5-04",
+      "kind": "lexeme-recall",
+      "prompt": "What does 'жер алма' literally mean, and what food is it?",
+      "acceptableAnswers": [
+        "earth apple, potato",
+        "earth apple; potato",
+        "potato (earth apple)"
+      ],
+      "lexemeIds": [
+        "ky-lex-u5-zher-alma"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-lex-u4-kaydan",
+      "languageCode": "ky",
+      "lemma": "кайдан",
+      "transliteration": "kaydan",
+      "gloss": "from where",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The question word for origin. Кайдансыз? means 'Where are you from?' in polite register. Кайдансың? is the informal equivalent."
+    },
+    {
+      "id": "ky-lex-u4-ata",
+      "languageCode": "ky",
+      "lemma": "ата",
+      "transliteration": "ata",
+      "gloss": "father",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The word for father. With the possessive suffix it becomes атам (my father). Ата is also used as a respectful address to an older man."
+    },
+    {
+      "id": "ky-lex-u4-apa",
+      "languageCode": "ky",
+      "lemma": "апа",
+      "transliteration": "apa",
+      "gloss": "mother",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The word for mother. With the possessive suffix it becomes апам (my mother). Апа is also a warm address for an older woman."
+    },
+    {
+      "id": "ky-lex-u4-bayke",
+      "languageCode": "ky",
+      "lemma": "байке",
+      "transliteration": "bayke",
+      "gloss": "older brother",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Term for an older brother. Also used as a respectful address to any young-to-middle-aged man who is older than you. Байкем means 'my older brother'."
+    },
+    {
+      "id": "ky-lex-u4-ezhe",
+      "languageCode": "ky",
+      "lemma": "эже",
+      "transliteration": "ezhe",
+      "gloss": "older sister",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Term for an older sister. Also used as a polite address to any woman who is older than you but not yet elderly. Эжем means 'my older sister'."
+    },
+    {
+      "id": "ky-lex-u4-kyz",
+      "languageCode": "ky",
+      "lemma": "кыз",
+      "transliteration": "kyz",
+      "gloss": "daughter / girl",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Means both daughter and girl depending on context. Менин кызым means 'my daughter'. The ы is a back unrounded vowel, close to a muffled 'i'."
+    },
+    {
+      "id": "ky-lex-u4-uy-bulo",
+      "languageCode": "ky",
+      "lemma": "үй-бүлө",
+      "transliteration": "üy-bülö",
+      "gloss": "family",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The common word for family as a household unit. Both vowels are front rounded (ü and ö). Туугандар is used for the wider circle of relatives."
+    },
+    {
+      "id": "ky-lex-u4-menin",
+      "languageCode": "ky",
+      "lemma": "менин",
+      "transliteration": "menin",
+      "gloss": "my",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The genitive form of мен (I). In Kyrgyz the noun after менин also takes a possessive suffix: Менин атам (my father). Both markers together is standard and not redundant."
+    },
+    {
+      "id": "ky-lex-u4-mugalim",
+      "languageCode": "ky",
+      "lemma": "мугалим",
+      "transliteration": "mugalim",
+      "gloss": "teacher",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "A very common profession word. Менин апам мугалим — My mother is a teacher. No suffix needed on the predicate noun in a simple identity statement."
+    },
+    {
+      "id": "ky-lex-u4-bishkek",
+      "languageCode": "ky",
+      "lemma": "Бишкек",
+      "transliteration": "Bishkek",
+      "gloss": "Bishkek (capital city)",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The capital of Kyrgyzstan. Useful in origin statements: Мен Бишкектенмин — I am from Bishkek. After Бишкек, the ablative suffix is -тен (not -ден) because к is voiceless."
+    },
+    {
+      "id": "ky-lex-u4-tuugandar",
+      "languageCode": "ky",
+      "lemma": "туугандар",
+      "transliteration": "tuugandar",
+      "gloss": "relatives / family members",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The plural form for relatives. The root is тууган (kinsperson, born of). Туугандарым means 'my relatives'. Used when speaking about the wider family rather than the immediate household."
+    },
+    {
+      "id": "ky-lex-u4-al",
+      "languageCode": "ky",
+      "lemma": "ал",
+      "transliteration": "al",
+      "gloss": "he / she / it",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Kyrgyz has one third-person pronoun for all genders. Ал менин байкем means both 'He is my older brother' and 'She is my older sister' depending on context."
+    }
+  ]
+}

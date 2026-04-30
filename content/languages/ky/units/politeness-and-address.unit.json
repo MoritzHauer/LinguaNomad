@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "unit": {
+    "id": "ky-unit-politeness-and-address",
+    "slug": "politeness-and-address",
+    "title": "Politeness And Address Forms",
+    "communicationGoal": "Use the correct register when addressing an elder, a peer, or a stranger; give and receive thanks; offer a simple apology; and open a conversation respectfully.",
+    "sequenceNumber": 3,
+    "unlocksAfterUnitId": "ky-unit-greetings-and-introductions",
+    "supportedScripts": [
+      "cyrl",
+      "latn"
+    ],
+    "pronunciationFocus": [
+      "Keep the ө in Өтүнөм rounded and short",
+      "Кечиресиз ends with a clear з, not an s sound",
+      "Stress in Жарайт falls on the second syllable: zha-RAYT"
+    ],
+    "sentenceIds": [
+      "ky-sent-u3-01",
+      "ky-sent-u3-02",
+      "ky-sent-u3-03",
+      "ky-sent-u3-04",
+      "ky-sent-u3-05",
+      "ky-sent-u3-06",
+      "ky-sent-u3-07",
+      "ky-sent-u3-08",
+      "ky-sent-u3-09"
+    ],
+    "grammarNoteIds": [
+      "ky-grammar-u3-01",
+      "ky-grammar-u3-02",
+      "ky-grammar-u3-03"
+    ],
+    "reviewSeedIds": [
+      "ky-review-u3-01",
+      "ky-review-u3-02",
+      "ky-review-u3-03",
+      "ky-review-u3-04"
+    ],
+    "sourceIds": [
+      "linguanomad-original-kyrgyz-starter-2026",
+      "peace-corps-kyrgyz-language-manual-1997"
+    ]
+  }
+}

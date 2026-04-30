@@ -10,13 +10,11 @@ import {
   View,
 } from 'react-native';
 
-import { getCourseBundles, type CourseBundle } from '../lib/course-data';
+import { getCourseBundles } from '../lib/course-data';
 import { useLearnerProgress } from '../lib/learner-progress';
 import { UnitCard, type UnitState } from '../src/components/UnitCard';
 import { colors } from '../src/theme/colors';
 
-// Static metadata for all 6 units in the Kyrgyz Starter Path
-// Units 1 & 2 are fully backed by content; 3-6 are defined here for the overview.
 interface CourseUnitMeta {
   id: string;
   sequenceNumber: number;
@@ -27,46 +25,21 @@ interface CourseUnitMeta {
   unlocksAfterUnitId: string | undefined;
 }
 
-import unit01Data from '../../../content/kyrgyz/unit-01-script-and-sound.json';
-import unit02Data from '../../../content/kyrgyz/unit-02-greetings.json';
-import unit03Data from '../../../content/kyrgyz/unit-03-politeness.json';
-import unit04Data from '../../../content/kyrgyz/unit-04-identity-family.json';
-import unit05Data from '../../../content/kyrgyz/unit-05-food.json';
-import unit06Data from '../../../content/kyrgyz/unit-06-location.json';
+// Derive unit list from course bundles — single source of truth
+const ALL_UNITS: CourseUnitMeta[] = getCourseBundles()
+  .map((b) => ({
+    id: b.unit.id,
+    sequenceNumber: b.unit.sequenceNumber ?? 0,
+    title: b.unit.title,
+    communicationGoal: b.unit.communicationGoal,
+    lexemeCount: b.lexemes.length,
+    taskCount: b.tasks.length,
+    unlocksAfterUnitId: b.unit.unlocksAfterUnitId,
+  }))
+  .sort((a, b) => a.sequenceNumber - b.sequenceNumber);
 
-function toMeta(data: { unit: {
-  id: string;
-  sequenceNumber?: number;
-  title: string;
-  communicationGoal: string;
-  lexemeIds: string[];
-  taskIds: string[];
-  unlocksAfterUnitId?: string;
-}}): CourseUnitMeta {
-  const u = data.unit;
-  return {
-    id: u.id,
-    sequenceNumber: u.sequenceNumber ?? 0,
-    title: u.title,
-    communicationGoal: u.communicationGoal,
-    lexemeCount: u.lexemeIds.length,
-    taskCount: u.taskIds.length,
-    unlocksAfterUnitId: u.unlocksAfterUnitId,
-  };
-}
-
-const ALL_UNITS: CourseUnitMeta[] = [
-  toMeta(unit01Data as Parameters<typeof toMeta>[0]),
-  toMeta(unit02Data as Parameters<typeof toMeta>[0]),
-  toMeta(unit03Data as Parameters<typeof toMeta>[0]),
-  toMeta(unit04Data as Parameters<typeof toMeta>[0]),
-  toMeta(unit05Data as Parameters<typeof toMeta>[0]),
-  toMeta(unit06Data as Parameters<typeof toMeta>[0]),
-].sort((a, b) => a.sequenceNumber - b.sequenceNumber);
-
-const ACTIVE_UNIT_IDS = new Set(
-  getCourseBundles().map((b: CourseBundle) => b.unit.id)
-);
+// All units are now backed by content
+const ACTIVE_UNIT_IDS = new Set(ALL_UNITS.map((u) => u.id));
 
 export default function CourseScreen() {
   const router = useRouter();

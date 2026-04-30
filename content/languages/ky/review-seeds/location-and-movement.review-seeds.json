@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-review-u6-01",
+      "kind": "lexeme-recall",
+      "prompt": "What is the Kyrgyz word for 'where'?",
+      "acceptableAnswers": [
+        "кайда",
+        "Кайда",
+        "kayda"
+      ],
+      "lexemeIds": [
+        "ky-lex-u6-kayda"
+      ],
+      "sentenceIds": [
+        "ky-sent-u6-01"
+      ]
+    },
+    {
+      "id": "ky-review-u6-02",
+      "kind": "sentence-comprehension",
+      "prompt": "What does 'Мен базарга баратмын' mean?",
+      "acceptableAnswers": [
+        "I am going to the bazaar",
+        "i am going to the bazaar"
+      ],
+      "lexemeIds": [
+        "ky-lex-u6-bazaar",
+        "ky-lex-u6-barat"
+      ],
+      "sentenceIds": [
+        "ky-sent-u6-04"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u6-01"
+      ]
+    },
+    {
+      "id": "ky-review-u6-03",
+      "kind": "form-noticing",
+      "prompt": "What does the -га suffix on 'базарга' indicate?",
+      "acceptableAnswers": [
+        "direction / destination",
+        "going to",
+        "toward the bazaar",
+        "destination suffix"
+      ],
+      "lexemeIds": [
+        "ky-lex-u6-bazaar"
+      ],
+      "sentenceIds": [
+        "ky-sent-u6-04"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u6-01"
+      ]
+    },
+    {
+      "id": "ky-review-u6-04",
+      "kind": "pattern-recall",
+      "prompt": "How do you say 'The stop is not far' in Kyrgyz?",
+      "acceptableAnswers": [
+        "Бекет узак эмес",
+        "бекет узак эмес",
+        "Beket uzak emes"
+      ],
+      "lexemeIds": [
+        "ky-lex-u6-bekhet",
+        "ky-lex-u6-uzak"
+      ],
+      "sentenceIds": [
+        "ky-sent-u6-06"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u6-03"
+      ]
+    }
+  ]
+}

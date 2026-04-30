@@ -1,11 +1,13 @@
 import type { ReviewSeed } from "@linguanomad/content-schema";
+import { createLessonRunState } from "@linguanomad/learner-state";
 import type { ReviewRating, ReviewState } from "@linguanomad/srs";
 import { createInitialReviewState, scheduleNextReview } from "@linguanomad/srs";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 
 import { getBundleByUnitId } from "../../lib/course-data";
+import { useLearnerProgress } from "../../lib/learner-progress";
 import { FlashCard } from "../../src/components/FlashCard";
 import { RatingButtons } from "../../src/components/RatingButtons";
 
@@ -17,6 +19,8 @@ interface ReviewCardState {
 export default function ReviewScreen() {
   const { unitId } = useLocalSearchParams<{ unitId: string }>();
   const router = useRouter();
+  const { finalizeRun } = useLearnerProgress();
+  const runRef = useRef(createLessonRunState(unitId ?? ""));
 
   const bundle = useMemo(() => {
     if (!unitId) return undefined;
@@ -66,6 +70,19 @@ export default function ReviewScreen() {
     const nextState = scheduleNextReview(current.srsState, rating, new Date());
     const isCorrect = rating !== "again";
 
+    // Track in lesson run
+    const run = runRef.current;
+    if (isCorrect) {
+      run.correctAnswers++;
+      run.score += 12;
+      run.currentCorrectAnswerStreak++;
+      run.longestCorrectAnswerStreak = Math.max(run.longestCorrectAnswerStreak, run.currentCorrectAnswerStreak);
+    } else {
+      run.incorrectAnswers++;
+      run.currentCorrectAnswerStreak = 0;
+    }
+    run.answeredPrompts++;
+
     // Update the queue entry with new state
     const updatedQueue = queue.map((item, idx) =>
       idx === currentIndex ? { ...item, srsState: nextState } : item
@@ -85,6 +102,9 @@ export default function ReviewScreen() {
   }
 
   if (isComplete) {
+    // Finalize the run — marks unit complete if not already, updates progress
+    void finalizeRun(runRef.current);
+
     return (
       <View style={styles.screen}>
         <ScrollView contentContainerStyle={styles.completionContent}>

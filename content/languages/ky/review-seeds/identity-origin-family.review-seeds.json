@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-review-u4-01",
+      "kind": "lexeme-recall",
+      "prompt": "What is the Kyrgyz word for 'mother'?",
+      "acceptableAnswers": [
+        "апа",
+        "Апа",
+        "apa"
+      ],
+      "lexemeIds": [
+        "ky-lex-u4-apa"
+      ]
+    },
+    {
+      "id": "ky-review-u4-02",
+      "kind": "sentence-comprehension",
+      "prompt": "What does 'Менин атам мугалим' mean?",
+      "acceptableAnswers": [
+        "My father is a teacher",
+        "my father is a teacher"
+      ],
+      "lexemeIds": [
+        "ky-lex-u4-menin",
+        "ky-lex-u4-ata",
+        "ky-lex-u4-mugalim"
+      ],
+      "sentenceIds": [
+        "ky-sent-u4-03"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u4-03"
+      ]
+    },
+    {
+      "id": "ky-review-u4-03",
+      "kind": "pattern-recall",
+      "prompt": "How do you say 'I am from Bishkek' in Kyrgyz?",
+      "acceptableAnswers": [
+        "Мен Бишкектенмин",
+        "мен Бишкектенмин",
+        "Men Bishkektenmin"
+      ],
+      "lexemeIds": [
+        "ky-lex-u4-bishkek"
+      ],
+      "sentenceIds": [
+        "ky-sent-u4-02"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u4-02"
+      ]
+    },
+    {
+      "id": "ky-review-u4-04",
+      "kind": "form-noticing",
+      "prompt": "In 'Менин атам', what does the -м ending on атам indicate?",
+      "acceptableAnswers": [
+        "my / first person possessive",
+        "possessive suffix",
+        "it means 'my'",
+        "first-person possessive"
+      ],
+      "lexemeIds": [
+        "ky-lex-u4-menin",
+        "ky-lex-u4-ata"
+      ],
+      "sentenceIds": [
+        "ky-sent-u4-03"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u4-01"
+      ]
+    }
+  ]
+}

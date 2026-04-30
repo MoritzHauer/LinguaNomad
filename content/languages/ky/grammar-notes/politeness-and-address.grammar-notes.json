@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-grammar-u3-01",
+      "title": "сиз vs сен: choosing the right register",
+      "summary": "Kyrgyz has two second-person pronouns. Сиз is the polite form used with elders, strangers, teachers, and anyone you have just met. Сен is the casual form for close friends and peers of similar age. When in doubt, always use сиз — it is never rude to be respectful. Using сен too early with an elder can cause offence.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-grammar-u3-02",
+      "title": "The -чы particle softens requests",
+      "summary": "Adding -чы (or -чи after front vowels) to the end of a verb turns a plain command into a gentle request. Кел means come; Келчи means come on or please come. It works in the informal register between friends. For polite register, prefix Өтүнөм instead. Both strategies reduce abruptness — choose based on whom you are speaking to.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-grammar-u3-03",
+      "title": "Fixed polite formulae are safe whole chunks",
+      "summary": "Some polite expressions in Kyrgyz work best as memorised whole chunks rather than analysed word by word. Кечиресиз, Өтүнөм, and Маселе жок each carry a social function that learners can deploy immediately without needing to build the phrase from parts. Learn these as tools first; understanding the internal structure can come later.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    }
+  ]
+}

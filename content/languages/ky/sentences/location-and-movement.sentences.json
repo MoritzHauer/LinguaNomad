@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-sent-u6-01",
+      "languageCode": "ky",
+      "text": "Кечиресиз, базар кайда?",
+      "transliteration": "Kechiresiz, bazaar kayda?",
+      "translation": "Excuse me, where is the bazaar?",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u6-02",
+      "languageCode": "ky",
+      "text": "Базар жакын, оңго буруңуз.",
+      "transliteration": "Bazaar zhakyn, onggo burunguz.",
+      "translation": "The bazaar is nearby, turn right.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u6-03",
+      "languageCode": "ky",
+      "text": "Сиз кайда барасыз?",
+      "transliteration": "Siz kayda barasyz?",
+      "translation": "Where are you going?",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u6-04",
+      "languageCode": "ky",
+      "text": "Мен базарга баратмын.",
+      "transliteration": "Men bazaarga baratmyn.",
+      "translation": "I am going to the bazaar.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u6-05",
+      "languageCode": "ky",
+      "text": "Автобус бекети кайда?",
+      "transliteration": "Avtobus beketi kayda?",
+      "translation": "Where is the bus stop?",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u6-06",
+      "languageCode": "ky",
+      "text": "Бекет узак эмес.",
+      "transliteration": "Beket uzak emes.",
+      "translation": "The stop is not far.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u6-07",
+      "languageCode": "ky",
+      "text": "Түз жүрүңүз, андан кийин солго.",
+      "transliteration": "Tüz zhürüngüz, andan kiyin solgo.",
+      "translation": "Go straight, then turn left.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u6-08",
+      "languageCode": "ky",
+      "text": "Ушул автобус базарга барабы?",
+      "transliteration": "Ushul avtobus bazaarga baraby?",
+      "translation": "Does this bus go to the bazaar?",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u6-09",
+      "languageCode": "ky",
+      "text": "Ооба, барат.",
+      "transliteration": "Ooba, barat.",
+      "translation": "Yes, it goes there.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u6-10",
+      "languageCode": "ky",
+      "text": "Өтүнөм, токтоңуз!",
+      "transliteration": "Ötünöm, toktonguz!",
+      "translation": "Please, stop!",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    }
+  ]
+}

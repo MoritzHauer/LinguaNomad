@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "unit": {
+    "id": "ky-unit-food-and-preferences",
+    "slug": "food-and-preferences",
+    "title": "Food And Everyday Preferences",
+    "communicationGoal": "Name common Kyrgyz foods, express a simple want or preference, accept or decline an offer politely, and respond to a host at a tea table.",
+    "sequenceNumber": 5,
+    "unlocksAfterUnitId": "ky-unit-identity-origin-family",
+    "supportedScripts": [
+      "cyrl",
+      "latn"
+    ],
+    "pronunciationFocus": [
+      "Жакшы көрөм — the ö in көрөм is a front rounded vowel, hold it clearly",
+      "Каалайм ends with a nasal м; do not drop it",
+      "Тамак has stress on the first syllable: TA-mak"
+    ],
+    "sentenceIds": [
+      "ky-sent-u5-01",
+      "ky-sent-u5-02",
+      "ky-sent-u5-03",
+      "ky-sent-u5-04",
+      "ky-sent-u5-05",
+      "ky-sent-u5-06",
+      "ky-sent-u5-07",
+      "ky-sent-u5-08",
+      "ky-sent-u5-09"
+    ],
+    "grammarNoteIds": [
+      "ky-grammar-u5-01",
+      "ky-grammar-u5-02",
+      "ky-grammar-u5-03"
+    ],
+    "reviewSeedIds": [
+      "ky-review-u5-01",
+      "ky-review-u5-02",
+      "ky-review-u5-03",
+      "ky-review-u5-04"
+    ],
+    "sourceIds": [
+      "linguanomad-original-kyrgyz-starter-2026",
+      "peace-corps-kyrgyz-language-manual-1997"
+    ]
+  }
+}

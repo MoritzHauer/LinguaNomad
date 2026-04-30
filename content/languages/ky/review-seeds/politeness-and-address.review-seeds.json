@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-review-u3-01",
+      "kind": "lexeme-recall",
+      "prompt": "How do you say 'excuse me / sorry' politely in Kyrgyz?",
+      "acceptableAnswers": [
+        "Кечиресиз",
+        "кечиресиз",
+        "Kechiresiz"
+      ],
+      "lexemeIds": [
+        "ky-lex-u3-kechiresiz"
+      ],
+      "sentenceIds": [
+        "ky-sent-u3-01"
+      ]
+    },
+    {
+      "id": "ky-review-u3-02",
+      "kind": "sentence-comprehension",
+      "prompt": "What does 'Рахмат, маселе жок' mean?",
+      "acceptableAnswers": [
+        "Thank you, no problem",
+        "thank you, no problem"
+      ],
+      "lexemeIds": [
+        "ky-lex-u3-rakhmat",
+        "ky-lex-u3-masele-zhok"
+      ],
+      "sentenceIds": [
+        "ky-sent-u3-02"
+      ]
+    },
+    {
+      "id": "ky-review-u3-03",
+      "kind": "form-noticing",
+      "prompt": "Which pronoun should you use when talking to your friend's grandmother: сен or сиз?",
+      "acceptableAnswers": [
+        "сиз",
+        "Сиз",
+        "siz"
+      ],
+      "lexemeIds": [
+        "ky-lex-u3-siz",
+        "ky-lex-u3-sen"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u3-01"
+      ]
+    },
+    {
+      "id": "ky-review-u3-04",
+      "kind": "pattern-recall",
+      "prompt": "Complete the polite request: ___, отуруңуз. (Please, have a seat.)",
+      "acceptableAnswers": [
+        "Өтүнөм",
+        "өтүнөм",
+        "Ötünöm"
+      ],
+      "lexemeIds": [
+        "ky-lex-u3-otunom"
+      ],
+      "sentenceIds": [
+        "ky-sent-u3-06"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u3-03"
+      ]
+    }
+  ]
+}

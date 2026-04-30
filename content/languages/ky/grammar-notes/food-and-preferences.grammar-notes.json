@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-grammar-u5-01",
+      "title": "каалайм and жакшы көрөм both express wanting",
+      "summary": "Kyrgyz has two common ways to say you want or like something. Каалайм (I want / I would like) is more about desire in the moment, like ordering food. Жакшы көрөм (I like) describes a general preference. Both follow the subject-object-verb order: Мен чай каалайм (I tea want = I want tea). Neither requires additional words to make a complete sentence.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-grammar-u5-02",
+      "title": "Polite offers use the -сызбы / -сизби question suffix",
+      "summary": "To offer something politely in Kyrgyz, take the polite verb form and add -бы or -би for a yes-no question. Чай ичесизби means 'would you like to drink tea?' The -сиз part marks polite register and -би turns it into a question. You can answer simply болот (okay/yes) or рахмат, жок (thank you, no).",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-grammar-u5-03",
+      "title": "Adjectives precede nouns without changing form",
+      "summary": "In Kyrgyz, adjectives come before the noun they describe and do not take case suffixes. Сүттүү чай means 'milky tea' or 'tea with milk' — сүттүү (milky) sits directly before чай (tea). This is one of the most beginner-friendly patterns in the language: there is no agreement in gender, number, or case on the adjective itself.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    }
+  ]
+}

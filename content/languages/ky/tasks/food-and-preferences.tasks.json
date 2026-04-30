@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-task-u5-host-01",
+      "kind": "mini-role",
+      "objective": "Respond to a host's food and drink offers using the phrase bank from this unit.",
+      "instructions": "You are a guest at a Kyrgyz home. Your host will make three offers: tea, bread, and a main dish. For each offer, respond using a phrase from the bank. Accept at least two things and politely decline one.",
+      "successCriteria": [
+        "Accept a drink offer using болот or ооба, рахмат.",
+        "Express a food preference using жакшы көрөм or каалайм.",
+        "Decline one offer politely using рахмат, жок or жактырбайм.",
+        "Thank the host at the end using рахмат or чоң рахмат."
+      ],
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "lexemeIds": [
+        "ky-lex-u5-chai",
+        "ky-lex-u5-nan",
+        "ky-lex-u5-et",
+        "ky-lex-u5-kaalaym",
+        "ky-lex-u5-zhakshy-korom",
+        "ky-lex-u5-zhaktyrbaym",
+        "ky-lex-u5-bolot"
+      ],
+      "sentenceIds": [
+        "ky-sent-u5-01",
+        "ky-sent-u5-02",
+        "ky-sent-u5-03",
+        "ky-sent-u5-04",
+        "ky-sent-u5-05",
+        "ky-sent-u5-07"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u5-01",
+        "ky-grammar-u5-02"
+      ],
+      "completionHint": "You can always say 'Рахмат, мен токтодум' to politely stop eating or decline more food.",
+      "supportCards": [
+        {
+          "id": "ky-task-u5-host-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Tea is a social ritual in Kyrgyz homes",
+          "body": "Refusing tea from a host can feel unwelcoming. If you are not thirsty, accept the cup, hold it warmly, and take small sips. The gesture of receiving matters more than the amount you drink.",
+          "sourceIds": [
+            "linguanomad-original-kyrgyz-starter-2026"
+          ]
+        },
+        {
+          "id": "ky-task-u5-host-01-support-grammar",
+          "kind": "grammar",
+          "title": "Bolot vs bolboyt",
+          "body": "Болот means it's okay / yes please when accepting an offer. Болбойт (with the negation -бой-) means it won't work / no, and is a gentle soft refusal. Both are polite.",
+          "grammarNoteIds": [
+            "ky-grammar-u5-02"
+          ],
+          "sourceIds": [
+            "linguanomad-original-kyrgyz-starter-2026"
+          ]
+        }
+      ],
+      "scenario": "You have been invited to a family's home for a meal. The host is generous and will offer you several things. Use your phrase bank to respond naturally.",
+      "learnerRole": "Guest at a Kyrgyz home.",
+      "phraseBankLexemeIds": [
+        "ky-lex-u5-chai",
+        "ky-lex-u5-nan",
+        "ky-lex-u5-et",
+        "ky-lex-u5-kaalaym",
+        "ky-lex-u5-zhakshy-korom",
+        "ky-lex-u5-zhaktyrbaym",
+        "ky-lex-u5-bolot",
+        "ky-lex-u5-sut",
+        "ky-lex-u5-meva"
+      ],
+      "phraseBankSentenceIds": [
+        "ky-sent-u5-02",
+        "ky-sent-u5-03",
+        "ky-sent-u5-04",
+        "ky-sent-u5-05",
+        "ky-sent-u5-07",
+        "ky-sent-u5-08"
+      ]
+    }
+  ]
+}

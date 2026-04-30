@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-lex-u3-siz",
+      "languageCode": "ky",
+      "lemma": "сиз",
+      "transliteration": "siz",
+      "gloss": "you (polite)",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The polite second-person pronoun. Use with elders, strangers, and anyone you have just met. Always a safe choice when unsure of the appropriate register."
+    },
+    {
+      "id": "ky-lex-u3-sen",
+      "languageCode": "ky",
+      "lemma": "сен",
+      "transliteration": "sen",
+      "gloss": "you (informal)",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The casual second-person pronoun. Use only with close friends and peers of similar age once you know each other well. Using сен too soon can seem disrespectful."
+    },
+    {
+      "id": "ky-lex-u3-rakhmat",
+      "languageCode": "ky",
+      "lemma": "Рахмат",
+      "transliteration": "Rakhmat",
+      "gloss": "thank you",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The everyday thank-you. Works in all registers. The kh is a light throat sound, not a hard English k."
+    },
+    {
+      "id": "ky-lex-u3-chon-rakhmat",
+      "languageCode": "ky",
+      "lemma": "Чоң рахмат",
+      "transliteration": "Chong rakhmat",
+      "gloss": "thank you very much",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Чоң means big or great, so this phrase is literally 'big thanks'. Use it when someone has gone out of their way to help you."
+    },
+    {
+      "id": "ky-lex-u3-kechiresiz",
+      "languageCode": "ky",
+      "lemma": "Кечиресиз",
+      "transliteration": "Kechiresiz",
+      "gloss": "excuse me / sorry (polite)",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Polite form. Use when speaking to elders, strangers, or in formal situations. Also works to get someone's attention before a question."
+    },
+    {
+      "id": "ky-lex-u3-kechir",
+      "languageCode": "ky",
+      "lemma": "Кечир",
+      "transliteration": "Kechir",
+      "gloss": "sorry (informal)",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Casual apology for use with friends and peers. It is the short imperative form of the verb кечирүү (to forgive). Do not use with elders."
+    },
+    {
+      "id": "ky-lex-u3-zharayt",
+      "languageCode": "ky",
+      "lemma": "Жарайт",
+      "transliteration": "Zharayt",
+      "gloss": "okay / alright",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "An all-purpose 'okay' that fits both registers. Use it to accept an offer, agree to a plan, or close a brief exchange."
+    },
+    {
+      "id": "ky-lex-u3-otunom",
+      "languageCode": "ky",
+      "lemma": "Өтүнөм",
+      "transliteration": "Ötünöm",
+      "gloss": "please / I request",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "A polite particle meaning 'please' or 'I ask you'. Place it at the start of a request to soften the tone. Slightly more formal than the -чы suffix."
+    },
+    {
+      "id": "ky-lex-u3-masele-zhok",
+      "languageCode": "ky",
+      "lemma": "Маселе жок",
+      "transliteration": "Masele zhok",
+      "gloss": "no problem",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Literally 'there is no issue'. A warm and common response to thanks or an apology. Works in both formal and informal settings."
+    },
+    {
+      "id": "ky-lex-u3-ooba",
+      "languageCode": "ky",
+      "lemma": "Ооба",
+      "transliteration": "Ooba",
+      "gloss": "yes",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The standard Kyrgyz yes. It has a long double-o sound at the start. The shorter иə or ия forms are heard in some dialects but ооба is understood everywhere."
+    },
+    {
+      "id": "ky-lex-u3-bolot",
+      "languageCode": "ky",
+      "lemma": "Болот",
+      "transliteration": "Bolot",
+      "gloss": "it's okay / it's possible",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "From болуу (to be, to become). Used to say something is acceptable, possible, or fine. Often follows жарайт for added warmth: Жарайт, болот."
+    },
+    {
+      "id": "ky-lex-u3-zhardam",
+      "languageCode": "ky",
+      "lemma": "жардам",
+      "transliteration": "zhardam",
+      "gloss": "help / assistance",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Noun meaning help. Common in the phrase жардам бересизби (can you help me?). Also appears as a verb: жардам бер (give help)."
+    }
+  ]
+}
