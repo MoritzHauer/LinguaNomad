@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@linguanomad/content-schema": "workspace:*",
+    "@linguanomad/srs": "workspace:*",
     "@linguanomad/learner-state": "workspace:*",
     "@linguanomad/shared": "workspace:*",
     "@react-native-async-storage/async-storage": "^2.1.2",
