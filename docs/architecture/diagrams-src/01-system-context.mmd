@@ -1,0 +1,14 @@
+C4Context
+    title LinguaNomad – System Context
+
+    Person(learner, "Learner", "A motivated language learner studying Kyrgyz on their phone.")
+
+    System(mobile, "LinguaNomad Mobile App", "Delivers structured lessons, spaced-retrieval review, and task-based practice. Works fully offline.")
+
+    System_Ext(supabase, "Supabase Backend", "Handles authentication, cloud backup of learner progress, content-pack metadata, and remote configuration.")
+
+    System_Ext(cdn, "Content Pack CDN", "Hosts downloadable content packs (JSON bundles) distributed to learners.")
+
+    Rel(learner, mobile, "Studies lessons, reviews vocabulary, completes tasks")
+    Rel(mobile, supabase, "Authenticates, syncs progress, fetches remote config", "HTTPS / REST + Realtime")
+    Rel(mobile, cdn, "Downloads content packs", "HTTPS")
