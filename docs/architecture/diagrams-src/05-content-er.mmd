@@ -1,0 +1,78 @@
+erDiagram
+    SourceRecord {
+        string id PK
+        string name
+        string url
+        string licenseSummary
+        boolean committable
+        boolean packagable
+        string status
+    }
+
+    UnitDefinition {
+        string id PK
+        string slug
+        string languageCode
+        string title
+        string communicationGoal
+    }
+
+    Lexeme {
+        string id PK
+        string languageCode
+        string form
+        string transliteration
+        string gloss
+        string partOfSpeech
+        string proficiency
+    }
+
+    SentenceCard {
+        string id PK
+        string languageCode
+        string kyrgyz
+        string transliteration
+        string translation
+        string proficiency
+    }
+
+    GrammarNote {
+        string id PK
+        string languageCode
+        string title
+        string explanation
+        string proficiency
+    }
+
+    TaskDefinition {
+        string id PK
+        string languageCode
+        string kind
+        string title
+    }
+
+    ReviewItem {
+        string id PK
+        string learnerId
+        string contentId
+        string contentType
+        float easeFactor
+        int intervalDays
+        datetime nextReviewAt
+        int grade
+    }
+
+    UnitDefinition ||--o{ Lexeme : "includes"
+    UnitDefinition ||--o{ SentenceCard : "includes"
+    UnitDefinition ||--o{ GrammarNote : "includes"
+    UnitDefinition ||--o{ TaskDefinition : "includes"
+
+    Lexeme ||--o{ ReviewItem : "generates"
+    SentenceCard ||--o{ ReviewItem : "generates"
+
+    SentenceCard }o--o{ Lexeme : "references"
+    TaskDefinition }o--o{ Lexeme : "draws from phrase bank"
+    TaskDefinition }o--o{ SentenceCard : "draws from phrase bank"
+    GrammarNote }o--o{ SentenceCard : "illustrates with"
+
+    SourceRecord ||--o{ UnitDefinition : "attribution chain"

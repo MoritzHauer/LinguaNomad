@@ -1,0 +1,30 @@
+C4Container
+    title LinguaNomad – Container Diagram
+
+    Person(learner, "Learner")
+
+    Container_Boundary(app, "LinguaNomad Mobile App (Expo / React Native)") {
+        Container(ui, "Lesson & Review UI", "React Native / Expo Router", "Screens for lessons, review queues, tasks, and progress. Reads from and writes to local SQLite.")
+        Container(srs, "packages/srs", "TypeScript", "On-device SRS scheduling logic. Computes next review dates from performance history. Runs fully offline.")
+        Container(schema, "packages/content-schema", "TypeScript", "Canonical TypeScript types for Lexeme, SentenceCard, GrammarNote, TaskDefinition, UnitDefinition, ReviewItem, and source metadata.")
+        Container(sqlite, "Local SQLite DB", "Expo SQLite", "Persists content packs, learner progress, review history, and pending sync queue.")
+        Container(sync, "Sync Orchestrator", "TypeScript", "Queues local changes, detects connectivity, pushes deltas to Supabase, resolves conflicts deterministically.")
+    }
+
+    Container_Boundary(backend, "Supabase Backend") {
+        Container(auth, "Auth", "Supabase Auth", "JWT-based authentication.")
+        Container(db, "Postgres DB", "Supabase Postgres", "Stores user accounts, cloud progress snapshots, content-pack metadata.")
+        Container(storage, "File Storage", "Supabase Storage / CDN", "Hosts downloadable content pack bundles.")
+    }
+
+    Rel(learner, ui, "Interacts with")
+    Rel(ui, srs, "Requests next review schedule")
+    Rel(ui, sqlite, "Reads/writes content and progress")
+    Rel(srs, sqlite, "Reads review history, writes review items")
+    Rel(ui, sync, "Triggers sync on reconnect")
+    Rel(sync, sqlite, "Reads pending queue, updates sync state")
+    Rel(sync, auth, "Authenticates requests", "HTTPS")
+    Rel(sync, db, "Pushes/pulls progress deltas", "HTTPS / REST")
+    Rel(ui, storage, "Downloads content packs", "HTTPS")
+    Rel(schema, ui, "Type contracts (compile-time)")
+    Rel(schema, srs, "Type contracts (compile-time)")

@@ -1,0 +1,34 @@
+stateDiagram-v2
+    [*] --> Offline : App launch (no connectivity)
+    [*] --> Online : App launch (connectivity available)
+
+    Online --> Offline : Connectivity lost
+    Offline --> Syncing : Connectivity restored AND pending queue non-empty
+    Online --> Syncing : Sync triggered (foreground or background)
+
+    Syncing --> Online : Sync complete (queue flushed)
+    Syncing --> Offline : Connectivity lost during sync\n(partial flush retained in queue)
+    Syncing --> Online : Sync failed (server error)\n(retry scheduled, queue retained)
+
+    state Online {
+        [*] --> Idle
+        Idle --> Downloading : Learner requests content pack
+        Downloading --> Idle : Pack stored in SQLite
+        Idle --> Studying : Learner opens lesson
+        Studying --> Idle : Lesson complete\n(progress written to SQLite + queue)
+        Idle --> Reviewing : Review queue non-empty, learner opens review
+        Reviewing --> Idle : Review session complete\n(ReviewItems updated + queue appended)
+    }
+
+    state Offline {
+        [*] --> OfflineStudying : Learner opens lesson
+        OfflineStudying --> [*] : Lesson complete\n(progress written to SQLite + queue)
+        [*] --> OfflineReviewing : Learner opens review
+        OfflineReviewing --> [*] : Review complete\n(ReviewItems updated + queue appended)
+    }
+
+    note right of Syncing
+        Conflict resolution is deterministic:
+        server timestamp wins for progress records;
+        local review items are never discarded.
+    end note

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "peace-corps-kyrgyz-language-manual-1997",
+      "name": "Peace Corps Kyrgyz Language Manual",
+      "url": "https://files.eric.ed.gov/fulltext/ED461284.pdf",
+      "licenseSummary": "Redistribution status not yet verified; use as restricted editorial reference only. Do not copy verbatim text from this source into shipping content.",
+      "attributionRequired": true,
+      "committable": false,
+      "packagable": false,
+      "status": "candidate",
+      "sourceLanguages": ["ky", "en"],
+      "contentTypes": [
+        "dialogue",
+        "vocabulary-box",
+        "grammar-box",
+        "phonetic-drill",
+        "exercise"
+      ],
+      "notes": "Reference for sequencing, scope planning, and grammar cross-checking only. Ship original LinguaNomad wording; do not redistribute manual content directly. Redistribution rights must be confirmed before status can advance from candidate to approved."
+    }
+  ]
+}

@@ -279,6 +279,22 @@ export type ReviewSeedKind =
   | "pattern-recall"
   | "form-noticing";
 
+/**
+ * ReviewItem combines a review seed (what to ask) with the learner's current
+ * spaced-repetition state for that item. This is the runtime unit the SRS
+ * scheduler operates on.
+ */
+export interface ReviewItem {
+  id: string;
+  seed: ReviewSeed;
+  /** ISO date string: when this item is next due */
+  dueAt: string;
+  intervalDays: number;
+  reviewCount: number;
+  lapseCount: number;
+  lastReviewedAt?: string;
+}
+
 export interface ReviewSeed {
   id: string;
   kind: ReviewSeedKind;
@@ -305,6 +321,21 @@ export interface UnitDefinition {
   taskIds: string[];
   reviewSeedIds?: string[];
   sourceIds: string[];
+}
+
+/**
+ * UnitBundle bundles an entire unit and all its content into one portable JSON.
+ * Useful for seeding, exporting, and content review tooling.
+ */
+export interface UnitBundle {
+  version: number;
+  languageCode: string;
+  unit: UnitDefinition;
+  lexemes: Lexeme[];
+  sentences: SentenceCard[];
+  grammarNotes: GrammarNote[];
+  tasks: TaskDefinition[];
+  reviewSeeds: ReviewSeed[];
 }
 
 export function isPublicSource(source: SourceRecord): boolean {

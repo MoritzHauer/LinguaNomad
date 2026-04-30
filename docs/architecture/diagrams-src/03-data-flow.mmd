@@ -1,0 +1,37 @@
+sequenceDiagram
+    participant CDN as Content Pack CDN
+    participant App as Mobile App
+    participant SQLite as Local SQLite
+    participant SRS as packages/srs
+    participant Queue as Sync Queue (SQLite)
+    participant Supabase as Supabase Backend
+
+    Note over App,CDN: Content download (requires connectivity)
+    App->>CDN: GET /packs/ky-starter.json
+    CDN-->>App: Content pack bundle (units, lexemes, sentences, tasks)
+    App->>SQLite: Persist content pack rows
+
+    Note over App,SRS: Lesson flow (fully offline)
+    App->>SQLite: Load unit + lesson items
+    SQLite-->>App: Lexemes, SentenceCards, GrammarNotes, TaskDefinitions
+    App->>App: Learner studies lesson
+    App->>SRS: recordPerformance(itemId, grade)
+    SRS->>SRS: Compute nextReviewAt (SM-2 / FSRS)
+    SRS->>SQLite: Write ReviewItem (due date, interval, ease)
+
+    Note over App,Queue: Review session (fully offline)
+    App->>SQLite: Fetch due ReviewItems
+    SQLite-->>App: Due items
+    App->>App: Learner completes reviews
+    App->>SRS: recordPerformance(itemId, grade) per item
+    SRS->>SQLite: Update ReviewItem state
+    App->>Queue: Append progress delta to sync queue
+
+    Note over Queue,Supabase: Sync on reconnect
+    App->>App: Connectivity detected
+    App->>Queue: Read pending deltas
+    Queue-->>App: Pending progress records
+    App->>Supabase: POST /sync (progress batch)
+    Supabase-->>App: Accepted / conflict report
+    App->>Queue: Mark deltas flushed
+    App->>SQLite: Apply any server-side corrections
