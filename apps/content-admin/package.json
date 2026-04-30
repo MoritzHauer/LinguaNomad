@@ -1,0 +1,17 @@
+{
+  "name": "@linguanomad/content-admin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Editorial review, source auditing, and content QA tooling for LinguaNomad",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@linguanomad/content-schema": "workspace:*",
+    "@linguanomad/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

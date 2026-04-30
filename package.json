@@ -7,10 +7,12 @@
   },
   "scripts": {
     "mobile": "corepack pnpm --filter @linguanomad/mobile start",
+    "build": "pnpm -r --filter './packages/**' typecheck",
     "typecheck": "corepack pnpm -r typecheck"
   },
   "devDependencies": {
     "@types/react": "^19.1.5",
+    "eslint": "^9.0.0",
     "typescript": "^5.8.3"
   }
 }
