@@ -1,6 +1,6 @@
 # ADR-003: Supabase as Backend
 
-**Status:** Accepted  
+**Status:** Amended (see Amendment below)  
 **Date:** 2026-04-30  
 **Author:** LinguaNomad core team
 
@@ -49,7 +49,7 @@ LinguaNomad uses **Supabase** as its backend infrastructure for the MVP.
 | Storage | Content pack bundle files (`.json` downloads) |
 | Row Level Security | Every progress row is scoped to `auth.uid()` |
 | Realtime (optional) | Not used at MVP; may be considered for multi-device instant sync later |
-| Edge Functions | Not used at MVP |
+| Edge Functions | Used for `/sync` only — transport logic, no domain logic (see Amendment below) |
 
 ### Constraints to keep backend narrow
 
@@ -60,6 +60,43 @@ LinguaNomad uses **Supabase** as its backend infrastructure for the MVP.
 ### Self-hosting path
 
 Because Supabase is open-source, the project can be self-hosted via Docker Compose if the managed service becomes unavailable or if contributors prefer full control. This is not required at MVP but is a meaningful exit option.
+
+---
+
+---
+
+## Amendment: Sync Edge Function
+
+**Date:** 2026-04-30  
+**Superseded by:** [ADR-005 — Sync Edge Function](ADR-005-sync-edge-function.md)
+
+### Why plain REST is insufficient for batched sync
+
+The original ADR stated "Edge Functions — Not used at MVP". Implementation revealed that batched sync with Last-Write-Wins (LWW) conflict resolution and per-record conflict reporting cannot be cleanly expressed via Supabase's auto-generated REST API:
+
+1. **Atomicity.** A batch upsert spanning multiple progress rows must succeed or fail as a unit. The PostgREST REST layer does not expose a clean single-request batch-with-results primitive that also returns per-row conflict metadata.
+2. **Conflict reporting.** LWW resolution requires the server to detect when an incoming record is older than the stored version and report that fact back to the client in the same response. This logic cannot be expressed in PostgREST URL parameters or RPC without a custom Postgres function — at which point an Edge Function is cleaner and more testable.
+3. **Single round-trip.** Clients on mobile connections benefit strongly from a single push/pull round-trip rather than N individual REST calls.
+
+### Why this is still consistent with "narrow backend"
+
+The Edge Function contains **transport logic only**. It:
+
+- Accepts a batch of serialised progress deltas.
+- Upserts rows using LWW timestamp comparison.
+- Returns a conflict report (which rows were rejected and why).
+- Does not understand what a progress record *means*.
+
+The Edge Function does **not** perform SRS scheduling, content validation, lesson sequencing, or any other domain logic. Those remain entirely on-device in `packages/srs` and the app layer. The server remains a durable key/value store with auth — the function is merely a smarter write path.
+
+### What stays off-limits server-side (unchanged)
+
+- SRS scheduling and interval calculation
+- Lesson sequencing and curriculum logic
+- Content-pack validation or transformation
+- Any interpretation of what a progress record means semantically
+
+These constraints are unchanged by this amendment. The Edge Function is a narrow exception carved out for transport efficiency, not a precedent for moving domain logic to the server.
 
 ---
 
