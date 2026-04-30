@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=375, initial-scale=1.0">
+<title>LinguaNomad – SRS Review</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 375px;
+    min-height: 812px;
+    background: #0f0f1a;
+    font-family: -apple-system, 'Roboto', Arial, sans-serif;
+    color: #e8e8f0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .status-bar {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .status-bar .time { font-size: 15px; font-weight: 600; }
+  .status-icons { font-size: 13px; color: #ccc; display: flex; gap: 6px; }
+
+  .review-header {
+    padding: 4px 20px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .back-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .back-btn {
+    width: 32px; height: 32px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; color: #9090c0;
+  }
+  .review-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #e0e0f0;
+  }
+
+  .queue-badge {
+    background: rgba(99,102,241,0.15);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 100px;
+    padding: 5px 12px;
+    font-size: 12.5px;
+    color: #818cf8;
+    font-weight: 600;
+  }
+
+  /* Session stats row */
+  .session-stats {
+    display: flex;
+    margin: 0 20px 20px;
+    gap: 10px;
+  }
+  .stat-chip {
+    flex: 1;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+    padding: 10px 12px;
+    text-align: center;
+  }
+  .stat-num {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+  }
+  .stat-num.green { color: #10b981; }
+  .stat-num.red { color: #ef4444; }
+  .stat-label {
+    font-size: 10.5px;
+    color: #5050a0;
+    margin-top: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+
+  /* The card area */
+  .card-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    gap: 16px;
+  }
+
+  .flashcard {
+    width: 100%;
+    background: linear-gradient(160deg, rgba(30,30,52,1), rgba(18,18,36,1));
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 24px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    min-height: 240px;
+    justify-content: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  }
+
+  .card-instruction {
+    position: absolute;
+    top: 16px;
+    left: 0; right: 0;
+    text-align: center;
+    font-size: 11px;
+    color: #4a4a80;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .audio-btn {
+    position: absolute;
+    top: 14px; right: 16px;
+    width: 32px; height: 32px;
+    background: rgba(99,102,241,0.12);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px;
+  }
+
+  .kyrgyz-word {
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .transliteration {
+    font-size: 18px;
+    color: #7070a0;
+    font-style: italic;
+    letter-spacing: 0.5px;
+  }
+
+  .reveal-hint {
+    font-size: 13px;
+    color: #4a4a70;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Revealed section */
+  .revealed-section {
+    background: rgba(99,102,241,0.06);
+    border-top: 1px solid rgba(99,102,241,0.15);
+    width: calc(100% + 48px);
+    margin: 0 -24px -40px;
+    border-radius: 0 0 24px 24px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .english-answer {
+    font-size: 24px;
+    color: #c8c8ee;
+    font-weight: 500;
+    text-align: center;
+  }
+  .answer-note {
+    font-size: 12px;
+    color: #6060a0;
+    text-align: center;
+  }
+
+  /* Tap-to-reveal placeholder */
+  .tap-reveal {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    color: #4a4a70;
+    font-size: 13px;
+  }
+
+  /* Rating buttons */
+  .rating-section {
+    width: 100%;
+  }
+
+  .rating-label {
+    font-size: 11.5px;
+    color: #4a4a80;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .rating-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+  }
+
+  .rating-btn {
+    border: none;
+    border-radius: 14px;
+    padding: 14px 6px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .rating-btn .emoji { font-size: 20px; }
+  .rating-btn .interval { font-size: 10px; margin-top: 1px; }
+
+  .btn-again { background: rgba(239,68,68,0.15); color: #f87171; }
+  .btn-again .interval { color: #ef444460; }
+  .btn-hard { background: rgba(245,158,11,0.12); color: #fbbf24; }
+  .btn-hard .interval { color: #f59e0b60; }
+  .btn-good { background: rgba(16,185,129,0.12); color: #34d399; }
+  .btn-good .interval { color: #10b98160; }
+  .btn-easy { background: rgba(99,102,241,0.12); color: #818cf8; }
+  .btn-easy .interval { color: #6366f160; }
+
+  .next-review-note {
+    font-size: 12px;
+    color: #404060;
+    text-align: center;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="status-bar">
+    <span class="time">9:41</span>
+    <div class="status-icons"><span>📶</span><span>🔋</span></div>
+  </div>
+
+  <div class="review-header">
+    <div class="back-area">
+      <div class="back-btn">‹</div>
+      <span class="review-title">Review Session</span>
+    </div>
+    <div class="queue-badge">12 remaining</div>
+  </div>
+
+  <div class="session-stats">
+    <div class="stat-chip">
+      <div class="stat-num">8</div>
+      <div class="stat-label">Done</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-num green">6</div>
+      <div class="stat-label">Correct</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-num red">2</div>
+      <div class="stat-label">Again</div>
+    </div>
+    <div class="stat-chip">
+      <div class="stat-num" style="color:#818cf8">3</div>
+      <div class="stat-label">Day streak</div>
+    </div>
+  </div>
+
+  <div class="card-area">
+
+    <div class="flashcard">
+      <span class="card-instruction">Translate to English</span>
+      <div class="audio-btn">🔊</div>
+
+      <div class="kyrgyz-word">мугалим</div>
+      <div class="transliteration">mugalim</div>
+
+      <!-- Revealed state shown -->
+      <div class="revealed-section">
+        <div class="english-answer">teacher</div>
+        <div class="answer-note">noun · school / education context</div>
+      </div>
+    </div>
+
+    <div class="rating-section">
+      <p class="rating-label">How well did you know it?</p>
+      <div class="rating-btns">
+        <button class="rating-btn btn-again">
+          <span class="emoji">😰</span>
+          Again
+          <span class="interval">&lt;1 min</span>
+        </button>
+        <button class="rating-btn btn-hard">
+          <span class="emoji">😓</span>
+          Hard
+          <span class="interval">6 min</span>
+        </button>
+        <button class="rating-btn btn-good">
+          <span class="emoji">🙂</span>
+          Good
+          <span class="interval">1 day</span>
+        </button>
+        <button class="rating-btn btn-easy">
+          <span class="emoji">😄</span>
+          Easy
+          <span class="interval">4 days</span>
+        </button>
+      </div>
+      <p class="next-review-note">Choosing "Good" schedules the next review for tomorrow</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=375, initial-scale=1.0">
+<title>LinguaNomad – Task Screen</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 375px;
+    min-height: 812px;
+    background: #0f0f1a;
+    font-family: -apple-system, 'Roboto', Arial, sans-serif;
+    color: #e8e8f0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .status-bar {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .status-bar .time { font-size: 15px; font-weight: 600; }
+  .status-icons { font-size: 13px; color: #ccc; display: flex; gap: 6px; }
+
+  .task-header {
+    padding: 4px 16px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .back-btn {
+    width: 32px; height: 32px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; color: #9090c0;
+    flex-shrink: 0;
+  }
+  .task-info { flex: 1; }
+  .task-type-label {
+    font-size: 11px;
+    color: #6366f1;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 2px;
+  }
+  .task-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #e0e0f0;
+  }
+  .task-progress {
+    font-size: 12px;
+    color: #818cf8;
+    font-weight: 600;
+    padding: 4px 10px;
+    background: rgba(99,102,241,0.1);
+    border-radius: 8px;
+  }
+
+  /* Task instruction */
+  .task-instruction {
+    margin: 0 16px 14px;
+    background: rgba(99,102,241,0.08);
+    border: 1px solid rgba(99,102,241,0.2);
+    border-radius: 14px;
+    padding: 12px 16px;
+    font-size: 13.5px;
+    color: #9090c0;
+    line-height: 1.5;
+  }
+  .task-instruction strong { color: #a5b4fc; }
+
+  /* Dialogue container */
+  .dialogue-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 380px;
+  }
+
+  .dialogue-turn {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .speaker-avatar {
+    width: 32px; height: 32px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .speaker-avatar.a { background: rgba(99,102,241,0.2); }
+  .speaker-avatar.b { background: rgba(16,185,129,0.2); }
+
+  .bubble-stack {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .speaker-name {
+    font-size: 10.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #4a4a80;
+    margin-bottom: 2px;
+  }
+
+  .dialogue-bubble {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #c8c8e8;
+    line-height: 1.5;
+    position: relative;
+  }
+
+  .dialogue-bubble.has-blank {
+    background: rgba(99,102,241,0.06);
+    border-color: rgba(99,102,241,0.2);
+  }
+
+  .blank {
+    display: inline-block;
+    background: rgba(99,102,241,0.15);
+    border: 2px dashed rgba(99,102,241,0.4);
+    border-radius: 8px;
+    padding: 1px 16px;
+    min-width: 80px;
+    text-align: center;
+    vertical-align: middle;
+    color: transparent;
+    position: relative;
+    font-size: 13px;
+  }
+
+  .blank.selected {
+    background: rgba(16,185,129,0.15);
+    border-color: rgba(16,185,129,0.5);
+    color: #34d399;
+  }
+
+  .blank.active {
+    background: rgba(99,102,241,0.2);
+    border-color: #6366f1;
+    color: #818cf8;
+    animation: pulse-border 1.5s infinite;
+  }
+
+  @keyframes pulse-border {
+    0%, 100% { border-color: #6366f1; }
+    50% { border-color: rgba(99,102,241,0.3); }
+  }
+
+  .sub-text {
+    font-size: 12px;
+    color: #8888b0;
+    font-style: italic;
+    margin-top: 4px;
+  }
+
+  /* Multiple choice options */
+  .choices-section {
+    padding: 14px 16px 0;
+    flex-shrink: 0;
+  }
+
+  .choices-label {
+    font-size: 11px;
+    color: #4a4a70;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .choices-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .choice-btn {
+    background: rgba(255,255,255,0.05);
+    border: 1.5px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 12px 14px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .choice-kyrgyz {
+    font-size: 15px;
+    font-weight: 600;
+    color: #e0e0f0;
+    display: block;
+  }
+
+  .choice-english {
+    font-size: 11.5px;
+    color: #5050a0;
+    margin-top: 2px;
+    display: block;
+  }
+
+  .choice-btn:hover, .choice-btn.focused {
+    border-color: rgba(99,102,241,0.5);
+    background: rgba(99,102,241,0.1);
+  }
+
+  /* Check button */
+  .check-bar {
+    padding: 12px 16px 32px;
+    flex-shrink: 0;
+    background: #0f0f1a;
+    border-top: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .check-btn {
+    width: 100%;
+    height: 52px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(99,102,241,0.4);
+  }
+
+  .check-btn:disabled {
+    background: rgba(255,255,255,0.06);
+    color: #4a4a70;
+    box-shadow: none;
+  }
+</style>
+</head>
+<body>
+
+  <div class="status-bar">
+    <span class="time">9:41</span>
+    <div class="status-icons"><span>📶</span><span>🔋</span></div>
+  </div>
+
+  <div class="task-header">
+    <div class="back-btn">‹</div>
+    <div class="task-info">
+      <p class="task-type-label">📝 Task · Dialogue</p>
+      <p class="task-name">At school – a greeting exchange</p>
+    </div>
+    <div class="task-progress">3 / 6</div>
+  </div>
+
+  <div class="task-instruction">
+    Complete the dialogue by filling in the blanks. <strong>Tap a blank to select it</strong>, then choose from the options below.
+  </div>
+
+  <div class="dialogue-container">
+
+    <!-- Turn 1 -->
+    <div class="dialogue-turn">
+      <div class="speaker-avatar a">👩</div>
+      <div class="bubble-stack">
+        <p class="speaker-name">Айгүл (Aygül)</p>
+        <div class="dialogue-bubble">
+          Саламатсызбы, <span class="blank selected">мугалим</span>!
+        </div>
+        <p class="sub-text">Hello, teacher!</p>
+      </div>
+    </div>
+
+    <!-- Turn 2 -->
+    <div class="dialogue-turn">
+      <div class="speaker-avatar b">👨</div>
+      <div class="bubble-stack">
+        <p class="speaker-name">Мугалим (Teacher)</p>
+        <div class="dialogue-bubble has-blank">
+          Саламатсыз, Айгүл. <span class="blank active">_________</span>?
+        </div>
+        <p class="sub-text">Hello, Aigul. How are you?</p>
+      </div>
+    </div>
+
+    <!-- Turn 3 -->
+    <div class="dialogue-turn">
+      <div class="speaker-avatar a">👩</div>
+      <div class="bubble-stack">
+        <p class="speaker-name">Айгүл (Aygül)</p>
+        <div class="dialogue-bubble">
+          Жакшы, рахмат. Сиз <span class="blank">_________</span>?
+        </div>
+        <p class="sub-text">Good, thank you. And you?</p>
+      </div>
+    </div>
+
+    <!-- Turn 4 -->
+    <div class="dialogue-turn">
+      <div class="speaker-avatar b">👨</div>
+      <div class="bubble-stack">
+        <p class="speaker-name">Мугалим (Teacher)</p>
+        <div class="dialogue-bubble">Жакшы, рахмат!</div>
+        <p class="sub-text">Good, thank you!</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="choices-section">
+    <p class="choices-label">Choose for blank 2</p>
+    <div class="choices-grid">
+      <div class="choice-btn focused">
+        <span class="choice-kyrgyz">Кандайсыз</span>
+        <span class="choice-english">How are you (formal)</span>
+      </div>
+      <div class="choice-btn">
+        <span class="choice-kyrgyz">Жакшымысыз</span>
+        <span class="choice-english">Are you well?</span>
+      </div>
+      <div class="choice-btn">
+        <span class="choice-kyrgyz">Баарыңарга</span>
+        <span class="choice-english">To all of you</span>
+      </div>
+      <div class="choice-btn">
+        <span class="choice-kyrgyz">Ким сиз</span>
+        <span class="choice-english">Who are you</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="check-bar">
+    <button class="check-btn">Check answers</button>
+  </div>
+
+</body>
+</html>
