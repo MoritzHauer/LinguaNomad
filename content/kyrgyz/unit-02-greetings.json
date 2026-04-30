@@ -1,0 +1,392 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "unit": {
+    "id": "ky-unit-greetings-and-introductions",
+    "slug": "greetings-and-introductions",
+    "title": "Greetings And Introductions",
+    "communicationGoal": "Greet someone politely, ask and give a name, say who you are with one simple identity statement, and close a first meeting warmly.",
+    "sequenceNumber": 2,
+    "unlocksAfterUnitId": "ky-unit-script-and-sound-survival",
+    "supportedScripts": ["cyrl", "latn"],
+    "pronunciationFocus": [
+      "Hear Саламатсызбы as one greeting chunk rather than isolated syllables",
+      "Keep question intonation light at the end of Ким?",
+      "Hold Менин атым together as a fixed beginner introduction frame"
+    ],
+    "lexemeIds": [
+      "ky-lex-u2-salamatsyzby",
+      "ky-lex-u2-salam",
+      "ky-lex-u2-men",
+      "ky-lex-u2-siz",
+      "ky-lex-u2-at",
+      "ky-lex-u2-kim",
+      "ky-lex-u2-rahmat",
+      "ky-lex-u2-zhakshy",
+      "ky-lex-u2-kechiresiz",
+      "ky-lex-u2-taanyshamyn",
+      "ky-lex-u2-men-student",
+      "ky-lex-u2-kush-keldiniz"
+    ],
+    "sentenceIds": [
+      "ky-sent-u2-01",
+      "ky-sent-u2-02",
+      "ky-sent-u2-03",
+      "ky-sent-u2-04",
+      "ky-sent-u2-05",
+      "ky-sent-u2-06",
+      "ky-sent-u2-07",
+      "ky-sent-u2-08"
+    ],
+    "grammarNoteIds": [
+      "ky-grammar-u2-01",
+      "ky-grammar-u2-02"
+    ],
+    "taskIds": [
+      "ky-task-u2-dialogue-01"
+    ],
+    "reviewSeedIds": [
+      "ky-review-u2-01",
+      "ky-review-u2-02",
+      "ky-review-u2-03",
+      "ky-review-u2-04"
+    ],
+    "sourceIds": [
+      "linguanomad-original-kyrgyz-starter-2026",
+      "peace-corps-kyrgyz-language-manual-1997"
+    ]
+  },
+  "lexemes": [
+    {
+      "id": "ky-lex-u2-salamatsyzby",
+      "languageCode": "ky",
+      "lemma": "Саламатсызбы",
+      "transliteration": "Salamatsyzby",
+      "gloss": "hello (polite)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The default polite greeting for first meetings and respectful interactions. Learn it as one unbroken chunk."
+    },
+    {
+      "id": "ky-lex-u2-salam",
+      "languageCode": "ky",
+      "lemma": "Салам",
+      "transliteration": "Salam",
+      "gloss": "hi",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Casual greeting for peers and people you know. Use Саламатсызбы with elders or strangers until you know them."
+    },
+    {
+      "id": "ky-lex-u2-men",
+      "languageCode": "ky",
+      "lemma": "мен",
+      "transliteration": "men",
+      "gloss": "I",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "First-person singular pronoun. Used as the subject in sentences like Мен студентмин."
+    },
+    {
+      "id": "ky-lex-u2-siz",
+      "languageCode": "ky",
+      "lemma": "сиз",
+      "transliteration": "siz",
+      "gloss": "you (polite)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Polite second-person singular. Default for addressing elders, strangers, or anyone you have just met."
+    },
+    {
+      "id": "ky-lex-u2-at",
+      "languageCode": "ky",
+      "lemma": "ат",
+      "transliteration": "at",
+      "gloss": "name",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The word for name in Kyrgyz. In Менин атым, it takes a first-person possessive suffix."
+    },
+    {
+      "id": "ky-lex-u2-kim",
+      "languageCode": "ky",
+      "lemma": "ким",
+      "transliteration": "kim",
+      "gloss": "who",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The question word for who. In name questions it appears at the end: Атыңыз ким? The question intonation is light."
+    },
+    {
+      "id": "ky-lex-u2-rahmat",
+      "languageCode": "ky",
+      "lemma": "Рахмат",
+      "transliteration": "Rakhmat",
+      "gloss": "thank you",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Standard thanks, common across Central Asia. Let the kh sound stay slightly rough in the throat."
+    },
+    {
+      "id": "ky-lex-u2-zhakshy",
+      "languageCode": "ky",
+      "lemma": "жакшы",
+      "transliteration": "zhakshy",
+      "gloss": "good / well",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Used as a standalone positive response or as an adjective. Жакшы, рахмат is a very common polite reply."
+    },
+    {
+      "id": "ky-lex-u2-kechiresiz",
+      "languageCode": "ky",
+      "lemma": "Кечиресиз",
+      "transliteration": "Kechiresiz",
+      "gloss": "excuse me / sorry",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Polite form. Useful for starting a question with a stranger or apologizing briefly."
+    },
+    {
+      "id": "ky-lex-u2-taanyshamyn",
+      "languageCode": "ky",
+      "lemma": "таанышамын",
+      "transliteration": "taanyshamyn",
+      "gloss": "I am pleased to meet (you)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "From the verb таанышуу (to get acquainted). The full polite closing phrase is Таанышканыма кубанычтамын."
+    },
+    {
+      "id": "ky-lex-u2-men-student",
+      "languageCode": "ky",
+      "lemma": "студент",
+      "transliteration": "student",
+      "gloss": "student",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "An international borrowing, so learners recognize it immediately. Used in the identity pattern Мен студентмин."
+    },
+    {
+      "id": "ky-lex-u2-kush-keldiniz",
+      "languageCode": "ky",
+      "lemma": "Кош келиңиз",
+      "transliteration": "Kosh keliniz",
+      "gloss": "welcome",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "A warm host greeting when receiving a guest. Learn it as one fixed welcoming phrase."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "ky-sent-u2-01",
+      "languageCode": "ky",
+      "text": "Саламатсызбы!",
+      "transliteration": "Salamatsyzby!",
+      "translation": "Hello!",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u2-02",
+      "languageCode": "ky",
+      "text": "Атыңыз ким?",
+      "transliteration": "Atynyz kim?",
+      "translation": "What is your name?",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u2-03",
+      "languageCode": "ky",
+      "text": "Менин атым Алмаз.",
+      "transliteration": "Menin atym Almaz.",
+      "translation": "My name is Almaz.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u2-04",
+      "languageCode": "ky",
+      "text": "Мен студентмин.",
+      "transliteration": "Men studentmin.",
+      "translation": "I am a student.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u2-05",
+      "languageCode": "ky",
+      "text": "Жакшы, рахмат.",
+      "transliteration": "Zhakshy, rakhmat.",
+      "translation": "Good, thank you.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u2-06",
+      "languageCode": "ky",
+      "text": "Таанышканыма кубанычтамын.",
+      "transliteration": "Taanyshkanyma kubanychtamyn.",
+      "translation": "Nice to meet you.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u2-07",
+      "languageCode": "ky",
+      "text": "Кош келиңиз!",
+      "transliteration": "Kosh keliniz!",
+      "translation": "Welcome!",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u2-08",
+      "languageCode": "ky",
+      "text": "Сиздин атыңыз ким?",
+      "transliteration": "Sizdin atynyz kim?",
+      "translation": "What is your name? (polite)",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ],
+  "grammarNotes": [
+    {
+      "id": "ky-grammar-u2-01",
+      "title": "Personal pronouns: мен, сен, сиз",
+      "summary": "Kyrgyz has a polite and casual second-person pronoun distinction. Use сиз (polite) for elders, strangers, and first meetings. Use сен (casual) only with peers and close friends once you know them well. For now, defaulting to сиз in everything makes you sound respectful and safe. The first-person мен (I) works the same in all registers.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-u2-02",
+      "title": "The copula suffix -мин makes identity statements",
+      "summary": "To say 'I am [something]' in Kyrgyz, attach the suffix -мин directly to the noun. Мен студентмин means I am a student. The suffix form changes slightly with vowel harmony — front-vowel words use -мин, back-vowel words use -мын. For beginner sentences, the pattern Мен ... -мин is a safe and useful early tool.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "ky-task-u2-dialogue-01",
+      "kind": "guided-dialogue-completion",
+      "objective": "Complete a polite first-meeting greeting and name-exchange dialogue.",
+      "instructions": "Choose the missing Kyrgyz lines to finish the exchange. Keep the register polite throughout.",
+      "successCriteria": [
+        "Open with a polite greeting.",
+        "Ask for the other person's name using the polite pattern.",
+        "Give your own name using Менин атым.",
+        "Close the exchange with a warm phrase."
+      ],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "lexemeIds": [
+        "ky-lex-u2-salamatsyzby",
+        "ky-lex-u2-siz",
+        "ky-lex-u2-at",
+        "ky-lex-u2-kim",
+        "ky-lex-u2-men"
+      ],
+      "sentenceIds": [
+        "ky-sent-u2-01",
+        "ky-sent-u2-02",
+        "ky-sent-u2-03",
+        "ky-sent-u2-06",
+        "ky-sent-u2-08"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u2-01"
+      ],
+      "completionHint": "If the two speakers are meeting for the first time, stay in the polite register throughout.",
+      "supportCards": [
+        {
+          "id": "ky-task-u2-dialogue-01-support-grammar",
+          "kind": "grammar",
+          "title": "Polite сиз forms are the safest beginner default",
+          "body": "Until you know someone well, the polite сиз register keeps you socially safe. This task stays inside that register so you can focus on the introduction structure rather than register choices.",
+          "grammarNoteIds": ["ky-grammar-u2-01"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-u2-dialogue-01-support-pronunciation",
+          "kind": "pronunciation",
+          "title": "Say Саламатсызбы as one greeting block",
+          "body": "Do not pause in the middle of the greeting. Treat it as a single memorized formula. Your listener will register it correctly even before they parse the syllables.",
+          "sentenceIds": ["ky-sent-u2-01"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-u2-dialogue-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Name exchanges happen fast in Kyrgyz social settings",
+          "body": "Names often come up very early in Kyrgyz conversation. Mastering this short exchange gives you a real functional payoff almost immediately when you meet someone.",
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        }
+      ],
+      "turns": [
+        {
+          "speaker": "A",
+          "text": "Саламатсызбы!",
+          "transliteration": "Salamatsyzby!",
+          "translation": "Hello!"
+        },
+        {
+          "speaker": "B",
+          "text": "Саламатсызбы!",
+          "transliteration": "Salamatsyzby!",
+          "translation": "Hello!",
+          "responseSlotId": "reply-greeting"
+        },
+        {
+          "speaker": "A",
+          "text": "Сиздин атыңыз ким?",
+          "transliteration": "Sizdin atynyz kim?",
+          "translation": "What is your name?"
+        },
+        {
+          "speaker": "B",
+          "text": "Менин атым Алмаз.",
+          "transliteration": "Menin atym Almaz.",
+          "translation": "My name is Almaz.",
+          "responseSlotId": "reply-name"
+        },
+        {
+          "speaker": "A",
+          "text": "Таанышканыма кубанычтамын.",
+          "transliteration": "Taanyshkanyma kubanychtamyn.",
+          "translation": "Nice to meet you."
+        },
+        {
+          "speaker": "B",
+          "text": "Таанышканыма кубанычтамын.",
+          "transliteration": "Taanyshkanyma kubanychtamyn.",
+          "translation": "Nice to meet you.",
+          "responseSlotId": "reply-closing"
+        }
+      ],
+      "responseChoices": [
+        "Саламатсызбы!",
+        "Менин атым Алмаз.",
+        "Таанышканыма кубанычтамын.",
+        "Жакшы, рахмат.",
+        "Рахмат.",
+        "Салам."
+      ],
+      "responseMode": "ordered-choice"
+    }
+  ],
+  "reviewSeeds": [
+    {
+      "id": "ky-review-u2-01",
+      "kind": "lexeme-recall",
+      "prompt": "How do you say 'hello' politely in Kyrgyz?",
+      "acceptableAnswers": ["Саламатсызбы", "саламатсызбы", "Salamatsyzby"],
+      "lexemeIds": ["ky-lex-u2-salamatsyzby"],
+      "sentenceIds": ["ky-sent-u2-01"]
+    },
+    {
+      "id": "ky-review-u2-02",
+      "kind": "sentence-comprehension",
+      "prompt": "What does 'Менин атым Алмаз' mean?",
+      "acceptableAnswers": ["My name is Almaz", "my name is Almaz"],
+      "lexemeIds": ["ky-lex-u2-men", "ky-lex-u2-at"],
+      "sentenceIds": ["ky-sent-u2-03"]
+    },
+    {
+      "id": "ky-review-u2-03",
+      "kind": "pattern-recall",
+      "prompt": "Complete: Мен ___ (I am a student).",
+      "acceptableAnswers": ["студентмин", "Студентмин"],
+      "lexemeIds": ["ky-lex-u2-men-student"],
+      "sentenceIds": ["ky-sent-u2-04"],
+      "grammarNoteIds": ["ky-grammar-u2-02"]
+    },
+    {
+      "id": "ky-review-u2-04",
+      "kind": "lexeme-recall",
+      "prompt": "What does 'жакшы' mean?",
+      "acceptableAnswers": ["good", "well", "good / well"],
+      "lexemeIds": ["ky-lex-u2-zhakshy"],
+      "sentenceIds": ["ky-sent-u2-05"]
+    }
+  ]
+}

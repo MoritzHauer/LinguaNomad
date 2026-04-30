@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "unit": {
+    "id": "ky-unit-script-and-sound-survival",
+    "slug": "script-and-sound-survival",
+    "title": "Script And Sound Survival",
+    "communicationGoal": "Recognize the key beginner sounds of the Kyrgyz Cyrillic alphabet, read high-value words in Cyrillic, and respond with short social-survival phrases.",
+    "sequenceNumber": 1,
+    "supportedScripts": ["cyrl", "latn"],
+    "pronunciationFocus": [
+      "Open vowel А as a stable, familiar anchor sound",
+      "Front rounded vowels Ө and Ү as a sound family distinct from О and У",
+      "The single nasal consonant Ң written as one Cyrillic letter",
+      "The back fricative in Рахмат rendered as kh in transliteration"
+    ],
+    "lexemeIds": [
+      "ky-lex-u1-aa",
+      "ky-lex-u1-oe",
+      "ky-lex-u1-ue",
+      "ky-lex-u1-ng",
+      "ky-lex-u1-ooba",
+      "ky-lex-u1-zhok",
+      "ky-lex-u1-salam",
+      "ky-lex-u1-rahmat",
+      "ky-lex-u1-kechiresiz",
+      "ky-lex-u1-zhany"
+    ],
+    "sentenceIds": [
+      "ky-sent-u1-01",
+      "ky-sent-u1-02",
+      "ky-sent-u1-03",
+      "ky-sent-u1-04",
+      "ky-sent-u1-05",
+      "ky-sent-u1-06"
+    ],
+    "grammarNoteIds": [
+      "ky-grammar-u1-01",
+      "ky-grammar-u1-02"
+    ],
+    "taskIds": [
+      "ky-task-u1-script-01"
+    ],
+    "reviewSeedIds": [
+      "ky-review-u1-01",
+      "ky-review-u1-02",
+      "ky-review-u1-03",
+      "ky-review-u1-04"
+    ],
+    "sourceIds": [
+      "linguanomad-original-kyrgyz-starter-2026",
+      "peace-corps-kyrgyz-language-manual-1997"
+    ]
+  },
+  "lexemes": [
+    {
+      "id": "ky-lex-u1-aa",
+      "languageCode": "ky",
+      "lemma": "А а",
+      "transliteration": "A a",
+      "gloss": "letter A",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "A solid anchor letter. It appears clearly in high-frequency words like апа (mother) and helps learners trust the script early."
+    },
+    {
+      "id": "ky-lex-u1-oe",
+      "languageCode": "ky",
+      "lemma": "Ө ө",
+      "transliteration": "Oe oe",
+      "gloss": "letter Oe",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "A front rounded vowel. If you know Turkish or German, it is close to the oe or o-umlaut sound. It belongs to the front-vowel harmony group."
+    },
+    {
+      "id": "ky-lex-u1-ue",
+      "languageCode": "ky",
+      "lemma": "Ү ү",
+      "transliteration": "Ue ue",
+      "gloss": "letter Ue",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Another front rounded vowel, paired with Ө. Words like үй (house) show it in a real beginner context. It often co-occurs with other front vowels due to vowel harmony."
+    },
+    {
+      "id": "ky-lex-u1-ng",
+      "languageCode": "ky",
+      "lemma": "Ң ң",
+      "transliteration": "Ng ng",
+      "gloss": "letter Ng",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "One sound, not two. Pronounce it like the ng in sing. It is common in the middle and end of Kyrgyz words."
+    },
+    {
+      "id": "ky-lex-u1-ooba",
+      "languageCode": "ky",
+      "lemma": "Ооба",
+      "transliteration": "Ooba",
+      "gloss": "yes",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "A high-value survival word from day one. The long oo sound is worth hearing and practicing early. Back-vowel harmony pattern."
+    },
+    {
+      "id": "ky-lex-u1-zhok",
+      "languageCode": "ky",
+      "lemma": "Жок",
+      "transliteration": "Zhok",
+      "gloss": "no",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The first consonant Ж is softer than English j and often rendered as zh in transliteration. Essential from the very first lesson."
+    },
+    {
+      "id": "ky-lex-u1-salam",
+      "languageCode": "ky",
+      "lemma": "Салам",
+      "transliteration": "Salam",
+      "gloss": "hi",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "A casual, friendly greeting. Short enough to practice reading as a whole chunk. Back-vowel harmony pattern."
+    },
+    {
+      "id": "ky-lex-u1-rahmat",
+      "languageCode": "ky",
+      "lemma": "Рахмат",
+      "transliteration": "Rakhmat",
+      "gloss": "thank you",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Common across Central Asia. The kh in the middle signals a deeper back-of-mouth sound rather than plain English h."
+    },
+    {
+      "id": "ky-lex-u1-kechiresiz",
+      "languageCode": "ky",
+      "lemma": "Кечиресиз",
+      "transliteration": "Kechiresiz",
+      "gloss": "excuse me / sorry",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Polite form. The ending -сиз is a polite second-person marker. Use freely in public settings when navigating or asking for help."
+    },
+    {
+      "id": "ky-lex-u1-zhany",
+      "languageCode": "ky",
+      "lemma": "Жаңы",
+      "transliteration": "Zhany",
+      "gloss": "new",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Contains the special Ң letter in the middle. A good early example of Ң in a real word rather than an abstract drill."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "ky-sent-u1-01",
+      "languageCode": "ky",
+      "text": "Салам!",
+      "transliteration": "Salam!",
+      "translation": "Hi!",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u1-02",
+      "languageCode": "ky",
+      "text": "Ооба.",
+      "transliteration": "Ooba.",
+      "translation": "Yes.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u1-03",
+      "languageCode": "ky",
+      "text": "Жок.",
+      "transliteration": "Zhok.",
+      "translation": "No.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u1-04",
+      "languageCode": "ky",
+      "text": "Рахмат!",
+      "transliteration": "Rakhmat!",
+      "translation": "Thank you!",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u1-05",
+      "languageCode": "ky",
+      "text": "Кечиресиз.",
+      "transliteration": "Kechiresiz.",
+      "translation": "Excuse me.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u1-06",
+      "languageCode": "ky",
+      "text": "Жаңы үй.",
+      "transliteration": "Zhany uey.",
+      "translation": "New house.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ],
+  "grammarNotes": [
+    {
+      "id": "ky-grammar-u1-01",
+      "title": "Kyrgyz Cyrillic adds a few letters beyond standard Russian",
+      "summary": "You do not need the whole alphabet at once. Focus on the letters that appear in your first few words. The extra Kyrgyz-specific letters — Ө, Ү, and Ң — carry real meaning differences and show up often in beginner vocabulary. Recognizing them early prevents confusion later when you start reading more.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-u1-02",
+      "title": "Vowel harmony: front and back vowels travel together",
+      "summary": "Kyrgyz vowels divide into two families. Back vowels — А, О, У — travel together. Front vowels — Е, Ө, Ү, И — travel together. When a word has back vowels, suffixes also take back-vowel forms. When a word has front vowels, suffixes take front-vowel forms. You do not need the full rule set yet, but noticing that Ө and Ү belong to the front-vowel family now will help you hear suffix patterns later.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "ky-task-u1-script-01",
+      "kind": "script-to-meaning",
+      "objective": "Read short Kyrgyz words in Cyrillic and connect each one to its sound and meaning.",
+      "instructions": "Look at the Kyrgyz word first and try to read it aloud. Use the transliteration only when you need a quick pronunciation check. Then match the word to its meaning.",
+      "successCriteria": [
+        "Read at least one word with А aloud without looking at the transliteration.",
+        "Recognize a word containing Ө or Ү by sight.",
+        "Connect Ооба and Жок to their meanings without translating letter by letter.",
+        "Spot the Ң letter in Жаңы and say it as one ng sound."
+      ],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "lexemeIds": [
+        "ky-lex-u1-aa",
+        "ky-lex-u1-oe",
+        "ky-lex-u1-ue",
+        "ky-lex-u1-ng",
+        "ky-lex-u1-ooba",
+        "ky-lex-u1-zhok",
+        "ky-lex-u1-salam",
+        "ky-lex-u1-rahmat",
+        "ky-lex-u1-kechiresiz",
+        "ky-lex-u1-zhany"
+      ],
+      "sentenceIds": [
+        "ky-sent-u1-01",
+        "ky-sent-u1-02",
+        "ky-sent-u1-03",
+        "ky-sent-u1-04",
+        "ky-sent-u1-05",
+        "ky-sent-u1-06"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u1-01",
+        "ky-grammar-u1-02"
+      ],
+      "completionHint": "Read the overall word shape first, then zoom into the special letters.",
+      "supportCards": [
+        {
+          "id": "ky-task-u1-script-01-support-grammar",
+          "kind": "grammar",
+          "title": "Special letters now, suffix patterns later",
+          "body": "When you notice Ө or Ү in a word, you are not just memorizing a symbol. You are training your eye for a front-vowel pattern that shapes suffixes all through the language.",
+          "grammarNoteIds": ["ky-grammar-u1-02"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-u1-script-01-support-pronunciation",
+          "kind": "pronunciation",
+          "title": "Try the Cyrillic first, transliteration second",
+          "body": "Read each word once in Cyrillic before peeking at the Latin. Even two seconds of independent reading builds script confidence much faster than skipping straight to transliteration.",
+          "sentenceIds": ["ky-sent-u1-06"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-u1-script-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Жаңы is a great Ң test word",
+          "body": "Жаңы means new. The letter Ң sits right in the middle, making it easy to spot. Once you nail the ng sound here, you will recognize it quickly in longer words later.",
+          "sentenceIds": ["ky-sent-u1-06"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        }
+      ],
+      "transliterationVisible": true,
+      "items": [
+        {
+          "text": "Салам",
+          "transliteration": "Salam",
+          "meaning": "Hi"
+        },
+        {
+          "text": "Ооба",
+          "transliteration": "Ooba",
+          "meaning": "Yes"
+        },
+        {
+          "text": "Жок",
+          "transliteration": "Zhok",
+          "meaning": "No"
+        },
+        {
+          "text": "Рахмат",
+          "transliteration": "Rakhmat",
+          "meaning": "Thank you"
+        },
+        {
+          "text": "Кечиресиз",
+          "transliteration": "Kechiresiz",
+          "meaning": "Excuse me"
+        },
+        {
+          "text": "Жаңы",
+          "transliteration": "Zhany",
+          "meaning": "New"
+        },
+        {
+          "text": "Ү ү",
+          "transliteration": "Ue ue",
+          "meaning": "The front rounded vowel Ue"
+        },
+        {
+          "text": "Ө ө",
+          "transliteration": "Oe oe",
+          "meaning": "The front rounded vowel Oe"
+        }
+      ]
+    }
+  ],
+  "reviewSeeds": [
+    {
+      "id": "ky-review-u1-01",
+      "kind": "lexeme-recall",
+      "prompt": "What does Ооба mean?",
+      "acceptableAnswers": ["yes", "Yes"],
+      "lexemeIds": ["ky-lex-u1-ooba"],
+      "sentenceIds": ["ky-sent-u1-02"]
+    },
+    {
+      "id": "ky-review-u1-02",
+      "kind": "lexeme-recall",
+      "prompt": "What does Жок mean?",
+      "acceptableAnswers": ["no", "No"],
+      "lexemeIds": ["ky-lex-u1-zhok"],
+      "sentenceIds": ["ky-sent-u1-03"]
+    },
+    {
+      "id": "ky-review-u1-03",
+      "kind": "form-noticing",
+      "prompt": "Which Kyrgyz letter writes the single ng sound as in 'sing'?",
+      "acceptableAnswers": ["Ң", "ң"],
+      "lexemeIds": ["ky-lex-u1-ng", "ky-lex-u1-zhany"],
+      "grammarNoteIds": ["ky-grammar-u1-01"]
+    },
+    {
+      "id": "ky-review-u1-04",
+      "kind": "lexeme-recall",
+      "prompt": "How do you say 'excuse me' in Kyrgyz?",
+      "acceptableAnswers": ["Кечиресиз", "кечиресиз", "Kechiresiz"],
+      "lexemeIds": ["ky-lex-u1-kechiresiz"],
+      "sentenceIds": ["ky-sent-u1-05"]
+    }
+  ]
+}
