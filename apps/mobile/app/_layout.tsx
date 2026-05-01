@@ -69,10 +69,6 @@ function AppTabs() {
           name="task/[unitId]"
           options={{ href: null }} // navigated to from course
         />
-        <Tabs.Screen
-          name="admin/add-exercise"
-          options={{ href: null }}
-        />
     </Tabs>
   );
 }

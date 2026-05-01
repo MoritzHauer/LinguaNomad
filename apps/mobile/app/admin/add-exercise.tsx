@@ -1,7 +1,7 @@
 import type { FillInBlankTaskDefinition, MultipleChoiceTaskDefinition, ScriptMatchTaskDefinition, TaskDefinition } from "@linguanomad/content-schema";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useRouter } from "expo-router";
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import {
   Alert,
   Pressable,
@@ -20,8 +20,6 @@ import type { CustomExerciseEntry } from "../../lib/custom-exercises";
 type TaskTypeOption = "multiple-choice" | "fill-in-blank" | "script-match";
 
 const TASK_TYPES: TaskTypeOption[] = ["multiple-choice", "fill-in-blank", "script-match"];
-
-const bundles = getCourseBundles();
 
 function TaskTypeButton({
   label,
@@ -285,6 +283,7 @@ function ScriptMatchForm({
 export default function AddExerciseScreen() {
   const router = useRouter();
   const { reloadCustomExercises } = useCustomExercises();
+  const bundles = useMemo(() => getCourseBundles(), []);
 
   const [taskType, setTaskType] = useState<TaskTypeOption>("multiple-choice");
   const [selectedUnitId, setSelectedUnitId] = useState(bundles[0]?.unit.id ?? "");
