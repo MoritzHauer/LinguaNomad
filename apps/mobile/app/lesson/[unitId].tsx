@@ -111,9 +111,10 @@ export default function LessonScreen() {
             cyrillic={current.data.lemma}
             transliteration={current.data.transliteration}
             gloss={current.data.gloss}
+            tapToReveal
           />
         ) : (
-          <SentenceCardView sentence={current.data} />
+          <SentenceCardView sentence={current.data} tapToReveal />
         )}
 
         {/* Grammar note accordion */}
@@ -163,19 +164,33 @@ export default function LessonScreen() {
   );
 }
 
-function SentenceCardView({ sentence }: { sentence: SentenceCard }) {
-  return (
+function SentenceCardView({ sentence, tapToReveal = false }: { sentence: SentenceCard; tapToReveal?: boolean }) {
+  const [revealed, setRevealed] = useState(!tapToReveal);
+
+  const content = (
     <View style={styles.sentenceCard}>
       <Text style={styles.sentenceCyrillic} adjustsFontSizeToFit numberOfLines={3}>
         {sentence.text}
       </Text>
-      {sentence.transliteration ? (
+      {tapToReveal && !revealed ? (
+        <Text style={styles.sentenceRevealHint}>Tap to reveal pronunciation</Text>
+      ) : null}
+      {sentence.transliteration && revealed ? (
         <Text style={styles.sentenceTranslit}>{sentence.transliteration}</Text>
       ) : null}
       <View style={styles.sentenceDivider} />
       <Text style={styles.sentenceTranslation}>{sentence.translation}</Text>
     </View>
   );
+
+  if (tapToReveal) {
+    return (
+      <Pressable onPress={() => setRevealed((v) => !v)} accessibilityRole="button" accessibilityLabel="Toggle pronunciation">
+        {content}
+      </Pressable>
+    );
+  }
+  return content;
 }
 
 function GrammarAccordion({
@@ -311,6 +326,11 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     fontStyle: "italic",
     textAlign: "center"
+  },
+  sentenceRevealHint: {
+    fontSize: 12,
+    color: "#6060a0",
+    fontStyle: "italic",
   },
   sentenceDivider: {
     width: 48,

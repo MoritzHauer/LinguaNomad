@@ -239,6 +239,97 @@
         "Салам!"
       ],
       "responseMode": "ordered-choice"
+    },
+    {
+      "id": "ky-task-alpha-mc-01",
+      "kind": "multiple-choice",
+      "objective": "Match Kyrgyz Cyrillic words to their English meanings.",
+      "instructions": "Read the word and choose the correct meaning.",
+      "successCriteria": ["Correctly match all 4 words to their meanings."],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "question": "What does this word mean?",
+      "stimulus": "Салам",
+      "stimulusHint": "Salam",
+      "choices": [
+        { "id": "c1", "text": "Hello", "correct": true },
+        { "id": "c2", "text": "Thank you", "correct": false },
+        { "id": "c3", "text": "Yes", "correct": false },
+        { "id": "c4", "text": "No", "correct": false }
+      ]
+    },
+    {
+      "id": "ky-task-alpha-mc-02",
+      "kind": "multiple-choice",
+      "objective": "Match Kyrgyz Cyrillic words to their English meanings.",
+      "instructions": "Read the word and choose the correct meaning.",
+      "successCriteria": ["Correctly identify Рахмат."],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "question": "What does this word mean?",
+      "stimulus": "Рахмат",
+      "stimulusHint": "Rakhmat",
+      "choices": [
+        { "id": "c1", "text": "Thank you", "correct": true },
+        { "id": "c2", "text": "Hello", "correct": false },
+        { "id": "c3", "text": "Water", "correct": false },
+        { "id": "c4", "text": "New", "correct": false }
+      ]
+    },
+    {
+      "id": "ky-task-alpha-mc-03",
+      "kind": "multiple-choice",
+      "objective": "Identify which Kyrgyz word contains the special letter Ң.",
+      "instructions": "Look carefully at each option and find the word with Ң.",
+      "successCriteria": ["Identify Жаңы as the word with Ң."],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "question": "Which word contains the special Kyrgyz letter Ң?",
+      "choices": [
+        { "id": "c1", "text": "Жаңы", "correct": true },
+        { "id": "c2", "text": "Салам", "correct": false },
+        { "id": "c3", "text": "Ооба", "correct": false },
+        { "id": "c4", "text": "Апа", "correct": false }
+      ]
+    },
+    {
+      "id": "ky-task-alpha-script-match-01",
+      "kind": "script-match",
+      "objective": "Match Cyrillic words to their transliterations.",
+      "instructions": "See the Kyrgyz word in Cyrillic. Choose the correct Latin transliteration.",
+      "successCriteria": ["Match at least 4 of 5 words correctly."],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "direction": "cyrl-to-latn",
+      "items": [
+        { "id": "sm-01", "cyrillic": "Салам", "transliteration": "Salam", "gloss": "hello" },
+        { "id": "sm-02", "cyrillic": "Рахмат", "transliteration": "Rakhmat", "gloss": "thank you" },
+        { "id": "sm-03", "cyrillic": "Ооба", "transliteration": "Ooba", "gloss": "yes" },
+        { "id": "sm-04", "cyrillic": "Жок", "transliteration": "Zhok", "gloss": "no" },
+        { "id": "sm-05", "cyrillic": "Жаңы", "transliteration": "Zhangy", "gloss": "new" }
+      ]
+    },
+    {
+      "id": "ky-task-alpha-fitb-01",
+      "kind": "fill-in-blank",
+      "objective": "Complete the greeting using the correct word.",
+      "instructions": "Choose the right word to complete the sentence.",
+      "successCriteria": ["Complete the sentence with the right greeting."],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "template": "{{blank}}, Ата!",
+      "translation": "___, Father!",
+      "transliteration": "___, Ata!",
+      "wordBank": ["Салам", "Жок", "Рахмат", "Ооба"],
+      "correctAnswer": "Салам"
+    },
+    {
+      "id": "ky-task-alpha-fitb-02",
+      "kind": "fill-in-blank",
+      "objective": "Complete the sentence about bread.",
+      "instructions": "Choose the right word to complete the sentence.",
+      "successCriteria": ["Use Жок correctly in context."],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "template": "Нан {{blank}}.",
+      "translation": "There is no bread.",
+      "transliteration": "Nan ___.",
+      "wordBank": ["Жок", "Бар", "Суу", "Жаңы"],
+      "correctAnswer": "Жок"
     }
   ]
 }

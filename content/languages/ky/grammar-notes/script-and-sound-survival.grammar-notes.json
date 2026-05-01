@@ -19,6 +19,8 @@
       "title": "`ң` writes one sound, not two",
       "summary": "When you see `ң`, pronounce it like the `ng` in `sing`. Treat it as one sound chunk rather than `n` plus `g`.",
       "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
-    }
+    },
+    { "id": "ky-grammar-alpha-04", "title": "Ы (Y) — the invisible vowel", "summary": "The letter Ы sounds like a deep 'uh' made at the back of your throat with your tongue pulled back. It does not exist in most European languages. In early reading, it is the vowel most often mispronounced as plain 'i'." },
+    { "id": "ky-grammar-alpha-05", "title": "Х (Kh) — the Scottish loch sound", "summary": "Х is a voiceless velar fricative. Like the 'ch' in Scottish 'loch' or German 'Bach'. It appears in Рахмат — do not flatten it to English 'h'." }
   ]
 }

@@ -21,7 +21,15 @@
       "ky-lex-alpha-ooba",
       "ky-lex-alpha-zhok",
       "ky-lex-alpha-salam",
-      "ky-lex-alpha-rahmat"
+      "ky-lex-alpha-rahmat",
+      "ky-lex-alpha-zh",
+      "ky-lex-alpha-ky",
+      "ky-lex-alpha-kh",
+      "ky-lex-alpha-apa",
+      "ky-lex-alpha-ata",
+      "ky-lex-alpha-su",
+      "ky-lex-alpha-nan",
+      "ky-lex-alpha-zhany"
     ],
     "sentenceIds": [
       "ky-sent-alpha-01",
@@ -31,17 +39,29 @@
       "ky-sent-alpha-05",
       "ky-sent-alpha-06",
       "ky-sent-alpha-07",
-      "ky-sent-alpha-08"
+      "ky-sent-alpha-08",
+      "ky-sent-alpha-09",
+      "ky-sent-alpha-10",
+      "ky-sent-alpha-11",
+      "ky-sent-alpha-12"
     ],
     "grammarNoteIds": [
       "ky-grammar-alpha-01",
       "ky-grammar-alpha-02",
-      "ky-grammar-alpha-03"
+      "ky-grammar-alpha-03",
+      "ky-grammar-alpha-04",
+      "ky-grammar-alpha-05"
     ],
     "taskIds": [
       "ky-task-alpha-script-01",
       "ky-task-alpha-noticing-01",
-      "ky-task-alpha-dialogue-01"
+      "ky-task-alpha-dialogue-01",
+      "ky-task-alpha-mc-01",
+      "ky-task-alpha-mc-02",
+      "ky-task-alpha-mc-03",
+      "ky-task-alpha-script-match-01",
+      "ky-task-alpha-fitb-01",
+      "ky-task-alpha-fitb-02"
     ],
     "reviewSeedIds": [
       "ky-review-alpha-01",

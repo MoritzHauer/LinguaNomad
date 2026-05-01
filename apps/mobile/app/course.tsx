@@ -94,7 +94,14 @@ export default function CourseScreen() {
           </View>
           <View style={styles.headerActions}>
             <View style={styles.iconBtn}><Text style={styles.iconBtnText}>⬇️</Text></View>
-            <View style={styles.iconBtn}><Text style={styles.iconBtnText}>⚙️</Text></View>
+            <TouchableOpacity
+              style={styles.iconBtn}
+              onPress={() => router.push("/admin/add-exercise")}
+              accessibilityRole="button"
+              accessibilityLabel="Add exercise"
+            >
+              <Text style={styles.iconBtnText}>⚙️</Text>
+            </TouchableOpacity>
           </View>
         </View>
         <Text style={styles.courseTitle}>Kyrgyz Starter Path</Text>

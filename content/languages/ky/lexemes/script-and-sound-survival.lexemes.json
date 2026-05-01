@@ -73,6 +73,14 @@
       "gloss": "thank you",
       "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
       "notes": "Common across the region. The `kh` spelling signals a deeper back-of-mouth sound than plain English `h`."
-    }
+    },
+    { "id": "ky-lex-alpha-zh", "languageCode": "ky", "lemma": "Ж ж", "transliteration": "Zh zh", "gloss": "letter Zh — like 's' in 'measure'", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] },
+    { "id": "ky-lex-alpha-ky", "languageCode": "ky", "lemma": "Ы ы", "transliteration": "Y y", "gloss": "letter Y — deep back vowel, like 'uh' with tongue pulled back", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] },
+    { "id": "ky-lex-alpha-kh", "languageCode": "ky", "lemma": "Х х", "transliteration": "Kh kh", "gloss": "letter Kh — like Scottish 'loch'", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] },
+    { "id": "ky-lex-alpha-apa", "languageCode": "ky", "lemma": "Апа", "transliteration": "Apa", "gloss": "mother", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] },
+    { "id": "ky-lex-alpha-ata", "languageCode": "ky", "lemma": "Ата", "transliteration": "Ata", "gloss": "father", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] },
+    { "id": "ky-lex-alpha-su", "languageCode": "ky", "lemma": "Суу", "transliteration": "Suu", "gloss": "water", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] },
+    { "id": "ky-lex-alpha-nan", "languageCode": "ky", "lemma": "Нан", "transliteration": "Nan", "gloss": "bread", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] },
+    { "id": "ky-lex-alpha-zhany", "languageCode": "ky", "lemma": "Жаңы", "transliteration": "Zhangy", "gloss": "new", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] }
   ]
 }

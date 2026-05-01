@@ -155,7 +155,10 @@ export type TaskKind =
   | "information-gap"
   | "script-to-meaning"
   | "noticing"
-  | "mini-role";
+  | "mini-role"
+  | "multiple-choice"
+  | "fill-in-blank"
+  | "script-match";
 
 export interface DialogueTurn {
   speaker: string;
@@ -264,6 +267,38 @@ export interface MiniRoleTaskDefinition extends BaseTaskDefinition {
   phraseBankSentenceIds?: string[];
 }
 
+export interface MultipleChoiceTaskDefinition extends BaseTaskDefinition {
+  kind: "multiple-choice";
+  question: string;
+  stimulus?: string;
+  stimulusHint?: string;
+  choices: Array<{
+    id: string;
+    text: string;
+    correct: boolean;
+  }>;
+}
+
+export interface FillInBlankTaskDefinition extends BaseTaskDefinition {
+  kind: "fill-in-blank";
+  template: string;
+  translation?: string;
+  transliteration?: string;
+  wordBank: string[];
+  correctAnswer: string;
+}
+
+export interface ScriptMatchTaskDefinition extends BaseTaskDefinition {
+  kind: "script-match";
+  direction: "cyrl-to-latn" | "latn-to-cyrl";
+  items: Array<{
+    id: string;
+    cyrillic: string;
+    transliteration: string;
+    gloss?: string;
+  }>;
+}
+
 export type TaskDefinition =
   | GuidedDialogueCompletionTaskDefinition
   | RegisterChoiceTaskDefinition
@@ -271,7 +306,10 @@ export type TaskDefinition =
   | InformationGapTaskDefinition
   | ScriptToMeaningTaskDefinition
   | NoticingTaskDefinition
-  | MiniRoleTaskDefinition;
+  | MiniRoleTaskDefinition
+  | MultipleChoiceTaskDefinition
+  | FillInBlankTaskDefinition
+  | ScriptMatchTaskDefinition;
 
 export type ReviewSeedKind =
   | "lexeme-recall"

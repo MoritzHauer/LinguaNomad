@@ -9,6 +9,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { getBundleByUnitId } from "../../lib/course-data";
 import { useLearnerProgress } from "../../lib/learner-progress";
+import { FeedbackModal } from "../../src/components/FeedbackModal";
 import { FlashCard } from "../../src/components/FlashCard";
 import { RatingButtons } from "../../src/components/RatingButtons";
 
@@ -44,6 +45,7 @@ export default function ReviewScreen() {
   const [doneCount, setDoneCount] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const [againCount, setAgainCount] = useState(0);
+  const [feedbackVisible, setFeedbackVisible] = useState(false);
 
   if (!bundle) {
     return (
@@ -137,6 +139,21 @@ export default function ReviewScreen() {
             >
               <Text style={styles.primaryBtnText}>Back to Course</Text>
             </Pressable>
+
+            <Pressable
+              style={styles.feedbackBtn}
+              onPress={() => setFeedbackVisible(true)}
+              accessibilityRole="button"
+            >
+              <Text style={styles.feedbackBtnText}>Rate this lesson 💬</Text>
+            </Pressable>
+
+            <FeedbackModal
+              visible={feedbackVisible}
+              unitId={bundle.unit.id}
+              unitTitle={bundle.unit.title}
+              onClose={() => setFeedbackVisible(false)}
+            />
           </View>
         </ScrollView>
       </View>
@@ -443,5 +460,15 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "600",
     color: "#ffffff"
-  }
+  },
+  feedbackBtn: {
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    alignItems: "center",
+  },
+  feedbackBtnText: {
+    fontSize: 14,
+    color: "#818cf8",
+    fontWeight: "600",
+  },
 });

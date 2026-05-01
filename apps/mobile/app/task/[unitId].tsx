@@ -1,6 +1,9 @@
 import type {
+  FillInBlankTaskDefinition,
   GuidedDialogueCompletionTaskDefinition,
+  MultipleChoiceTaskDefinition,
   RegisterChoiceTaskDefinition,
+  ScriptMatchTaskDefinition,
   TaskDefinition,
 } from "@linguanomad/content-schema";
 import { useLocalSearchParams, useRouter } from "expo-router";
@@ -17,7 +20,11 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ChoiceButton } from "../../src/components/ChoiceButton";
 import type { BlankToken, DialogueToken } from "../../src/components/DialogueTurn";
 import { DialogueTurn } from "../../src/components/DialogueTurn";
+import { FillInBlankTask } from "../../src/components/FillInBlankTask";
+import { MultipleChoiceTask } from "../../src/components/MultipleChoiceTask";
+import { ScriptMatchTask } from "../../src/components/ScriptMatchTask";
 import { getBundleByUnitId } from "../../lib/course-data";
+import { useCustomExercises } from "../../lib/custom-exercises";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -414,6 +421,7 @@ export default function TaskScreen() {
   const { unitId } = useLocalSearchParams<{ unitId: string }>();
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  const { customTasks } = useCustomExercises();
   const bundle = useMemo(
     () => (unitId ? getBundleByUnitId(unitId) : undefined),
     [unitId]
@@ -421,6 +429,12 @@ export default function TaskScreen() {
 
   const [taskIndex, setTaskIndex] = useState(0);
   const [completedCount, setCompletedCount] = useState(0);
+
+  const tasks = useMemo(() => {
+    if (!bundle) return [];
+    const extra = (unitId && customTasks[unitId]) ? customTasks[unitId]! : [];
+    return [...bundle.tasks, ...extra];
+  }, [bundle, unitId, customTasks]);
 
   if (!bundle) {
     return (
@@ -430,7 +444,6 @@ export default function TaskScreen() {
     );
   }
 
-  const tasks = bundle.tasks;
   const task = tasks[taskIndex];
 
   function handleTaskComplete(_allCorrect: boolean) {
@@ -459,6 +472,33 @@ export default function TaskScreen() {
           key={t.id}
           task={t}
           onComplete={handleTaskComplete}
+        />
+      );
+    }
+    if (t.kind === "multiple-choice") {
+      return (
+        <MultipleChoiceTask
+          key={t.id}
+          task={t as MultipleChoiceTaskDefinition}
+          onComplete={(correct) => handleTaskComplete(correct)}
+        />
+      );
+    }
+    if (t.kind === "fill-in-blank") {
+      return (
+        <FillInBlankTask
+          key={t.id}
+          task={t as FillInBlankTaskDefinition}
+          onComplete={(correct) => handleTaskComplete(correct)}
+        />
+      );
+    }
+    if (t.kind === "script-match") {
+      return (
+        <ScriptMatchTask
+          key={t.id}
+          task={t as ScriptMatchTaskDefinition}
+          onComplete={(_correct, _total) => handleTaskComplete(true)}
         />
       );
     }

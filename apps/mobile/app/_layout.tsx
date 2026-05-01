@@ -5,6 +5,7 @@ import { Text } from "react-native";
 import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { LearnerProgressProvider } from "../lib/learner-progress";
+import { CustomExercisesProvider } from "../lib/custom-exercises";
 
 function TabIcon({ emoji, size = 20 }: { emoji: string; size?: number }) {
   return <Text style={{ fontSize: size }}>{emoji}</Text>;
@@ -68,6 +69,10 @@ function AppTabs() {
           name="task/[unitId]"
           options={{ href: null }} // navigated to from course
         />
+        <Tabs.Screen
+          name="admin/add-exercise"
+          options={{ href: null }}
+        />
     </Tabs>
   );
 }
@@ -76,8 +81,10 @@ export default function RootLayout() {
   return (
     <SafeAreaProvider>
       <LearnerProgressProvider>
-        <StatusBar style="light" />
-        <AppTabs />
+        <CustomExercisesProvider>
+          <StatusBar style="light" />
+          <AppTabs />
+        </CustomExercisesProvider>
       </LearnerProgressProvider>
     </SafeAreaProvider>
   );

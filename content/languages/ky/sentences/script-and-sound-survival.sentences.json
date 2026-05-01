@@ -65,6 +65,10 @@
       "transliteration": "Rakhmat!",
       "translation": "Thank you!",
       "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
-    }
+    },
+    { "id": "ky-sent-alpha-09", "languageCode": "ky", "text": "Апа, суу бар.", "transliteration": "Apa, suu bar.", "translation": "Mom, there is water.", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] },
+    { "id": "ky-sent-alpha-10", "languageCode": "ky", "text": "Нан жок.", "transliteration": "Nan zhok.", "translation": "There is no bread.", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] },
+    { "id": "ky-sent-alpha-11", "languageCode": "ky", "text": "Ата жаңы.", "transliteration": "Ata zhangy.", "translation": "Father is new.", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] },
+    { "id": "ky-sent-alpha-12", "languageCode": "ky", "text": "Салам, Ата!", "transliteration": "Salam, Ata!", "translation": "Hello, Father!", "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"] }
   ]
 }

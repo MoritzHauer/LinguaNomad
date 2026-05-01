@@ -86,7 +86,7 @@ const courseBundles: CourseBundle[] = [
     alphabetLexemesData,
     alphabetSentencesData,
     alphabetGrammarNotesData,
-    alphabetTasksData as Collection<TaskDefinition>,
+    alphabetTasksData as unknown as Collection<TaskDefinition>,
     alphabetReviewSeedsData as Collection<ReviewSeed>
   ),
   createBundle(
@@ -94,7 +94,7 @@ const courseBundles: CourseBundle[] = [
     greetingsLexemesData,
     greetingsSentencesData,
     greetingsGrammarNotesData,
-    greetingsTasksData as Collection<TaskDefinition>,
+    greetingsTasksData as unknown as Collection<TaskDefinition>,
     greetingsReviewSeedsData as Collection<ReviewSeed>
   ),
   createBundle(
@@ -102,7 +102,7 @@ const courseBundles: CourseBundle[] = [
     politenessLexemesData,
     politenessSentencesData,
     politenessGrammarNotesData,
-    politenessTasksData as Collection<TaskDefinition>,
+    politenessTasksData as unknown as Collection<TaskDefinition>,
     politenessReviewSeedsData as Collection<ReviewSeed>
   ),
   createBundle(
@@ -110,7 +110,7 @@ const courseBundles: CourseBundle[] = [
     identityLexemesData,
     identitySentencesData,
     identityGrammarNotesData,
-    identityTasksData as Collection<TaskDefinition>,
+    identityTasksData as unknown as Collection<TaskDefinition>,
     identityReviewSeedsData as Collection<ReviewSeed>
   ),
   createBundle(
@@ -118,7 +118,7 @@ const courseBundles: CourseBundle[] = [
     foodLexemesData,
     foodSentencesData,
     foodGrammarNotesData,
-    foodTasksData as Collection<TaskDefinition>,
+    foodTasksData as unknown as Collection<TaskDefinition>,
     foodReviewSeedsData as Collection<ReviewSeed>
   ),
   createBundle(
@@ -126,7 +126,7 @@ const courseBundles: CourseBundle[] = [
     locationLexemesData,
     locationSentencesData,
     locationGrammarNotesData,
-    locationTasksData as Collection<TaskDefinition>,
+    locationTasksData as unknown as Collection<TaskDefinition>,
     locationReviewSeedsData as Collection<ReviewSeed>
   )
 ].sort((left, right) => (left.unit.sequenceNumber ?? Number.MAX_SAFE_INTEGER) - (right.unit.sequenceNumber ?? Number.MAX_SAFE_INTEGER));
@@ -158,6 +158,9 @@ export function buildMachineCheckedPrompts(task: TaskDefinition): MachineChecked
     case "pattern-swap":
     case "information-gap":
     case "mini-role":
+    case "multiple-choice":
+    case "fill-in-blank":
+    case "script-match":
       return [];
     default:
       return assertNever(task);
@@ -180,6 +183,12 @@ export function getTaskKindLabel(kind: TaskDefinition["kind"]): string {
       return "Noticing";
     case "mini-role":
       return "Mini Role";
+    case "multiple-choice":
+      return "Multiple Choice";
+    case "fill-in-blank":
+      return "Fill In Blank";
+    case "script-match":
+      return "Script Match";
     default:
       return assertNever(kind);
   }
