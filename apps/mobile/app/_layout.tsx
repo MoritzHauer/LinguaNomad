@@ -2,6 +2,7 @@ import React from "react";
 import { Tabs } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { Text } from "react-native";
+import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { LearnerProgressProvider } from "../lib/learner-progress";
 
@@ -9,29 +10,30 @@ function TabIcon({ emoji, size = 20 }: { emoji: string; size?: number }) {
   return <Text style={{ fontSize: size }}>{emoji}</Text>;
 }
 
-export default function RootLayout() {
+function AppTabs() {
+  const insets = useSafeAreaInsets();
+  const tabBarHeight = 56 + insets.bottom;
+
   return (
-    <LearnerProgressProvider>
-      <StatusBar style="light" />
-      <Tabs
-        screenOptions={{
-          headerShown: false,
-          tabBarStyle: {
-            backgroundColor: "#0f0f1a",
-            borderTopColor: "rgba(255,255,255,0.08)",
-            borderTopWidth: 1,
-            height: 80,
-            paddingBottom: 16,
-            paddingTop: 8,
-          },
-          tabBarActiveTintColor: "#818cf8",
-          tabBarInactiveTintColor: "#4040a0",
-          tabBarLabelStyle: {
-            fontSize: 10,
-            fontWeight: "600",
-          },
-        }}
-      >
+    <Tabs
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: {
+          backgroundColor: "#0f0f1a",
+          borderTopColor: "rgba(255,255,255,0.08)",
+          borderTopWidth: 1,
+          height: tabBarHeight,
+          paddingBottom: insets.bottom || 8,
+          paddingTop: 8,
+        },
+        tabBarActiveTintColor: "#818cf8",
+        tabBarInactiveTintColor: "#4040a0",
+        tabBarLabelStyle: {
+          fontSize: 10,
+          fontWeight: "600",
+        },
+      }}
+    >
         <Tabs.Screen
           name="index"
           options={{
@@ -66,7 +68,17 @@ export default function RootLayout() {
           name="task/[unitId]"
           options={{ href: null }} // navigated to from course
         />
-      </Tabs>
-    </LearnerProgressProvider>
+    </Tabs>
+  );
+}
+
+export default function RootLayout() {
+  return (
+    <SafeAreaProvider>
+      <LearnerProgressProvider>
+        <StatusBar style="light" />
+        <AppTabs />
+      </LearnerProgressProvider>
+    </SafeAreaProvider>
   );
 }

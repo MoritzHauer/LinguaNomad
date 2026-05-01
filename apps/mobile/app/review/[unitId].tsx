@@ -3,8 +3,9 @@ import { createLessonRunState } from "@linguanomad/learner-state";
 import type { ReviewRating, ReviewState } from "@linguanomad/srs";
 import { createInitialReviewState, scheduleNextReview } from "@linguanomad/srs";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import React, { useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { getBundleByUnitId } from "../../lib/course-data";
 import { useLearnerProgress } from "../../lib/learner-progress";
@@ -20,6 +21,7 @@ export default function ReviewScreen() {
   const { unitId } = useLocalSearchParams<{ unitId: string }>();
   const router = useRouter();
   const { finalizeRun } = useLearnerProgress();
+  const insets = useSafeAreaInsets();
   const runRef = useRef(createLessonRunState(unitId ?? ""));
 
   const bundle = useMemo(() => {
@@ -101,10 +103,16 @@ export default function ReviewScreen() {
     setRevealed(false);
   }
 
-  if (isComplete) {
-    // Finalize the run — marks unit complete if not already, updates progress
-    void finalizeRun(runRef.current);
+  // Finalize only once when the last card is rated
+  const finalizedRef = useRef(false);
+  useEffect(() => {
+    if (isComplete && !finalizedRef.current) {
+      finalizedRef.current = true;
+      void finalizeRun(runRef.current);
+    }
+  }, [isComplete, finalizeRun]);
 
+  if (isComplete) {
     return (
       <View style={styles.screen}>
         <ScrollView contentContainerStyle={styles.completionContent}>
@@ -138,7 +146,7 @@ export default function ReviewScreen() {
   const currentCard = queue[currentIndex];
 
   return (
-    <View style={styles.screen}>
+    <View style={[styles.screen, { paddingTop: insets.top }]}>
       {/* Header */}
       <View style={styles.header}>
         <View style={styles.headerBack}>

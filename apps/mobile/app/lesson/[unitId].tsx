@@ -2,6 +2,7 @@ import type { GrammarNote, Lexeme, SentenceCard } from "@linguanomad/content-sch
 import { useLocalSearchParams, useRouter } from "expo-router";
 import React, { useMemo, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { getBundleByUnitId } from "../../lib/course-data";
 import { LexemeCard } from "../../src/components/LexemeCard";
@@ -17,6 +18,7 @@ export default function LessonScreen() {
   const router = useRouter();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [grammarExpanded, setGrammarExpanded] = useState(false);
+  const insets = useSafeAreaInsets();
 
   const bundle = useMemo(() => {
     if (!unitId) return undefined;
@@ -74,7 +76,7 @@ export default function LessonScreen() {
   }, [bundle, current]);
 
   return (
-    <View style={styles.screen}>
+    <View style={[styles.screen, { paddingTop: insets.top }]}>
       {/* Top bar: back + progress */}
       <View style={styles.topBar}>
         <Pressable

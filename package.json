@@ -12,10 +12,18 @@
     "test": "vitest run",
     "test:watch": "vitest"
   },
+  "pnpm": {
+    "overrides": {
+      "react-native-screens": "4.16.0"
+    }
+  },
   "devDependencies": {
     "@types/react": "^19.1.5",
     "eslint": "^9.0.0",
     "typescript": "^5.8.3",
     "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "react-native-screens": "4.16.0"
   }
 }

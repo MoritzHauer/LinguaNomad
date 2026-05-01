@@ -12,6 +12,7 @@ import {
   Text,
   View,
 } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { ChoiceButton } from "../../src/components/ChoiceButton";
 import type { BlankToken, DialogueToken } from "../../src/components/DialogueTurn";
@@ -412,6 +413,7 @@ function FallbackTask({
 export default function TaskScreen() {
   const { unitId } = useLocalSearchParams<{ unitId: string }>();
   const router = useRouter();
+  const insets = useSafeAreaInsets();
   const bundle = useMemo(
     () => (unitId ? getBundleByUnitId(unitId) : undefined),
     [unitId]
@@ -466,7 +468,7 @@ export default function TaskScreen() {
   }
 
   return (
-    <View style={styles.safeArea}>
+    <View style={[styles.safeArea, { paddingTop: insets.top }]}>
       {/* Back header */}
       <View style={styles.topBar}>
         <Pressable
@@ -509,7 +511,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 12,
     paddingHorizontal: 16,
-    paddingTop: 50,
+    paddingTop: 8,
     paddingBottom: 14,
   },
   backBtn: {

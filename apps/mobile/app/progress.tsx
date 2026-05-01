@@ -7,6 +7,7 @@ import {
   Text,
   View,
 } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { OfflineBadge } from "../src/components/OfflineBadge";
 import { StatCard } from "../src/components/StatCard";
@@ -120,6 +121,7 @@ export default function ProgressScreen() {
   const router = useRouter();
   const { profile } = useLearnerProgress();
   const reviewQueue = getMockReviewQueue();
+  const insets = useSafeAreaInsets();
 
   const unitEntries = useMemo(
     () => buildUnitProgressEntries(profile.completedUnitIds, profile.unitProgress),
@@ -137,7 +139,7 @@ export default function ProgressScreen() {
 
   return (
     <View style={styles.safeArea}>
-      <ScrollView contentContainerStyle={styles.scrollContent}>
+      <ScrollView contentContainerStyle={[styles.scrollContent, { paddingTop: insets.top }]}>
         {/* Page header */}
         <View style={styles.pageHeader}>
           <Text style={styles.pageTitle}>Progress</Text>
@@ -242,7 +244,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     paddingHorizontal: 20,
-    paddingTop: 54,
+    paddingTop: 8,
     paddingBottom: 20,
   },
   pageTitle: {
