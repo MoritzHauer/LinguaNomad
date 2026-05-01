@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=375, initial-scale=1.0">
+<title>LinguaNomad – Welcome</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 375px;
+    min-height: 812px;
+    background: #0f0f1a;
+    font-family: -apple-system, 'Roboto', Arial, sans-serif;
+    color: #e8e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 32px 48px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Subtle background accent */
+  body::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+  }
+
+  .logo-mark {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 32px rgba(99,102,241,0.35);
+  }
+
+  .logo-mark svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .app-name {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .app-name span {
+    color: #818cf8;
+  }
+
+  .tagline {
+    font-size: 15px;
+    color: #9494b0;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 260px;
+    margin-bottom: 48px;
+  }
+
+  .language-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(99,102,241,0.12);
+    border: 1px solid rgba(99,102,241,0.3);
+    border-radius: 100px;
+    padding: 8px 18px;
+    font-size: 14px;
+    color: #a5b4fc;
+    font-weight: 500;
+  }
+
+  .lang-flag {
+    font-size: 18px;
+  }
+
+  .value-props {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .prop {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 16px;
+  }
+
+  .prop-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 17px;
+  }
+
+  .prop-icon.cyan { background: rgba(6,182,212,0.15); }
+  .prop-icon.violet { background: rgba(139,92,246,0.15); }
+  .prop-icon.emerald { background: rgba(16,185,129,0.15); }
+
+  .prop-text h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e2e2f0;
+    margin-bottom: 3px;
+  }
+
+  .prop-text p {
+    font-size: 12.5px;
+    color: #7070a0;
+    line-height: 1.45;
+  }
+
+  .bottom-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 14px;
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.2px;
+    box-shadow: 0 4px 24px rgba(99,102,241,0.4);
+  }
+
+  .kyrgyz-preview {
+    font-size: 14px;
+    color: #6060a0;
+  }
+
+  .kyrgyz-preview .cyrillic {
+    color: #7c7cbc;
+    font-size: 15px;
+  }
+
+  .tos {
+    font-size: 11.5px;
+    color: #4a4a70;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .tos a { color: #6366f1; text-decoration: none; }
+</style>
+</head>
+<body>
+
+  <div class="top-section">
+    <div class="logo-mark">
+      <svg viewBox="0 0 40 40" fill="none">
+        <path d="M8 20 Q14 8 20 14 Q26 20 32 8" stroke="#fff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <circle cx="20" cy="26" r="6" fill="rgba(255,255,255,0.25)" stroke="#fff" stroke-width="2"/>
+        <text x="20" y="30.5" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">Кы</text>
+      </svg>
+    </div>
+
+    <h1 class="app-name">Lingua<span>Nomad</span></h1>
+    <p class="tagline">Serious language learning for underrepresented languages. Starting with Kyrgyz.</p>
+
+    <div class="language-badge">
+      <span class="lang-flag">🇰🇬</span>
+      Kyrgyz · Кыргызча
+    </div>
+  </div>
+
+  <div class="value-props">
+    <div class="prop">
+      <div class="prop-icon cyan">🔤</div>
+      <div class="prop-text">
+        <h3>Script &amp; pronunciation support</h3>
+        <p>Cyrillic with transliteration. Learn to read from day one.</p>
+      </div>
+    </div>
+    <div class="prop">
+      <div class="prop-icon violet">📴</div>
+      <div class="prop-text">
+        <h3>Fully offline</h3>
+        <p>Download content once, study anywhere. No network required.</p>
+      </div>
+    </div>
+    <div class="prop">
+      <div class="prop-icon emerald">📈</div>
+      <div class="prop-text">
+        <h3>Serious progression</h3>
+        <p>Spaced retrieval and task-based practice — not just flashcard streaks.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <button class="cta-btn">Start with Kyrgyz →</button>
+    <p class="kyrgyz-preview"><span class="cyrillic">Баштайлы!</span> — Let's begin!</p>
+    <p class="tos">By continuing you accept our <a href="#">Terms</a> and <a href="#">Privacy Policy</a></p>
+  </div>
+
+</body>
+</html>

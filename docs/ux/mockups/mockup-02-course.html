@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=375, initial-scale=1.0">
+<title>LinguaNomad – Course Overview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 375px;
+    min-height: 812px;
+    background: #0f0f1a;
+    font-family: -apple-system, 'Roboto', Arial, sans-serif;
+    color: #e8e8f0;
+    overflow: hidden;
+  }
+
+  .status-bar {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #0f0f1a;
+  }
+  .status-bar .time { font-size: 15px; font-weight: 600; color: #fff; }
+  .status-icons { display: flex; gap: 6px; align-items: center; }
+  .status-icons span { font-size: 13px; color: #ccc; }
+
+  .header {
+    padding: 12px 20px 16px;
+    background: #0f0f1a;
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+  }
+  .course-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6366f1;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+  .header-actions { display: flex; gap: 10px; }
+  .icon-btn {
+    width: 32px; height: 32px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px;
+  }
+  .course-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.3px;
+    margin-bottom: 4px;
+  }
+  .course-subtitle {
+    font-size: 13px;
+    color: #7070a0;
+  }
+
+  /* Overall progress bar */
+  .progress-strip {
+    margin: 0 20px 0;
+    background: rgba(255,255,255,0.06);
+    border-radius: 100px;
+    height: 6px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    border-radius: 100px;
+    width: 22%;
+  }
+  .progress-label {
+    padding: 6px 20px 12px;
+    font-size: 12px;
+    color: #5050a0;
+  }
+  .progress-label span { color: #818cf8; }
+
+  /* Divider */
+  .section-label {
+    padding: 4px 20px 10px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #404060;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  .unit-list {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 540px;
+  }
+
+  .unit-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .unit-card.active {
+    border-color: rgba(99,102,241,0.4);
+    background: rgba(99,102,241,0.08);
+  }
+
+  .unit-card.complete {
+    border-color: rgba(16,185,129,0.3);
+    background: rgba(16,185,129,0.05);
+  }
+
+  .unit-card.locked {
+    opacity: 0.45;
+  }
+
+  .unit-card.active::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    right: 0; height: 2px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  }
+
+  .unit-num {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 600;
+    gap: 2px;
+  }
+
+  .unit-num.done { background: rgba(16,185,129,0.15); color: #10b981; }
+  .unit-num.active-num { background: rgba(99,102,241,0.2); color: #818cf8; }
+  .unit-num.upcoming { background: rgba(255,255,255,0.06); color: #5050a0; }
+  .unit-num.locked-num { background: rgba(255,255,255,0.04); color: #3a3a60; }
+
+  .unit-num .num { font-size: 18px; font-weight: 700; line-height: 1; }
+
+  .unit-info { flex: 1; min-width: 0; }
+  .unit-info h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e2e2f0;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .unit-goal {
+    font-size: 12px;
+    color: #7070a0;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .unit-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .meta-chip {
+    font-size: 11px;
+    color: #5a5a90;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .meta-chip.green { color: #10b981; }
+  .meta-chip.violet { color: #818cf8; }
+
+  .unit-progress-bar {
+    margin-top: 8px;
+    height: 3px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .unit-progress-fill {
+    height: 100%;
+    background: #6366f1;
+    border-radius: 100px;
+  }
+
+  .lock-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  /* Bottom nav */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 375px;
+    height: 80px;
+    background: #0f0f1a;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 16px;
+  }
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    color: #4040a0;
+    padding: 8px 16px;
+  }
+  .nav-item.active { color: #818cf8; }
+  .nav-item .nav-icon { font-size: 20px; }
+</style>
+</head>
+<body>
+
+  <div class="status-bar">
+    <span class="time">9:41</span>
+    <div class="status-icons">
+      <span>📶</span><span>🔋</span>
+    </div>
+  </div>
+
+  <div class="header">
+    <div class="header-top">
+      <span class="course-label">🇰🇬 Kyrgyz · Beginner</span>
+      <div class="header-actions">
+        <div class="icon-btn">⬇️</div>
+        <div class="icon-btn">⚙️</div>
+      </div>
+    </div>
+    <h1 class="course-title">Kyrgyz Starter Path</h1>
+    <p class="course-subtitle">6 units · Script, phrases, grammar foundations</p>
+  </div>
+
+  <div class="progress-strip"><div class="progress-fill"></div></div>
+  <p class="progress-label"><span>Unit 2 in progress</span> · 22% complete</p>
+
+  <p class="section-label">Units</p>
+
+  <div class="unit-list">
+
+    <!-- Unit 1: complete -->
+    <div class="unit-card complete">
+      <div class="unit-num done">
+        <span style="font-size:20px">✓</span>
+      </div>
+      <div class="unit-info">
+        <h3>Unit 1 — The Kyrgyz Script</h3>
+        <p class="unit-goal">Goal: Read Cyrillic letters and basic sounds</p>
+        <div class="unit-meta">
+          <span class="meta-chip green">✓ Complete</span>
+          <span class="meta-chip">10 items</span>
+          <span class="meta-chip">1 task</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Unit 2: active -->
+    <div class="unit-card active">
+      <div class="unit-num active-num">
+        <span class="num">2</span>
+      </div>
+      <div class="unit-info">
+        <h3>Unit 2 — Greetings &amp; People</h3>
+        <p class="unit-goal">Goal: Introduce yourself and greet others</p>
+        <div class="unit-meta">
+          <span class="meta-chip violet">In progress</span>
+          <span class="meta-chip">12 items</span>
+          <span class="meta-chip">2 tasks</span>
+        </div>
+        <div class="unit-progress-bar">
+          <div class="unit-progress-fill" style="width:40%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Unit 3: upcoming -->
+    <div class="unit-card">
+      <div class="unit-num upcoming">
+        <span class="num">3</span>
+      </div>
+      <div class="unit-info">
+        <h3>Unit 3 — Everyday Objects</h3>
+        <p class="unit-goal">Goal: Name and describe common items</p>
+        <div class="unit-meta">
+          <span class="meta-chip">Unlocks after Unit 2</span>
+          <span class="meta-chip">14 items</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Unit 4: locked -->
+    <div class="unit-card locked">
+      <div class="unit-num locked-num">
+        <span class="num">4</span>
+      </div>
+      <div class="unit-info">
+        <h3>Unit 4 — Place &amp; Direction</h3>
+        <p class="unit-goal">Goal: Ask for and give directions</p>
+        <div class="unit-meta">
+          <span class="meta-chip">16 items</span>
+          <span class="meta-chip">2 tasks</span>
+        </div>
+      </div>
+      <span class="lock-icon">🔒</span>
+    </div>
+
+    <!-- Unit 5: locked -->
+    <div class="unit-card locked">
+      <div class="unit-num locked-num">
+        <span class="num">5</span>
+      </div>
+      <div class="unit-info">
+        <h3>Unit 5 — Time &amp; Schedule</h3>
+        <p class="unit-goal">Goal: Discuss times, days, and plans</p>
+        <div class="unit-meta">
+          <span class="meta-chip">18 items</span>
+          <span class="meta-chip">2 tasks</span>
+        </div>
+      </div>
+      <span class="lock-icon">🔒</span>
+    </div>
+
+    <!-- Unit 6: locked -->
+    <div class="unit-card locked">
+      <div class="unit-num locked-num">
+        <span class="num">6</span>
+      </div>
+      <div class="unit-info">
+        <h3>Unit 6 — Shopping &amp; Numbers</h3>
+        <p class="unit-goal">Goal: Handle simple market interactions</p>
+        <div class="unit-meta">
+          <span class="meta-chip">20 items</span>
+          <span class="meta-chip">3 tasks</span>
+        </div>
+      </div>
+      <span class="lock-icon">🔒</span>
+    </div>
+
+    <div style="height:88px"></div>
+  </div>
+
+  <div class="bottom-nav">
+    <div class="nav-item active">
+      <span class="nav-icon">📚</span>
+      Learn
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">🔁</span>
+      Review
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">📊</span>
+      Progress
+    </div>
+    <div class="nav-item">
+      <span class="nav-icon">👤</span>
+      Profile
+    </div>
+  </div>
+
+</body>
+</html>

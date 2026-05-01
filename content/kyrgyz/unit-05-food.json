@@ -1,0 +1,365 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "unit": {
+    "id": "ky-unit-food-and-preferences",
+    "slug": "food-and-preferences",
+    "title": "Food And Everyday Preferences",
+    "communicationGoal": "Name common Kyrgyz foods, express a simple want or preference, accept or decline an offer politely, and respond to a host at a tea table.",
+    "sequenceNumber": 5,
+    "unlocksAfterUnitId": "ky-unit-identity-origin-family",
+    "supportedScripts": ["cyrl", "latn"],
+    "pronunciationFocus": [
+      "Жакшы көрөм — the ö in көрөм is a front rounded vowel, hold it clearly",
+      "Каалайм ends with a nasal м; do not drop it",
+      "Тамак has stress on the first syllable: TA-mak"
+    ],
+    "lexemeIds": [
+      "ky-lex-u5-tamak",
+      "ky-lex-u5-nan",
+      "ky-lex-u5-chai",
+      "ky-lex-u5-et",
+      "ky-lex-u5-meva",
+      "ky-lex-u5-kaalaym",
+      "ky-lex-u5-zhakshy-korom",
+      "ky-lex-u5-zhaktyrbaym",
+      "ky-lex-u5-bolot",
+      "ky-lex-u5-zher-alma",
+      "ky-lex-u5-sut"
+    ],
+    "sentenceIds": [
+      "ky-sent-u5-01",
+      "ky-sent-u5-02",
+      "ky-sent-u5-03",
+      "ky-sent-u5-04",
+      "ky-sent-u5-05",
+      "ky-sent-u5-06",
+      "ky-sent-u5-07",
+      "ky-sent-u5-08",
+      "ky-sent-u5-09"
+    ],
+    "grammarNoteIds": [
+      "ky-grammar-u5-01",
+      "ky-grammar-u5-02",
+      "ky-grammar-u5-03"
+    ],
+    "taskIds": [
+      "ky-task-u5-host-01"
+    ],
+    "reviewSeedIds": [
+      "ky-review-u5-01",
+      "ky-review-u5-02",
+      "ky-review-u5-03",
+      "ky-review-u5-04"
+    ],
+    "sourceIds": [
+      "linguanomad-original-kyrgyz-starter-2026",
+      "peace-corps-kyrgyz-language-manual-1997"
+    ]
+  },
+  "lexemes": [
+    {
+      "id": "ky-lex-u5-tamak",
+      "languageCode": "ky",
+      "lemma": "тамак",
+      "transliteration": "tamak",
+      "gloss": "food / meal",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The general word for food or a cooked meal. Тамак жеңиз means 'please eat' and is a standard host invitation. Тамак ичүү literally means eating-drinking and can refer to a meal event."
+    },
+    {
+      "id": "ky-lex-u5-nan",
+      "languageCode": "ky",
+      "lemma": "нан",
+      "transliteration": "nan",
+      "gloss": "bread",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The round flatbread central to Kyrgyz meals. Нан is never placed on the floor or turned upside down — it carries cultural significance as a staple and sacred food."
+    },
+    {
+      "id": "ky-lex-u5-chai",
+      "languageCode": "ky",
+      "lemma": "чай",
+      "transliteration": "chay",
+      "gloss": "tea",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Tea is central to Kyrgyz hospitality. Guests are offered чай almost immediately upon arriving. Accepting tea is polite; refusing can seem cold. Кара чай is plain black tea; ак чай (white tea) has milk."
+    },
+    {
+      "id": "ky-lex-u5-et",
+      "languageCode": "ky",
+      "lemma": "эт",
+      "transliteration": "et",
+      "gloss": "meat",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The word for meat generally. Mutton and beef are most common. Эт a common part of many Kyrgyz dish names such as бешбармак (big five-finger dish with meat and noodles)."
+    },
+    {
+      "id": "ky-lex-u5-meva",
+      "languageCode": "ky",
+      "lemma": "мөмө",
+      "transliteration": "mömo",
+      "gloss": "fruit",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The general word for fruit. Apricots, apples, and melons are common in Kyrgyz markets. Мөмө жечи — would you like some fruit — is a warm host offer."
+    },
+    {
+      "id": "ky-lex-u5-kaalaym",
+      "languageCode": "ky",
+      "lemma": "каалайм",
+      "transliteration": "kaalaym",
+      "gloss": "I want / I would like",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "First-person singular present tense of каалоо (to want, to wish). In polite speech you can soften it by adding өтүнөм before it or by using the -чы suffix: Чай берчи (please give tea)."
+    },
+    {
+      "id": "ky-lex-u5-zhakshy-korom",
+      "languageCode": "ky",
+      "lemma": "жакшы көрөм",
+      "transliteration": "zhakshy köröm",
+      "gloss": "I like",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Literally 'I see/find it good'. The standard way to say you like something. Мен нан жакшы көрөм — I like bread. More positive than just каалайм; it expresses genuine liking."
+    },
+    {
+      "id": "ky-lex-u5-zhaktyrbaym",
+      "languageCode": "ky",
+      "lemma": "жактырбайм",
+      "transliteration": "zhaktyrbayim",
+      "gloss": "I don't like",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "The negated form of жактыруу. More direct than жакшы көрбөйм. Useful for politely declining food you genuinely dislike, but soften it with a smile and рахмат."
+    },
+    {
+      "id": "ky-lex-u5-bolot",
+      "languageCode": "ky",
+      "lemma": "болот",
+      "transliteration": "bolot",
+      "gloss": "okay / yes please",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Used as acceptance to an offer. When someone offers you tea, болот is a friendly way to say yes please. Болбойт means no / it won't work, used for soft refusals."
+    },
+    {
+      "id": "ky-lex-u5-zher-alma",
+      "languageCode": "ky",
+      "lemma": "жер алма",
+      "transliteration": "zher alma",
+      "gloss": "potato",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Literally 'earth apple'. Potatoes are a staple in Kyrgyz cooking. The compound word mirrors French pomme de terre and German Erdapfel — a useful memory hook."
+    },
+    {
+      "id": "ky-lex-u5-sut",
+      "languageCode": "ky",
+      "lemma": "сүт",
+      "transliteration": "süt",
+      "gloss": "milk",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "notes": "Dairy features strongly in Kyrgyz food culture. Сүт is used in tea, as a drink, and in many fermented products. The ü vowel is front rounded — round your lips."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "ky-sent-u5-01",
+      "languageCode": "ky",
+      "text": "Чай ичесизби?",
+      "transliteration": "Chay ichesizbi?",
+      "translation": "Would you like tea?",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u5-02",
+      "languageCode": "ky",
+      "text": "Ооба, рахмат, болот.",
+      "transliteration": "Ooba, rakhmat, bolot.",
+      "translation": "Yes, thank you, please.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u5-03",
+      "languageCode": "ky",
+      "text": "Мен нан жакшы көрөм.",
+      "transliteration": "Men nan zhakshy köröm.",
+      "translation": "I like bread.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u5-04",
+      "languageCode": "ky",
+      "text": "Эт каалайм.",
+      "transliteration": "Et kaalaym.",
+      "translation": "I would like some meat.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u5-05",
+      "languageCode": "ky",
+      "text": "Рахмат, мен токтодум.",
+      "transliteration": "Rakhmat, men toktоdum.",
+      "translation": "Thank you, I have had enough.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u5-06",
+      "languageCode": "ky",
+      "text": "Сиз эмне жегиңиз келет?",
+      "transliteration": "Siz emne zheginiz kelet?",
+      "translation": "What would you like to eat?",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u5-07",
+      "languageCode": "ky",
+      "text": "Мен жер алма жактырбайм.",
+      "transliteration": "Men zher alma zhaktyrbayim.",
+      "translation": "I don't like potatoes.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u5-08",
+      "languageCode": "ky",
+      "text": "Тамак абдан даамдуу!",
+      "transliteration": "Tamak abdan daamduu!",
+      "translation": "The food is very delicious!",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-sent-u5-09",
+      "languageCode": "ky",
+      "text": "Сүттүү чай берсеңиз болот.",
+      "transliteration": "Süttüü chay berseniz bolot.",
+      "translation": "You could give me tea with milk.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ],
+  "grammarNotes": [
+    {
+      "id": "ky-grammar-u5-01",
+      "title": "каалайм and жакшы көрөм both express wanting",
+      "summary": "Kyrgyz has two common ways to say you want or like something. Каалайм (I want / I would like) is more about desire in the moment, like ordering food. Жакшы көрөм (I like) describes a general preference. Both follow the subject-object-verb order: Мен чай каалайм (I tea want = I want tea). Neither requires additional words to make a complete sentence.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-u5-02",
+      "title": "Polite offers use the -сызбы / -сизби question suffix",
+      "summary": "To offer something politely in Kyrgyz, take the polite verb form and add -бы or -би for a yes-no question. Чай ичесизби means 'would you like to drink tea?' The -сиз part marks polite register and -би turns it into a question. You can answer simply болот (okay/yes) or рахмат, жок (thank you, no).",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    },
+    {
+      "id": "ky-grammar-u5-03",
+      "title": "Adjectives precede nouns without changing form",
+      "summary": "In Kyrgyz, adjectives come before the noun they describe and do not take case suffixes. Сүттүү чай means 'milky tea' or 'tea with milk' — сүттүү (milky) sits directly before чай (tea). This is one of the most beginner-friendly patterns in the language: there is no agreement in gender, number, or case on the adjective itself.",
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "ky-task-u5-host-01",
+      "kind": "mini-role",
+      "objective": "Respond to a host's food and drink offers using the phrase bank from this unit.",
+      "instructions": "You are a guest at a Kyrgyz home. Your host will make three offers: tea, bread, and a main dish. For each offer, respond using a phrase from the bank. Accept at least two things and politely decline one.",
+      "successCriteria": [
+        "Accept a drink offer using болот or ооба, рахмат.",
+        "Express a food preference using жакшы көрөм or каалайм.",
+        "Decline one offer politely using рахмат, жок or жактырбайм.",
+        "Thank the host at the end using рахмат or чоң рахмат."
+      ],
+      "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"],
+      "lexemeIds": [
+        "ky-lex-u5-chai",
+        "ky-lex-u5-nan",
+        "ky-lex-u5-et",
+        "ky-lex-u5-kaalaym",
+        "ky-lex-u5-zhakshy-korom",
+        "ky-lex-u5-zhaktyrbaym",
+        "ky-lex-u5-bolot"
+      ],
+      "sentenceIds": [
+        "ky-sent-u5-01",
+        "ky-sent-u5-02",
+        "ky-sent-u5-03",
+        "ky-sent-u5-04",
+        "ky-sent-u5-05",
+        "ky-sent-u5-07"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u5-01",
+        "ky-grammar-u5-02"
+      ],
+      "completionHint": "You can always say 'Рахмат, мен токтодум' to politely stop eating or decline more food.",
+      "supportCards": [
+        {
+          "id": "ky-task-u5-host-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Tea is a social ritual in Kyrgyz homes",
+          "body": "Refusing tea from a host can feel unwelcoming. If you are not thirsty, accept the cup, hold it warmly, and take small sips. The gesture of receiving matters more than the amount you drink.",
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        },
+        {
+          "id": "ky-task-u5-host-01-support-grammar",
+          "kind": "grammar",
+          "title": "Bolot vs bolboyt",
+          "body": "Болот means it's okay / yes please when accepting an offer. Болбойт (with the negation -бой-) means it won't work / no, and is a gentle soft refusal. Both are polite.",
+          "grammarNoteIds": ["ky-grammar-u5-02"],
+          "sourceIds": ["linguanomad-original-kyrgyz-starter-2026"]
+        }
+      ],
+      "scenario": "You have been invited to a family's home for a meal. The host is generous and will offer you several things. Use your phrase bank to respond naturally.",
+      "learnerRole": "Guest at a Kyrgyz home.",
+      "phraseBankLexemeIds": [
+        "ky-lex-u5-chai",
+        "ky-lex-u5-nan",
+        "ky-lex-u5-et",
+        "ky-lex-u5-kaalaym",
+        "ky-lex-u5-zhakshy-korom",
+        "ky-lex-u5-zhaktyrbaym",
+        "ky-lex-u5-bolot",
+        "ky-lex-u5-sut",
+        "ky-lex-u5-meva"
+      ],
+      "phraseBankSentenceIds": [
+        "ky-sent-u5-02",
+        "ky-sent-u5-03",
+        "ky-sent-u5-04",
+        "ky-sent-u5-05",
+        "ky-sent-u5-07",
+        "ky-sent-u5-08"
+      ]
+    }
+  ],
+  "reviewSeeds": [
+    {
+      "id": "ky-review-u5-01",
+      "kind": "lexeme-recall",
+      "prompt": "How do you say 'tea' in Kyrgyz?",
+      "acceptableAnswers": ["чай", "Чай", "chay"],
+      "lexemeIds": ["ky-lex-u5-chai"],
+      "sentenceIds": ["ky-sent-u5-01"]
+    },
+    {
+      "id": "ky-review-u5-02",
+      "kind": "sentence-comprehension",
+      "prompt": "What does 'Мен нан жакшы көрөм' mean?",
+      "acceptableAnswers": ["I like bread", "i like bread"],
+      "lexemeIds": ["ky-lex-u5-nan", "ky-lex-u5-zhakshy-korom"],
+      "sentenceIds": ["ky-sent-u5-03"],
+      "grammarNoteIds": ["ky-grammar-u5-01"]
+    },
+    {
+      "id": "ky-review-u5-03",
+      "kind": "pattern-recall",
+      "prompt": "How do you say 'I would like meat' in Kyrgyz?",
+      "acceptableAnswers": ["Эт каалайм", "эт каалайм", "Et kaalaym"],
+      "lexemeIds": ["ky-lex-u5-et", "ky-lex-u5-kaalaym"],
+      "sentenceIds": ["ky-sent-u5-04"],
+      "grammarNoteIds": ["ky-grammar-u5-01"]
+    },
+    {
+      "id": "ky-review-u5-04",
+      "kind": "lexeme-recall",
+      "prompt": "What does 'жер алма' literally mean, and what food is it?",
+      "acceptableAnswers": ["earth apple, potato", "earth apple; potato", "potato (earth apple)"],
+      "lexemeIds": ["ky-lex-u5-zher-alma"]
+    }
+  ]
+}

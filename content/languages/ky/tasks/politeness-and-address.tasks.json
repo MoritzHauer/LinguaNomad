@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-task-u3-register-01",
+      "kind": "register-choice",
+      "objective": "Choose the correct wording for three social situations: addressing an elder, a close peer, and an unknown stranger.",
+      "instructions": "Read each situation and pick the response that fits the register best. Think about who you are talking to before you choose.",
+      "successCriteria": [
+        "Use сиз forms when addressing an elder or stranger.",
+        "Use сен forms only when the situation clearly calls for casual register.",
+        "Select the correct apology or thanks phrase that matches the register.",
+        "Avoid mixing polite and casual forms in the same response."
+      ],
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "lexemeIds": [
+        "ky-lex-u3-siz",
+        "ky-lex-u3-sen",
+        "ky-lex-u3-kechiresiz",
+        "ky-lex-u3-kechir",
+        "ky-lex-u3-rakhmat",
+        "ky-lex-u3-otunom"
+      ],
+      "sentenceIds": [
+        "ky-sent-u3-01",
+        "ky-sent-u3-04",
+        "ky-sent-u3-06",
+        "ky-sent-u3-07",
+        "ky-sent-u3-08"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u3-01"
+      ],
+      "completionHint": "If you are unsure about age or relationship, the polite сиз register is always the safer choice.",
+      "supportCards": [
+        {
+          "id": "ky-task-u3-register-01-support-grammar",
+          "kind": "grammar",
+          "title": "Quick register reminder",
+          "body": "Elder or stranger → сиз, Кечиресиз. Friend you know well → сен, Кечир. When unsure → сиз.",
+          "grammarNoteIds": [
+            "ky-grammar-u3-01"
+          ],
+          "sourceIds": [
+            "linguanomad-original-kyrgyz-starter-2026"
+          ]
+        },
+        {
+          "id": "ky-task-u3-register-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Register matters a lot in Kyrgyz culture",
+          "body": "Respect for elders is central to Kyrgyz social life. Getting the pronoun right signals not just grammar knowledge but genuine cultural awareness — and people notice and appreciate it.",
+          "sourceIds": [
+            "linguanomad-original-kyrgyz-starter-2026"
+          ]
+        }
+      ],
+      "scenario": "You are in three different situations in one morning. For each, choose the phrase that best fits the context.",
+      "options": [
+        {
+          "id": "opt-a",
+          "text": "Кечиресиз, жардам бересизби?",
+          "transliteration": "Kechiresiz, zhardam beresizbi?",
+          "register": "polite",
+          "context": "stranger-or-elder",
+          "note": "Correct for approaching an unknown person or elder for help."
+        },
+        {
+          "id": "opt-b",
+          "text": "Кечир, жардам берчи?",
+          "transliteration": "Kechir, zhardam berchi?",
+          "register": "informal",
+          "context": "peer",
+          "note": "Correct for asking a close friend casually."
+        },
+        {
+          "id": "opt-c",
+          "text": "Өтүнөм, отуруңуз.",
+          "transliteration": "Ötünöm, oturunguz.",
+          "register": "polite",
+          "context": "elder-or-guest",
+          "note": "Correct when inviting an elder or respected guest to sit down."
+        },
+        {
+          "id": "opt-d",
+          "text": "Отур.",
+          "transliteration": "Otur.",
+          "register": "informal",
+          "context": "peer",
+          "note": "A bare command, acceptable only with close friends. Too blunt for an elder."
+        }
+      ],
+      "correctOptionIds": [
+        "opt-a",
+        "opt-b",
+        "opt-c"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-sent-u4-01",
+      "languageCode": "ky",
+      "text": "Сиз кайдансыз?",
+      "transliteration": "Siz kaydansyz?",
+      "translation": "Where are you from?",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u4-02",
+      "languageCode": "ky",
+      "text": "Мен Бишкектенмин.",
+      "transliteration": "Men Bishkektenmin.",
+      "translation": "I am from Bishkek.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u4-03",
+      "languageCode": "ky",
+      "text": "Менин атам мугалим.",
+      "transliteration": "Menin atam mugalim.",
+      "translation": "My father is a teacher.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u4-04",
+      "languageCode": "ky",
+      "text": "Менин апам Бишкекте жашайт.",
+      "transliteration": "Menin apam Bishkekte zhashait.",
+      "translation": "My mother lives in Bishkek.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u4-05",
+      "languageCode": "ky",
+      "text": "Анын аты Айгүл.",
+      "transliteration": "Anyn aty Aigül.",
+      "translation": "Her name is Aigul.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u4-06",
+      "languageCode": "ky",
+      "text": "Ал менин байкем.",
+      "transliteration": "Al menin baykem.",
+      "translation": "He is my older brother.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u4-07",
+      "languageCode": "ky",
+      "text": "Менин үч туугандарым бар.",
+      "transliteration": "Menin üch tuugandарым bar.",
+      "translation": "I have three relatives.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u4-08",
+      "languageCode": "ky",
+      "text": "Сиздин үй-бүлөңүз чоңбу?",
+      "transliteration": "Sizdin üy-bülönüz chongbu?",
+      "translation": "Is your family big?",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    }
+  ]
+}

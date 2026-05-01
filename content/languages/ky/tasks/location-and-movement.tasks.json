@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-task-u6-route-01",
+      "kind": "guided-dialogue-completion",
+      "objective": "Follow and complete a short route-finding dialogue between a visitor and a local.",
+      "instructions": "Read the exchange below. Some of the visitor's lines are missing. Choose the correct line from the options to complete each gap. The visitor is asking for the bazaar and the bus stop.",
+      "successCriteria": [
+        "Open with a polite attention-getter before asking a question.",
+        "Ask correctly where the bazaar is using кайда.",
+        "Confirm the bus route using ушул автобус барабы.",
+        "End the exchange politely."
+      ],
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "lexemeIds": [
+        "ky-lex-u6-kayda",
+        "ky-lex-u6-bazaar",
+        "ky-lex-u6-awtobus",
+        "ky-lex-u6-bekhet",
+        "ky-lex-u6-zhakyn",
+        "ky-lex-u6-sol",
+        "ky-lex-u6-ong"
+      ],
+      "sentenceIds": [
+        "ky-sent-u6-01",
+        "ky-sent-u6-02",
+        "ky-sent-u6-05",
+        "ky-sent-u6-06",
+        "ky-sent-u6-07",
+        "ky-sent-u6-08",
+        "ky-sent-u6-09"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u6-01",
+        "ky-grammar-u6-02"
+      ],
+      "completionHint": "Remember to start with Кечиресиз before asking a stranger a question.",
+      "supportCards": [
+        {
+          "id": "ky-task-u6-route-01-support-grammar",
+          "kind": "grammar",
+          "title": "Destination suffix recap",
+          "body": "Базар → базарга (to the bazaar). Үй → үйгө (to home). Add -га after a voiced back consonant, -ка after a voiceless back consonant, -ге after a voiced front consonant, -ке after a voiceless front consonant.",
+          "grammarNoteIds": [
+            "ky-grammar-u6-01"
+          ],
+          "sourceIds": [
+            "linguanomad-original-kyrgyz-starter-2026"
+          ]
+        },
+        {
+          "id": "ky-task-u6-route-01-support-pronunciation",
+          "kind": "pronunciation",
+          "title": "Direction words flow quickly",
+          "body": "Солго and оңго (to the left / to the right) are each said as a single natural unit. Do not pause between the direction word and its -го ending.",
+          "sentenceIds": [
+            "ky-sent-u6-07"
+          ],
+          "sourceIds": [
+            "linguanomad-original-kyrgyz-starter-2026"
+          ]
+        },
+        {
+          "id": "ky-task-u6-route-01-support-fact",
+          "kind": "fun-fact",
+          "title": "Asking for the bazaar is a power move",
+          "body": "In almost any Kyrgyz town or city, asking Базар кайда? is the single most useful navigation question. Markets are central, well-known, and always someone's destination. From the bazaar, you can orient yourself to find almost anything else.",
+          "sourceIds": [
+            "linguanomad-original-kyrgyz-starter-2026"
+          ]
+        }
+      ],
+      "turns": [
+        {
+          "speaker": "Visitor",
+          "text": "Кечиресиз, базар кайда?",
+          "transliteration": "Kechiresiz, bazaar kayda?",
+          "translation": "Excuse me, where is the bazaar?",
+          "responseSlotId": "visitor-open"
+        },
+        {
+          "speaker": "Local",
+          "text": "Базар жакын. Түз жүрүңүз, андан кийин оңго буруңуз.",
+          "transliteration": "Bazaar zhakyn. Tüz zhürüngüz, andan kiyin onggo burunguz.",
+          "translation": "The bazaar is close. Go straight, then turn right."
+        },
+        {
+          "speaker": "Visitor",
+          "text": "Рахмат! Автобус бекети кайда?",
+          "transliteration": "Rakhmat! Avtobus beketi kayda?",
+          "translation": "Thank you! Where is the bus stop?",
+          "responseSlotId": "visitor-bus-stop"
+        },
+        {
+          "speaker": "Local",
+          "text": "Бекет узак эмес, солго.",
+          "transliteration": "Beket uzak emes, solgo.",
+          "translation": "The stop is not far, to the left."
+        },
+        {
+          "speaker": "Visitor",
+          "text": "Ушул автобус базарга барабы?",
+          "transliteration": "Ushul avtobus bazaarga baraby?",
+          "translation": "Does this bus go to the bazaar?",
+          "responseSlotId": "visitor-bus-check"
+        },
+        {
+          "speaker": "Local",
+          "text": "Ооба, барат.",
+          "transliteration": "Ooba, barat.",
+          "translation": "Yes, it goes there."
+        },
+        {
+          "speaker": "Visitor",
+          "text": "Чоң рахмат!",
+          "transliteration": "Chong rakhmat!",
+          "translation": "Many thanks!",
+          "responseSlotId": "visitor-close"
+        }
+      ],
+      "responseChoices": [
+        "Кечиресиз, базар кайда?",
+        "Рахмат! Автобус бекети кайда?",
+        "Ушул автобус базарга барабы?",
+        "Чоң рахмат!",
+        "Мен базарга баратмын.",
+        "Базар жакынбы?",
+        "Кайда барасыз?"
+      ],
+      "responseMode": "ordered-choice"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-grammar-u6-01",
+      "title": "The -га / -ге / -ка / -ке suffix marks destination",
+      "summary": "To say where you are going in Kyrgyz, attach a directional suffix to the place name. Базар (bazaar) becomes базарга (to the bazaar). Which form? After voiced sounds use -га (back vowels) or -ге (front vowels). After voiceless sounds use -ка (back) or -ке (front). The choice depends on the last consonant of the word and vowel harmony. For now, practice базарга and үйгө (to home) as two starter examples.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-grammar-u6-02",
+      "title": "Кайда asks about static location; кайда барасыз asks about movement",
+      "summary": "Кайда means 'where' and works for both static location questions (Базар кайда? — where is the bazaar?) and movement questions (Кайда барасыз? — where are you going?). The difference comes from the verb: just кайда without a verb of motion asks for a location; кайда + баруу (to go) asks about a destination. This one question word does double duty.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-grammar-u6-03",
+      "title": "Negation with эмес: simple and flexible",
+      "summary": "The word эмес (not / is not) is placed directly after the word it negates. Базар жакын эмес — the bazaar is not near. Узак эмес — not far. This pattern requires no change to the negated word itself. It is one of the most beginner-friendly negation tools in Kyrgyz because it does not require verb conjugation changes.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    }
+  ]
+}

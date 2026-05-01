@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-lex-u6-kayda",
+      "languageCode": "ky",
+      "lemma": "кайда",
+      "transliteration": "kayda",
+      "gloss": "where",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The question word for location. Базар кайда? means 'Where is the bazaar?' When combined with the verb барасыз it asks direction: Кайда барасыз? — 'Where are you going?'"
+    },
+    {
+      "id": "ky-lex-u6-bazaar",
+      "languageCode": "ky",
+      "lemma": "базар",
+      "transliteration": "bazaar",
+      "gloss": "bazaar / market",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The open-air market, a central social and commercial space in Kyrgyz towns and cities. Asking for the bazaar is one of the most useful navigation questions a visitor can use."
+    },
+    {
+      "id": "ky-lex-u6-barat",
+      "languageCode": "ky",
+      "lemma": "барат",
+      "transliteration": "barat",
+      "gloss": "is going / goes",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Third-person singular present progressive of баруу (to go). Мен баратмын (I am going), сиз барасыз (you are going), ал барат (he/she is going)."
+    },
+    {
+      "id": "ky-lex-u6-zhol",
+      "languageCode": "ky",
+      "lemma": "жол",
+      "transliteration": "zhol",
+      "gloss": "road / way",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Means road, path, or way. Also used idiomatically: Жолуңар болсун means 'have a good journey'. Жол сурамак means to ask for directions."
+    },
+    {
+      "id": "ky-lex-u6-awtobus",
+      "languageCode": "ky",
+      "lemma": "автобус",
+      "transliteration": "avtobus",
+      "gloss": "bus",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The standard word for bus, borrowed from Russian. Микроавтобус (minibus, marshrutka) is also very common in Kyrgyz cities. Автобус токтойт — the bus is stopping."
+    },
+    {
+      "id": "ky-lex-u6-bekhet",
+      "languageCode": "ky",
+      "lemma": "бекет",
+      "transliteration": "beket",
+      "gloss": "stop / station",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "A bus stop or station. Автобус бекети means 'bus stop'. Also used for larger stations. Knowing this word helps you navigate public transport quickly."
+    },
+    {
+      "id": "ky-lex-u6-tuurasynda",
+      "languageCode": "ky",
+      "lemma": "тууралуу",
+      "transliteration": "tuuraluu",
+      "gloss": "straight ahead",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Means straight, or in the direction of. Түз жүрүңүз is the common direction instruction for go straight. Тууралуу also means 'about / regarding' in other contexts — context tells you which meaning applies."
+    },
+    {
+      "id": "ky-lex-u6-zhakyn",
+      "languageCode": "ky",
+      "lemma": "жакын",
+      "transliteration": "zhakyn",
+      "gloss": "near / close",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Жакын is used both for physical closeness (the bazaar is near) and for emotional closeness. Базар жакынбы? — Is the bazaar close? It is also a common personal name."
+    },
+    {
+      "id": "ky-lex-u6-uzak",
+      "languageCode": "ky",
+      "lemma": "узак",
+      "transliteration": "uzak",
+      "gloss": "far / long",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Opposite of жакын. Узак refers to physical distance or duration. Узак эмес means 'not far'. Узак жол means a long road or journey."
+    },
+    {
+      "id": "ky-lex-u6-sol",
+      "languageCode": "ky",
+      "lemma": "сол",
+      "transliteration": "sol",
+      "gloss": "left",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The direction word for left. Солго бур means 'turn left'. In directions, солго (to the left) uses the directional suffix -го."
+    },
+    {
+      "id": "ky-lex-u6-ong",
+      "languageCode": "ky",
+      "lemma": "оң",
+      "transliteration": "ong",
+      "gloss": "right",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "The direction word for right. Оңго бур means 'turn right'. The ң is a nasal n, similar to the ng in 'sing'. Оң also means correct or good in figurative use."
+    },
+    {
+      "id": "ky-lex-u6-toktom",
+      "languageCode": "ky",
+      "lemma": "токтом",
+      "transliteration": "toktom",
+      "gloss": "stop (command) / halt",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "notes": "Used to signal a stop, for example telling a driver to stop. Токтоңуз (polite: please stop) is the form you would use with a driver or conductor. Токтом alone is more abrupt."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-sent-u3-01",
+      "languageCode": "ky",
+      "text": "Кечиресиз, жардам бересизби?",
+      "transliteration": "Kechiresiz, zhardam beresizbi?",
+      "translation": "Excuse me, could you help me?",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u3-02",
+      "languageCode": "ky",
+      "text": "Рахмат, маселе жок.",
+      "transliteration": "Rakhmat, masele zhok.",
+      "translation": "Thank you, no problem.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u3-03",
+      "languageCode": "ky",
+      "text": "Чоң рахмат сизге!",
+      "transliteration": "Chong rakhmat sizge!",
+      "translation": "Many thanks to you!",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u3-04",
+      "languageCode": "ky",
+      "text": "Кечир, мен кеч калдым.",
+      "transliteration": "Kechir, men kech kaldym.",
+      "translation": "Sorry, I was late.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u3-05",
+      "languageCode": "ky",
+      "text": "Жарайт, болот.",
+      "transliteration": "Zharayt, bolot.",
+      "translation": "Okay, that's fine.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u3-06",
+      "languageCode": "ky",
+      "text": "Өтүнөм, отуруңуз.",
+      "transliteration": "Ötünöm, oturunguz.",
+      "translation": "Please, have a seat.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u3-07",
+      "languageCode": "ky",
+      "text": "Сен эмне каалайсың?",
+      "transliteration": "Sen emne kaalaysyng?",
+      "translation": "What do you want? (informal)",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u3-08",
+      "languageCode": "ky",
+      "text": "Сиз эмне каалайсыз?",
+      "transliteration": "Siz emne kaalaysyz?",
+      "translation": "What would you like? (polite)",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u3-09",
+      "languageCode": "ky",
+      "text": "Ооба, жарайт.",
+      "transliteration": "Ooba, zharayt.",
+      "translation": "Yes, that's fine.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    }
+  ]
+}

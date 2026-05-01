@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-sent-u5-01",
+      "languageCode": "ky",
+      "text": "Чай ичесизби?",
+      "transliteration": "Chay ichesizbi?",
+      "translation": "Would you like tea?",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u5-02",
+      "languageCode": "ky",
+      "text": "Ооба, рахмат, болот.",
+      "transliteration": "Ooba, rakhmat, bolot.",
+      "translation": "Yes, thank you, please.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u5-03",
+      "languageCode": "ky",
+      "text": "Мен нан жакшы көрөм.",
+      "transliteration": "Men nan zhakshy köröm.",
+      "translation": "I like bread.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u5-04",
+      "languageCode": "ky",
+      "text": "Эт каалайм.",
+      "transliteration": "Et kaalaym.",
+      "translation": "I would like some meat.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u5-05",
+      "languageCode": "ky",
+      "text": "Рахмат, мен токтодум.",
+      "transliteration": "Rakhmat, men toktоdum.",
+      "translation": "Thank you, I have had enough.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u5-06",
+      "languageCode": "ky",
+      "text": "Сиз эмне жегиңиз келет?",
+      "transliteration": "Siz emne zheginiz kelet?",
+      "translation": "What would you like to eat?",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u5-07",
+      "languageCode": "ky",
+      "text": "Мен жер алма жактырбайм.",
+      "transliteration": "Men zher alma zhaktyrbayim.",
+      "translation": "I don't like potatoes.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u5-08",
+      "languageCode": "ky",
+      "text": "Тамак абдан даамдуу!",
+      "transliteration": "Tamak abdan daamduu!",
+      "translation": "The food is very delicious!",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-sent-u5-09",
+      "languageCode": "ky",
+      "text": "Сүттүү чай берсеңиз болот.",
+      "transliteration": "Süttüü chay berseniz bolot.",
+      "translation": "You could give me tea with milk.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    }
+  ]
+}

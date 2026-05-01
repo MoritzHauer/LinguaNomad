@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "unit": {
+    "id": "ky-unit-identity-origin-family",
+    "slug": "identity-origin-family",
+    "title": "Identity, Origin, And Family Basics",
+    "communicationGoal": "Say where you are from, name one or two family members, state a simple relationship, and introduce yourself and a family member from a short prompt.",
+    "sequenceNumber": 4,
+    "unlocksAfterUnitId": "ky-unit-politeness-and-address",
+    "supportedScripts": [
+      "cyrl",
+      "latn"
+    ],
+    "pronunciationFocus": [
+      "The ү in үй-бүлө is a front rounded vowel, not a plain u",
+      "Hear the -тен suffix in Бишкектенмин as one flowing ending",
+      "Менин runs quickly before the next word; do not pause between them"
+    ],
+    "sentenceIds": [
+      "ky-sent-u4-01",
+      "ky-sent-u4-02",
+      "ky-sent-u4-03",
+      "ky-sent-u4-04",
+      "ky-sent-u4-05",
+      "ky-sent-u4-06",
+      "ky-sent-u4-07",
+      "ky-sent-u4-08"
+    ],
+    "grammarNoteIds": [
+      "ky-grammar-u4-01",
+      "ky-grammar-u4-02",
+      "ky-grammar-u4-03"
+    ],
+    "reviewSeedIds": [
+      "ky-review-u4-01",
+      "ky-review-u4-02",
+      "ky-review-u4-03",
+      "ky-review-u4-04"
+    ],
+    "sourceIds": [
+      "linguanomad-original-kyrgyz-starter-2026",
+      "peace-corps-kyrgyz-language-manual-1997"
+    ]
+  }
+}

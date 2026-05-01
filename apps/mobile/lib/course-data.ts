@@ -13,16 +13,40 @@ import { assertNever } from "@linguanomad/shared";
 
 import alphabetGrammarNotesData from "../../../content/languages/ky/grammar-notes/script-and-sound-survival.grammar-notes.json";
 import greetingsGrammarNotesData from "../../../content/languages/ky/grammar-notes/greetings-and-introductions.grammar-notes.json";
+import politenessGrammarNotesData from "../../../content/languages/ky/grammar-notes/politeness-and-address.grammar-notes.json";
+import identityGrammarNotesData from "../../../content/languages/ky/grammar-notes/identity-origin-family.grammar-notes.json";
+import foodGrammarNotesData from "../../../content/languages/ky/grammar-notes/food-and-preferences.grammar-notes.json";
+import locationGrammarNotesData from "../../../content/languages/ky/grammar-notes/location-and-movement.grammar-notes.json";
 import alphabetLexemesData from "../../../content/languages/ky/lexemes/script-and-sound-survival.lexemes.json";
 import greetingsLexemesData from "../../../content/languages/ky/lexemes/greetings-and-introductions.lexemes.json";
+import politenessLexemesData from "../../../content/languages/ky/lexemes/politeness-and-address.lexemes.json";
+import identityLexemesData from "../../../content/languages/ky/lexemes/identity-origin-family.lexemes.json";
+import foodLexemesData from "../../../content/languages/ky/lexemes/food-and-preferences.lexemes.json";
+import locationLexemesData from "../../../content/languages/ky/lexemes/location-and-movement.lexemes.json";
 import alphabetReviewSeedsData from "../../../content/languages/ky/review-seeds/script-and-sound-survival.review-seeds.json";
 import greetingsReviewSeedsData from "../../../content/languages/ky/review-seeds/greetings-and-introductions.review-seeds.json";
+import politenessReviewSeedsData from "../../../content/languages/ky/review-seeds/politeness-and-address.review-seeds.json";
+import identityReviewSeedsData from "../../../content/languages/ky/review-seeds/identity-origin-family.review-seeds.json";
+import foodReviewSeedsData from "../../../content/languages/ky/review-seeds/food-and-preferences.review-seeds.json";
+import locationReviewSeedsData from "../../../content/languages/ky/review-seeds/location-and-movement.review-seeds.json";
 import alphabetSentencesData from "../../../content/languages/ky/sentences/script-and-sound-survival.sentences.json";
 import greetingsSentencesData from "../../../content/languages/ky/sentences/greetings-and-introductions.sentences.json";
+import politenessSentencesData from "../../../content/languages/ky/sentences/politeness-and-address.sentences.json";
+import identitySentencesData from "../../../content/languages/ky/sentences/identity-origin-family.sentences.json";
+import foodSentencesData from "../../../content/languages/ky/sentences/food-and-preferences.sentences.json";
+import locationSentencesData from "../../../content/languages/ky/sentences/location-and-movement.sentences.json";
 import alphabetTasksData from "../../../content/languages/ky/tasks/script-and-sound-survival.tasks.json";
 import greetingsTasksData from "../../../content/languages/ky/tasks/greetings-and-introductions.tasks.json";
+import politenessTasksData from "../../../content/languages/ky/tasks/politeness-and-address.tasks.json";
+import identityTasksData from "../../../content/languages/ky/tasks/identity-origin-family.tasks.json";
+import foodTasksData from "../../../content/languages/ky/tasks/food-and-preferences.tasks.json";
+import locationTasksData from "../../../content/languages/ky/tasks/location-and-movement.tasks.json";
 import alphabetUnitData from "../../../content/languages/ky/units/script-and-sound-survival.unit.json";
 import greetingsUnitData from "../../../content/languages/ky/units/greetings-and-introductions.unit.json";
+import politenessUnitData from "../../../content/languages/ky/units/politeness-and-address.unit.json";
+import identityUnitData from "../../../content/languages/ky/units/identity-origin-family.unit.json";
+import foodUnitData from "../../../content/languages/ky/units/food-and-preferences.unit.json";
+import locationUnitData from "../../../content/languages/ky/units/location-and-movement.unit.json";
 
 type Collection<T> = {
   version: number;
@@ -72,6 +96,38 @@ const courseBundles: CourseBundle[] = [
     greetingsGrammarNotesData,
     greetingsTasksData as Collection<TaskDefinition>,
     greetingsReviewSeedsData as Collection<ReviewSeed>
+  ),
+  createBundle(
+    politenessUnitData,
+    politenessLexemesData,
+    politenessSentencesData,
+    politenessGrammarNotesData,
+    politenessTasksData as Collection<TaskDefinition>,
+    politenessReviewSeedsData as Collection<ReviewSeed>
+  ),
+  createBundle(
+    identityUnitData,
+    identityLexemesData,
+    identitySentencesData,
+    identityGrammarNotesData,
+    identityTasksData as Collection<TaskDefinition>,
+    identityReviewSeedsData as Collection<ReviewSeed>
+  ),
+  createBundle(
+    foodUnitData,
+    foodLexemesData,
+    foodSentencesData,
+    foodGrammarNotesData,
+    foodTasksData as Collection<TaskDefinition>,
+    foodReviewSeedsData as Collection<ReviewSeed>
+  ),
+  createBundle(
+    locationUnitData,
+    locationLexemesData,
+    locationSentencesData,
+    locationGrammarNotesData,
+    locationTasksData as Collection<TaskDefinition>,
+    locationReviewSeedsData as Collection<ReviewSeed>
   )
 ].sort((left, right) => (left.unit.sequenceNumber ?? Number.MAX_SAFE_INTEGER) - (right.unit.sequenceNumber ?? Number.MAX_SAFE_INTEGER));
 

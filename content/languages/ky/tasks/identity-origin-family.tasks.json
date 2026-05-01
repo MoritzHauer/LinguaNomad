@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-task-u4-intro-01",
+      "kind": "mini-role",
+      "objective": "Introduce yourself and one family member using a short prompt card.",
+      "instructions": "You have received a prompt card with a name, a home city, and one family member's name and job. Use the sentence patterns from this unit to introduce yourself and that family member. Speak or write at least four sentences.",
+      "successCriteria": [
+        "State your name using the Менин атым pattern.",
+        "Say where you are from using the -тен / -ден + мин structure.",
+        "Name one family member and their relationship to you.",
+        "Say one fact about that family member (job, city, or name)."
+      ],
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ],
+      "lexemeIds": [
+        "ky-lex-u4-menin",
+        "ky-lex-u4-ata",
+        "ky-lex-u4-apa",
+        "ky-lex-u4-bayke",
+        "ky-lex-u4-ezhe",
+        "ky-lex-u4-mugalim",
+        "ky-lex-u4-bishkek"
+      ],
+      "sentenceIds": [
+        "ky-sent-u4-02",
+        "ky-sent-u4-03",
+        "ky-sent-u4-04",
+        "ky-sent-u4-05",
+        "ky-sent-u4-06"
+      ],
+      "grammarNoteIds": [
+        "ky-grammar-u4-01",
+        "ky-grammar-u4-02",
+        "ky-grammar-u4-03"
+      ],
+      "completionHint": "Start with your name, then your city, then introduce the family member. Use Менин ... + family word + possessive suffix.",
+      "supportCards": [
+        {
+          "id": "ky-task-u4-intro-01-support-grammar",
+          "kind": "grammar",
+          "title": "Pattern reminder: origin statement",
+          "body": "Place name + -тен / -ден + мин. Example: Мен Ош шаарынантанмын — I am from the city of Osh. For Bishkek: Мен Бишкектенмин.",
+          "grammarNoteIds": [
+            "ky-grammar-u4-02"
+          ],
+          "sourceIds": [
+            "linguanomad-original-kyrgyz-starter-2026"
+          ]
+        },
+        {
+          "id": "ky-task-u4-intro-01-support-pronunciation",
+          "kind": "pronunciation",
+          "title": "Keep Менин short and flowing",
+          "body": "Менин is unstressed in a natural introduction. Let it run into the noun that follows without pausing. Menin atam sounds like one unit when spoken naturally.",
+          "sentenceIds": [
+            "ky-sent-u4-03"
+          ],
+          "sourceIds": [
+            "linguanomad-original-kyrgyz-starter-2026"
+          ]
+        }
+      ],
+      "scenario": "A new neighbour is visiting your home for the first time. They ask about you and your family. Using the prompt card below, introduce yourself and one family member.",
+      "learnerRole": "You are the host introducing yourself and your family.",
+      "phraseBankLexemeIds": [
+        "ky-lex-u4-menin",
+        "ky-lex-u4-ata",
+        "ky-lex-u4-apa",
+        "ky-lex-u4-bayke",
+        "ky-lex-u4-ezhe",
+        "ky-lex-u4-mugalim",
+        "ky-lex-u4-bishkek",
+        "ky-lex-u4-al"
+      ],
+      "phraseBankSentenceIds": [
+        "ky-sent-u4-02",
+        "ky-sent-u4-03",
+        "ky-sent-u4-04",
+        "ky-sent-u4-05",
+        "ky-sent-u4-06"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "languageCode": "ky",
+  "items": [
+    {
+      "id": "ky-grammar-u4-01",
+      "title": "Менин + noun + possessive suffix = my [noun]",
+      "summary": "To express 'my' in Kyrgyz, you use the pronoun менин in front of the noun AND add a short possessive suffix to the noun itself. Менин + ата + -м gives менин атам (my father). Both parts are needed — this double marking is normal and not a mistake. The suffix is -м after a vowel and -ым/-им after a consonant.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-grammar-u4-02",
+      "title": "The -дан / -ден / -тан / -тен suffix marks origin",
+      "summary": "To say where you are from, attach an ablative suffix to the place name and then add the copula -мин or -мын. Бишкек + -тен + -мин = Бишкектенмин (I am from Bishkek). Which form of the suffix? After a voiceless consonant (к, п, т) use -тан or -тен. After a voiced consonant or vowel use -дан or -ден. Pick тен vs тан based on the vowels in the word: front vowels get -тен, back vowels get -тан.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    },
+    {
+      "id": "ky-grammar-u4-03",
+      "title": "Simple identity statements: noun + noun, no verb needed",
+      "summary": "In Kyrgyz, present-tense identity sentences like 'My father is a teacher' do not need a separate verb. Менин атам мугалим is a complete sentence. The subject (менин атам) sits next to the predicate (мугалим) and the meaning is clear. This is one of the most immediately useful patterns for talking about family and work.",
+      "sourceIds": [
+        "linguanomad-original-kyrgyz-starter-2026"
+      ]
+    }
+  ]
+}
