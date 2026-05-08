@@ -1,3 +1,20 @@
+/**
+ * course-data.ts
+ *
+ * Central registry for all course content.
+ *
+ * HOW TO ADD A NEW UNIT
+ * ─────────────────────
+ * 1. Create the six JSON files in content/languages/ky/:
+ *    <slug>.unit.json, .lexemes.json, .sentences.json,
+ *    .grammar-notes.json, .tasks.json, .review-seeds.json
+ *
+ * 2. Add six import lines at the top of this file (follow the pattern below).
+ *
+ * 3. Add a createBundle(...) call to the courseBundles array.
+ *
+ * See docs/developer-guide/adding-content.md for a full walkthrough.
+ */
 import type {
   GrammarNote,
   GuidedDialogueCompletionTaskDefinition,

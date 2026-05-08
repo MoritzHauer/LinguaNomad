@@ -148,6 +148,16 @@ export interface TaskSupportCard {
   sourceIds?: string[];
 }
 
+/**
+ * All supported exercise/task kinds.
+ * When adding a new exercise type:
+ *   1. Add the kind string here.
+ *   2. Create a new `<Kind>TaskDefinition` interface extending `BaseTaskDefinition`.
+ *   3. Add it to the `TaskDefinition` union below.
+ *   4. Add a case in `getTaskKindLabel()` in apps/mobile/lib/course-data.ts.
+ *   5. Add a render branch in `renderTask()` in apps/mobile/app/task/[unitId].tsx.
+ * See docs/developer-guide/adding-exercise-types.md for a full walkthrough.
+ */
 export type TaskKind =
   | "guided-dialogue-completion"
   | "register-choice"

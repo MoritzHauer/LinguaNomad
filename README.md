@@ -1,16 +1,47 @@
 # LinguaNomad
-LinguaNomad is an open-source app for adventurous language learners. Start your journey with Kyrgyz, and soon explore other underrepresented languages - wherever your curiosity takes you.
+LinguaNomad is an open-source app for adventurous language learners. Start your journey with Kyrgyz, and soon explore other underrepresented languages — wherever your curiosity takes you.
 
-## Current Direction
+## What it is
 
-LinguaNomad is being built as a mobile-first, offline-first learning app for serious learners of underrepresented languages, starting with Kyrgyz.
-The current MVP direction combines structured lessons, spaced retrieval, task-based practice, and explicit support for script, pronunciation, and grammar.
+A mobile-first, offline-first language learning app for serious learners of underrepresented languages, starting with Kyrgyz.
+It combines structured lessons, spaced retrieval, task-based practice, and explicit support for script, pronunciation, and grammar.
 
-## Project Status
+## Getting started
 
-The repository currently contains the workflow and planning baseline for the first implementation phase:
-- Workspace-wide agent instructions in `.github/copilot-instructions.md`
-- Focused custom agents under `.github/agents/`
-- Product, architecture, and content-policy docs under `docs/`
+```bash
+# Install dependencies (requires pnpm)
+pnpm install
 
-The next implementation step is the TypeScript monorepo and Expo mobile scaffold described in `docs/architecture/architecture.md`.
+# Run all tests
+pnpm test
+
+# Start the mobile app (requires Expo Go or a simulator)
+cd apps/mobile && npx expo start
+```
+
+## Repository layout
+
+```
+LinguaNomad/
+├── apps/mobile/          # Expo React Native app
+├── apps/content-admin/   # Content management CLI
+├── packages/
+│   ├── content-schema/   # TypeScript types for all content JSON
+│   ├── db/               # SQLite schema + repositories
+│   ├── learner-state/    # Scoring and learner profile logic
+│   ├── shared/           # Shared primitives
+│   └── srs/              # Spaced-repetition scheduler
+├── content/languages/ky/ # Kyrgyz content (units, exercises, vocab …)
+├── supabase/             # Cloud backend (migrations, Edge Functions)
+└── docs/                 # All project documentation
+```
+
+## Documentation
+
+| Topic | Link |
+|---|---|
+| **Developer Guide** (adding content, exercises, screens) | [`docs/developer-guide/`](docs/developer-guide/README.md) |
+| Architecture & decisions | [`docs/architecture/`](docs/architecture/architecture.md) |
+| Content schema spec | [`docs/content/schema-spec.md`](docs/content/schema-spec.md) |
+| Product vision & requirements | [`docs/product/vision.md`](docs/product/vision.md) |
+| Supabase backend setup | [`supabase/README.md`](supabase/README.md) |
