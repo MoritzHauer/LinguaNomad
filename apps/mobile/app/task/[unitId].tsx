@@ -17,7 +17,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { ChoiceButton } from "../../src/components/ChoiceButton";
 import type { BlankToken, DialogueToken } from "../../src/components/DialogueTurn";
 import { DialogueTurn } from "../../src/components/DialogueTurn";
-import { getBundleByUnitId } from "../../lib/course-data";
+import { getBundleByUnitId, getTaskKindLabel } from "../../lib/course-data";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -103,7 +103,6 @@ function GuidedDialogueTask({
     return [...new Set(raw)];
   }, [task, blanks]);
 
-  const activeSloitId = blanks[activeBlankIndex]?.responseSlotId;
   const allFilled = answers.every((a) => a.value !== null);
 
   function handleChoice(choice: string) {
@@ -143,7 +142,9 @@ function GuidedDialogueTask({
       {/* Header */}
       <View style={styles.taskHeader}>
         <View style={styles.taskInfo}>
-          <Text style={styles.taskTypeLabel}>📝 Task · Dialogue</Text>
+          <Text style={styles.taskTypeLabel}>
+            {`📝 Task · ${getTaskKindLabel(task.kind)}`}
+          </Text>
           <Text style={styles.taskName}>{task.objective}</Text>
         </View>
         <View style={styles.taskProgressBadge}>
@@ -164,7 +165,6 @@ function GuidedDialogueTask({
         contentContainerStyle={styles.dialogueContent}
       >
         {task.turns.map((turn, i) => {
-          const isBlank = !!turn.responseSlotId;
           const answer = answers.find((a) => a.slotId === turn.responseSlotId);
           const blankIdx = blanks.findIndex(
             (b) => b.responseSlotId === turn.responseSlotId
@@ -298,7 +298,9 @@ function RegisterChoiceTask({
       {/* Header */}
       <View style={styles.taskHeader}>
         <View style={styles.taskInfo}>
-          <Text style={styles.taskTypeLabel}>🎭 Task · Register</Text>
+          <Text style={styles.taskTypeLabel}>
+            {`🎭 Task · ${getTaskKindLabel(task.kind)}`}
+          </Text>
           <Text style={styles.taskName}>{task.objective}</Text>
         </View>
       </View>
