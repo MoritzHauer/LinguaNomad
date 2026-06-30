@@ -1,0 +1,4 @@
+- Mission focus: travel plus family.
+- Starting point: absolute beginner.
+- First lesson requested: the Kyrgyz alphabet.
+- Prefer short, practical lessons with an immediate payoff.
