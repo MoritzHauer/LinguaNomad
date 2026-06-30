@@ -6,8 +6,31 @@ import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-cont
 
 import { LearnerProgressProvider } from "../lib/learner-progress";
 
-function TabIcon({ emoji, size = 20 }: { emoji: string; size?: number }) {
+type TabIconProps = Readonly<{
+  emoji: string;
+  size?: number;
+}>;
+
+type TabBarIconProps = Readonly<{
+  focused: boolean;
+  color: string;
+  size: number;
+}>;
+
+function TabIcon({ emoji, size = 20 }: TabIconProps) {
   return <Text style={{ fontSize: size }}>{emoji}</Text>;
+}
+
+function renderLearnTabIcon({ focused }: TabBarIconProps) {
+  return <TabIcon emoji="📚" size={focused ? 22 : 20} />;
+}
+
+function renderReviewTabIcon({ focused }: TabBarIconProps) {
+  return <TabIcon emoji="🔁" size={focused ? 22 : 20} />;
+}
+
+function renderProgressTabIcon({ focused }: TabBarIconProps) {
+  return <TabIcon emoji="📊" size={focused ? 22 : 20} />;
 }
 
 function AppTabs() {
@@ -37,24 +60,32 @@ function AppTabs() {
         <Tabs.Screen
           name="index"
           options={{
-            title: "Course",
-            tabBarIcon: ({ focused }) => (
-              <TabIcon emoji="📚" size={focused ? 22 : 20} />
-            ),
+            href: null,
+            tabBarStyle: {
+              display: "none"
+            }
+          }}
+        />
+        <Tabs.Screen
+          name="course"
+          options={{
+            title: "Learn",
+            tabBarIcon: renderLearnTabIcon,
+          }}
+        />
+        <Tabs.Screen
+          name="review"
+          options={{
+            title: "Review",
+            tabBarIcon: renderReviewTabIcon,
           }}
         />
         <Tabs.Screen
           name="progress"
           options={{
             title: "Progress",
-            tabBarIcon: ({ focused }) => (
-              <TabIcon emoji="📊" size={focused ? 22 : 20} />
-            ),
+            tabBarIcon: renderProgressTabIcon,
           }}
-        />
-        <Tabs.Screen
-          name="course"
-          options={{ href: null }} // navigated to programmatically from welcome
         />
         <Tabs.Screen
           name="lesson/[unitId]"

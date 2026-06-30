@@ -58,11 +58,13 @@ export default function CourseScreen() {
         !completedUnitIds.includes(u.id) &&
         isUnitUnlocked(u.unlocksAfterUnitId, completedUnitIds)
     );
-    const label = activeUnit
-      ? `Unit ${activeUnit.sequenceNumber} in progress`
-      : completedCount === totalCount
-      ? 'Course complete!'
-      : 'Get started';
+    let label = 'Get started';
+
+    if (activeUnit) {
+      label = `Unit ${activeUnit.sequenceNumber} in progress`;
+    } else if (completedCount === totalCount) {
+      label = 'Course complete!';
+    }
 
     return { overallPercent: pct, currentUnitLabel: label };
   }, [completedUnitIds]);
@@ -106,7 +108,7 @@ export default function CourseScreen() {
       {/* Overall progress */}
       <View style={styles.progressSection}>
         <View style={styles.progressTrack}>
-          <View style={[styles.progressFill, { width: `${overallPercent}%` as `${number}%` }]} />
+          <View style={[styles.progressFill, { width: `${overallPercent}%` }]} />
         </View>
         <Text style={styles.progressLabel}>
           <Text style={styles.progressLabelAccent}>{currentUnitLabel}</Text>
@@ -165,26 +167,6 @@ export default function CourseScreen() {
         {/* Bottom spacer for tab bar */}
         <View style={styles.bottomSpacer} />
       </ScrollView>
-
-      {/* Bottom nav */}
-      <View style={styles.bottomNav}>
-        <View style={[styles.navItem, styles.navItemActive]}>
-          <Text style={styles.navIcon}>📚</Text>
-          <Text style={[styles.navLabel, styles.navLabelActive]}>Learn</Text>
-        </View>
-        <View style={styles.navItem}>
-          <Text style={styles.navIcon}>🔁</Text>
-          <Text style={styles.navLabel}>Review</Text>
-        </View>
-        <View style={styles.navItem}>
-          <Text style={styles.navIcon}>📊</Text>
-          <Text style={styles.navLabel}>Progress</Text>
-        </View>
-        <View style={styles.navItem}>
-          <Text style={styles.navIcon}>👤</Text>
-          <Text style={styles.navLabel}>Profile</Text>
-        </View>
-      </View>
     </SafeAreaView>
   );
 }
@@ -299,37 +281,6 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   bottomSpacer: {
-    height: 100,
-  },
-  bottomNav: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    height: 80,
-    backgroundColor: colors.background,
-    borderTopWidth: 1,
-    borderTopColor: 'rgba(255,255,255,0.08)',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-    paddingBottom: 16,
-  },
-  navItem: {
-    alignItems: 'center',
-    gap: 4,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-  },
-  navItemActive: {},
-  navIcon: {
-    fontSize: 20,
-  },
-  navLabel: {
-    fontSize: 10,
-    color: '#4040a0',
-  },
-  navLabelActive: {
-    color: colors.accentSoft,
+    height: 28,
   },
 });
