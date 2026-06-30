@@ -53,7 +53,6 @@ function buildUnitProgressEntries(
       completedUnitIds.includes(bundle.unit.unlocksAfterUnitId ?? "")
     ) {
       status = "active";
-      progressPct = 0;
     }
 
     return {
@@ -84,9 +83,16 @@ function getMockReviewQueue(): ReviewQueueMock {
 
 // ─── Unit Progress Row ────────────────────────────────────────────────────────
 
-function UnitProgressRow({ entry }: { entry: UnitProgressEntry }) {
+function UnitProgressRow({ entry }: Readonly<{ entry: UnitProgressEntry }>) {
   const isDone = entry.status === "done";
   const isActive = entry.status === "active";
+  let statusLabel = "🔒";
+
+  if (isDone) {
+    statusLabel = "Done";
+  } else if (isActive) {
+    statusLabel = `${entry.progressPct}%`;
+  }
 
   return (
     <View style={styles.unitRow}>
@@ -97,7 +103,7 @@ function UnitProgressRow({ entry }: { entry: UnitProgressEntry }) {
             styles.unitBarFill,
             isDone && styles.unitBarDone,
             isActive && styles.unitBarActive,
-            { width: `${entry.progressPct}%` as `${number}%` },
+            { width: `${entry.progressPct}%` },
           ]}
         />
       </View>
@@ -109,7 +115,7 @@ function UnitProgressRow({ entry }: { entry: UnitProgressEntry }) {
           !isDone && !isActive && styles.unitPctLocked,
         ]}
       >
-        {isDone ? "Done" : isActive ? `${entry.progressPct}%` : "🔒"}
+        {statusLabel}
       </Text>
     </View>
   );
@@ -207,7 +213,7 @@ export default function ProgressScreen() {
           </View>
           <Pressable
             accessibilityRole="button"
-            onPress={() => router.push("/")}
+            onPress={() => router.push("/review")}
             style={({ pressed }) => [
               styles.reviewBtn,
               pressed && styles.reviewBtnPressed,
